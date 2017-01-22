@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>verifyForm.html</title>
+<meta http-equiv="description" content="this is my page">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+<script type="text/javascript">
+window.onload = function(){
+	alert("aaa");
+	var st = document.getElementById("submit");
+	st.onclick = chkForm();
+	
+};
+function chkForm() {
+		
+	var ip = document.getElementById("d1");
+	var value = ip.value;
+	var len = value.length; 
+	for(var i=0;i<len;i++){
+		if(value.charAt(i)>"9" | value.charAt(i)<"0") {
+			alert("含有非数字字符"); 
+			return false; 
+		}
+	} 
+	return true;
+} 
+</script>
+</head>
+
+<body>
+	
+	<input type="text" name="d1" id ="d1"/>
+	<input type="submit" id = "submit" onclick = "alert('bbb')"/>
+	
+</body>
+
+</html>

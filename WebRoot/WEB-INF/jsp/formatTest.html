@@ -1,0 +1,2297 @@
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>国泰君安综合理财服务系统 -</title>
+<meta content="IE=7" http-equiv="X-UA-Compatible" />
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+<link rel="stylesheet"
+	href="http://localhost:8080/biz-iwm/css/horn/h_ui.css" type="text/css">
+<link rel="stylesheet"
+	href="http://localhost:8080/biz-iwm/components/components.css"
+	type="text/css">
+<link rel="stylesheet"
+	href="http://localhost:8080/biz-iwm/plugins/lhgcalendar/skins/lhgcalendar.css"
+	type="text/css">
+<link rel="stylesheet"
+	href="http://localhost:8080/biz-iwm/plugins/ztree/zTreeStyle/zTreeStyle.css"
+	type="text/css">
+<link rel="stylesheet"
+	href="http://localhost:8080/biz-iwm/css/horn/h_iframe.css"
+	type="text/css">
+<link rel="stylesheet"
+	href="http://localhost:8080/biz-iwm/css/horn/h_index.css"
+	type="text/css">
+<link rel="stylesheet"
+	href="http://localhost:8080/biz-iwm/css/user/user.css" type="text/css">
+<link rel="stylesheet"
+	href="http://localhost:8080/biz-iwm/dhtmlx/dhtmlx.css" type="text/css">
+<script src="http://localhost:8080/biz-iwm/scripts/bigpipe.mini.js"
+	type="text/javascript"></script>
+<script src="http://localhost:8080/biz-iwm/scripts/jquery.mini.js"
+	type="text/javascript"></script>
+<script src="http://localhost:8080/biz-iwm/scripts/horn/horn.core.js"
+	type="text/javascript"></script>
+<script src="http://localhost:8080/biz-iwm/components/components.js"
+	type="text/javascript"></script>
+<script
+	src="http://localhost:8080/biz-iwm/plugins/lhgcalendar/lhgcalendar.js"
+	type="text/javascript"></script>
+<script
+	src="http://localhost:8080/biz-iwm/plugins/lhgcalendar/lhgcalendar.min.js"
+	type="text/javascript"></script>
+<script
+	src="http://localhost:8080/biz-iwm/plugins/lhgcalendar/lhgcore.lhgcalendar.min.js"
+	type="text/javascript"></script>
+<script
+	src="http://localhost:8080/biz-iwm/plugins/ztree/jquery.ztree.core-3.5.min.js"
+	type="text/javascript"></script>
+<script
+	src="http://localhost:8080/biz-iwm/plugins/ztree/jquery.ztree.excheck-3.5.min.js"
+	type="text/javascript"></script>
+<script
+	src="http://localhost:8080/biz-iwm/plugins/ztree/jquery.ztree.exhide-3.5.min.js"
+	type="text/javascript"></script>
+<script src="http://localhost:8080/biz-iwm/scripts/horn/hc_gtja.js"
+	type="text/javascript"></script>
+<script src="http://localhost:8080/biz-iwm/dhtmlx/dhtmlx.js"
+	type="text/javascript"></script>
+<script src="http://localhost:8080/biz-iwm/dhtmlx/hc_dhtmlx.js"
+	type="text/javascript"></script>
+<script src="http://localhost:8080/biz-iwm/scripts/iwm.js"
+	type="text/javascript"></script>
+<script src="http://localhost:8080/biz-iwm/scripts/iwm.querytable.js"
+	type="text/javascript"></script>
+<script src="http://localhost:8080/biz-iwm/scripts/iwm.select.js"
+	type="text/javascript"></script>
+<script src="http://localhost:8080/biz-iwm/scripts/iwm.pwd.js"
+	type="text/javascript"></script>
+
+<script type="text/javascript">
+		var context_path = "http://localhost:8080/biz-iwm/" ;
+		if(context_path.lastIndexOf("/")==context_path.length-1){
+			context_path = context_path.substr(0,context_path.length-1) ;
+		}
+	</script>
+</head>
+<body>
+	<script src="http://localhost:8080/biz-iwm/scripts/iwm.imm.js"
+		type="text/javascript"></script>
+	<script type="text/javascript">
+var menu_id = "230807" ;
+</script>
+
+	<div class="h_screen">
+		<style type="text/css">
+ul.h_panel {
+	display: block;
+	width: 680px;
+}
+
+ul.h_panel li {
+	display: inline-block;
+	width: 220px;
+}
+
+ul.h_panel li span {
+	float: left;
+	width: 70px;
+}
+
+.btn-box {
+	float: right;
+	margin: 20px;
+}
+</style>
+		<div class="h_screen-content-3">
+			<h1>
+				<span></span>
+			</h1>
+
+			<div class="h_columns-4">
+				<ul class="h_panel">
+
+
+					<li class="hc_panel-li "><span title="证通机构编号:"> 证通机构编号:</span>
+						<div class="hc_combox" pKeyField=pLabel keyField=label
+							titleField=value showLabel="true">
+							<input type="hidden" name="gt_ztbank_no_q" value="!" check="" />
+							<input multiple="" type="text" onchange="loadQryTable()"
+								readonly="readonly" value="!:全部" delimiter="," />
+
+							<div class="hc_checkboxdiv" multiple_line="false">
+								<ul>
+
+
+									<li title="全部" pKeyCommand="$!{pItem.pLabel}" pKey="" key="!"><label>
+
+											!:全部 </label></li>
+
+									<li title="句容茅山村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40219"><label> 40219:句容茅山村镇银行 </label></li>
+
+									<li title="海口苏南村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40220"><label> 40220:海口苏南村镇银行 </label></li>
+
+									<li title="双流诚民村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40221"><label> 40221:双流诚民村镇银行 </label></li>
+
+									<li title="宣汉诚民村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40222"><label> 40222:宣汉诚民村镇银行 </label></li>
+
+									<li title="福建建瓯瑞狮村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40223"><label> 40223:福建建瓯瑞狮村镇银行 </label></li>
+
+									<li title="恩施村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40224"><label> 40224:恩施村镇银行 </label></li>
+
+									<li title="咸丰村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40225"><label> 40225:咸丰村镇银行 </label></li>
+
+									<li title="宝坻浦发村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40226"><label> 40226:宝坻浦发村镇银行 </label></li>
+
+									<li title="泽州浦发村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40227"><label> 40227:泽州浦发村镇银行 </label></li>
+
+									<li title="公主岭浦发村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40228"><label> 40228:公主岭浦发村镇银行 </label></li>
+
+									<li title="平阳浦发村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40229"><label> 40229:平阳浦发村镇银行 </label></li>
+
+									<li title="新昌浦发村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40230"><label> 40230:新昌浦发村镇银行 </label></li>
+
+									<li title="临川浦发村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40231"><label> 40231:临川浦发村镇银行 </label></li>
+
+									<li title="邹平浦发村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40232"><label> 40232:邹平浦发村镇银行 </label></li>
+
+									<li title="巩义浦发村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40233"><label> 40233:巩义浦发村镇银行 </label></li>
+
+									<li title="资兴浦发村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40234"><label> 40234:资兴浦发村镇银行 </label></li>
+
+									<li title="临武浦发村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40235"><label> 40235:临武浦发村镇银行 </label></li>
+
+									<li title="巴南浦发村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40236"><label> 40236:巴南浦发村镇银行 </label></li>
+
+									<li title="韩城浦发村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40237"><label> 40237:韩城浦发村镇银行 </label></li>
+
+									<li title="邗江联合村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40238"><label> 40238:邗江联合村镇银行 </label></li>
+
+									<li title="浙江乐清联合村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40239"><label> 40239:浙江乐清联合村镇银行 </label></li>
+
+									<li title="嘉善联合村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40240"><label> 40240:嘉善联合村镇银行 </label></li>
+
+									<li title="长兴联合村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40241"><label> 40241:长兴联合村镇银行 </label></li>
+
+									<li title="国泰君安资产管理公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="71032"><label> 71032:国泰君安资产管理公司 </label></li>
+
+									<li title="政通" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="00000"><label> 00000:政通 </label></li>
+
+									<li title="中国民族证券有限责任公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01108"><label> 01108:中国民族证券有限责任公司 </label></li>
+
+									<li title="浦银安盛基金管理有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01109"><label> 01109:浦银安盛基金管理有限公司 </label></li>
+
+									<li title="前海开源基金管理有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01110"><label> 01110:前海开源基金管理有限公司 </label></li>
+
+									<li title="日信证券有限责任公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01111"><label> 01111:日信证券有限责任公司 </label></li>
+
+									<li title="上海华信证券有限责任公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01112"><label> 01112:上海华信证券有限责任公司 </label></li>
+
+									<li title="上海证券有限责任公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01113"><label> 01113:上海证券有限责任公司 </label></li>
+
+									<li title="上投摩根基金管理有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01114"><label> 01114:上投摩根基金管理有限公司 </label></li>
+
+									<li title="上银基金管理有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01115"><label> 01115:上银基金管理有限公司 </label></li>
+
+									<li title="申万菱信基金管理有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01116"><label> 01116:申万菱信基金管理有限公司 </label></li>
+
+									<li title="世纪证券有限责任公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01117"><label> 01117:世纪证券有限责任公司 </label></li>
+
+									<li title="首创证券有限责任公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01118"><label> 01118:首创证券有限责任公司 </label></li>
+
+									<li title="太平洋证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01119"><label> 01119:太平洋证券股份有限公司 </label></li>
+
+									<li title="柯桥联合村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40242"><label> 40242:柯桥联合村镇银行 </label></li>
+
+									<li title="义乌联合村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40243"><label> 40243:义乌联合村镇银行 </label></li>
+
+									<li title="浙江温岭联合村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40244"><label> 40244:浙江温岭联合村镇银行 </label></li>
+
+									<li title="寿县联合村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40245"><label> 40245:寿县联合村镇银行 </label></li>
+
+									<li title="霍邱联合村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40246"><label> 40246:霍邱联合村镇银行 </label></li>
+
+									<li title="沭阳东吴村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40247"><label> 40247:沭阳东吴村镇银行 </label></li>
+
+									<li title="东胜蒙银村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40248"><label> 40248:东胜蒙银村镇银行 </label></li>
+
+									<li title="阿左旗方大村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40249"><label> 40249:阿左旗方大村镇银行 </label></li>
+
+									<li title="龙岗鼎业村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40250"><label> 40250:龙岗鼎业村镇银行 </label></li>
+
+									<li title="中山小榄村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40251"><label> 40251:中山小榄村镇银行 </label></li>
+
+									<li title="江苏邗江民泰村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40252"><label> 40252:江苏邗江民泰村镇银行 </label></li>
+
+									<li title="静海新华村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40253"><label> 40253:静海新华村镇银行 </label></li>
+
+									<li title="安徽当涂新华村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40254"><label> 40254:安徽当涂新华村镇银行 </label></li>
+
+									<li title="和县新华村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40255"><label> 40255:和县新华村镇银行 </label></li>
+
+									<li title="安徽郎溪新华村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40256"><label> 40256:安徽郎溪新华村镇银行 </label></li>
+
+									<li title="颍上中银富登村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40257"><label> 40257:颍上中银富登村镇银行 </label></li>
+
+									<li title="界首中银富登村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40258"><label> 40258:界首中银富登村镇银行 </label></li>
+
+									<li title="来安中银富登村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40259"><label> 40259:来安中银富登村镇银行 </label></li>
+
+									<li title="全椒中银富登村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40260"><label> 40260:全椒中银富登村镇银行 </label></li>
+
+									<li title="嘉祥中银富登村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40261"><label> 40261:嘉祥中银富登村镇银行 </label></li>
+
+									<li title="曲阜中银富登村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40262"><label> 40262:曲阜中银富登村镇银行 </label></li>
+
+									<li title="临邑中银富登村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40263"><label> 40263:临邑中银富登村镇银行 </label></li>
+
+									<li title="曹县中银富登村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40264"><label> 40264:曹县中银富登村镇银行 </label></li>
+
+									<li title="单县中银富登村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40265"><label> 40265:单县中银富登村镇银行 </label></li>
+
+									<li title="五莲中银富登村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40266"><label> 40266:五莲中银富登村镇银行 </label></li>
+
+									<li title="临颍中银富登村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40267"><label> 40267:临颍中银富登村镇银行 </label></li>
+
+									<li title="谷城中银富登村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40268"><label> 40268:谷城中银富登村镇银行 </label></li>
+
+									<li title="老河口中银富登村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40269"><label> 40269:老河口中银富登村镇银行 </label></li>
+
+									<li title="枣阳中银富登村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40270"><label> 40270:枣阳中银富登村镇银行 </label></li>
+
+									<li title="京山中银富登村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40271"><label> 40271:京山中银富登村镇银行 </label></li>
+
+									<li title="沙洋中银富登村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40272"><label> 40272:沙洋中银富登村镇银行 </label></li>
+
+									<li title="蕲春中银富登村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40273"><label> 40273:蕲春中银富登村镇银行 </label></li>
+
+									<li title="潜江中银富登村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40274"><label> 40274:潜江中银富登村镇银行 </label></li>
+
+									<li title="松滋中银富登村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40275"><label> 40275:松滋中银富登村镇银行 </label></li>
+
+									<li title="公安中银富登村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40276"><label> 40276:公安中银富登村镇银行 </label></li>
+
+									<li title="监利中银富登村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40277"><label> 40277:监利中银富登村镇银行 </label></li>
+
+									<li title="乾县中银富登村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40278"><label> 40278:乾县中银富登村镇银行 </label></li>
+
+									<li title="顺义银座村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40279"><label> 40279:顺义银座村镇银行 </label></li>
+
+									<li title="浙江景宁银座村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40280"><label> 40280:浙江景宁银座村镇银行 </label></li>
+
+									<li title="浙江三门银座村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40281"><label> 40281:浙江三门银座村镇银行 </label></li>
+
+									<li title="江西赣州银座村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40282"><label> 40282:江西赣州银座村镇银行 </label></li>
+
+									<li title="福田银座村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40283"><label> 40283:福田银座村镇银行 </label></li>
+
+									<li title="重庆渝北银座村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40284"><label> 40284:重庆渝北银座村镇银行 </label></li>
+
+									<li title="重庆黔江银座村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40285"><label> 40285:重庆黔江银座村镇银行 </label></li>
+
+									<li title="北京怀柔融兴村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40286"><label> 40286:北京怀柔融兴村镇银行 </label></li>
+
+									<li title="河间融惠村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40287"><label> 40287:河间融惠村镇银行 </label></li>
+
+									<li title="榆树融兴村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40288"><label> 40288:榆树融兴村镇银行 </label></li>
+
+									<li title="巴彦融兴村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40289"><label> 40289:巴彦融兴村镇银行 </label></li>
+
+									<li title="延寿融兴村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40290"><label> 40290:延寿融兴村镇银行 </label></li>
+
+									<li title="拜泉融兴村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40291"><label> 40291:拜泉融兴村镇银行 </label></li>
+
+									<li title="偃师融兴村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40292"><label> 40292:偃师融兴村镇银行 </label></li>
+
+									<li title="耒阳融兴村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40293"><label> 40293:耒阳融兴村镇银行 </label></li>
+
+									<li title="深圳宝安融兴村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40294"><label> 40294:深圳宝安融兴村镇银行 </label></li>
+
+									<li title="海南保亭融兴村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40295"><label> 40295:海南保亭融兴村镇银行 </label></li>
+
+									<li title="遂宁安居融兴村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40296"><label> 40296:遂宁安居融兴村镇银行 </label></li>
+
+									<li title="重庆市沙坪坝融兴村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40297"><label> 40297:重庆市沙坪坝融兴村镇银行 </label></li>
+
+									<li title="重庆大渡口融兴村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40298"><label> 40298:重庆大渡口融兴村镇银行 </label></li>
+
+									<li title="重庆市酉阳融兴村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40299"><label> 40299:重庆市酉阳融兴村镇银行 </label></li>
+
+									<li title="望江新华村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40300"><label> 40300:望江新华村镇银行 </label></li>
+
+									<li title="宁晋民生村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40301"><label> 40301:宁晋民生村镇银行 </label></li>
+
+									<li title="梅河口民生村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40302"><label> 40302:梅河口民生村镇银行 </label></li>
+
+									<li title="阜宁民生村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40303"><label> 40303:阜宁民生村镇银行 </label></li>
+
+									<li title="天台民生村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40304"><label> 40304:天台民生村镇银行 </label></li>
+
+									<li title="宁国民生村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40305"><label> 40305:宁国民生村镇银行 </label></li>
+
+									<li title="池州贵池民生村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40306"><label> 40306:池州贵池民生村镇银行 </label></li>
+
+									<li title="翔安民生村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40307"><label> 40307:翔安民生村镇银行 </label></li>
+
+									<li title="蓬莱民生村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40308"><label> 40308:蓬莱民生村镇银行 </label></li>
+
+									<li title="武汉江夏民生村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40309"><label> 40309:武汉江夏民生村镇银行 </label></li>
+
+									<li title="宜都民生村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40310"><label> 40310:宜都民生村镇银行 </label></li>
+
+									<li title="彭州民生村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40311"><label> 40311:彭州民生村镇银行 </label></li>
+
+									<li title="资阳民生村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40312"><label> 40312:资阳民生村镇银行 </label></li>
+
+									<li title="綦江民生村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40313"><label> 40313:綦江民生村镇银行 </label></li>
+
+									<li title="潼南民生村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40314"><label> 40314:潼南民生村镇银行 </label></li>
+
+									<li title="普洱民生村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40315"><label> 40315:普洱民生村镇银行 </label></li>
+
+									<li title="景洪民生村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40316"><label> 40316:景洪民生村镇银行 </label></li>
+
+									<li title="腾冲民生村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40317"><label> 40317:腾冲民生村镇银行 </label></li>
+
+									<li title="榆林榆阳民生村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40318"><label> 40318:榆林榆阳民生村镇银行 </label></li>
+
+									<li title="萧山湖商村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40319"><label> 40319:萧山湖商村镇银行 </label></li>
+
+									<li title="湖商村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40320"><label> 40320:湖商村镇银行 </label></li>
+
+									<li title="德清湖商村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40321"><label> 40321:德清湖商村镇银行 </label></li>
+
+									<li title="安徽濉溪湖商村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40322"><label> 40322:安徽濉溪湖商村镇银行 </label></li>
+
+									<li title="岳西湖商村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40323"><label> 40323:岳西湖商村镇银行 </label></li>
+
+									<li title="安徽宣州湖商村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40324"><label> 40324:安徽宣州湖商村镇银行 </label></li>
+
+									<li title="安徽涡阳湖商村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40325"><label> 40325:安徽涡阳湖商村镇银行 </label></li>
+
+									<li title="蒙城湖商村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40326"><label> 40326:蒙城湖商村镇银行 </label></li>
+
+									<li title="安徽利辛湖商村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40327"><label> 40327:安徽利辛湖商村镇银行 </label></li>
+
+									<li title="安徽谯城湖商村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40328"><label> 40328:安徽谯城湖商村镇银行 </label></li>
+
+									<li title="榆次融信村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40329"><label> 40329:榆次融信村镇银行 </label></li>
+
+									<li title="梅县客家村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40330"><label> 40330:梅县客家村镇银行 </label></li>
+
+									<li title="宝生村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40331"><label> 40331:宝生村镇银行 </label></li>
+
+									<li title="江苏东台稠州村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40332"><label> 40332:江苏东台稠州村镇银行 </label></li>
+
+									<li title="浙江舟山普陀稠州村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40333"><label> 40333:浙江舟山普陀稠州村镇银行 </label></li>
+
+									<li title="吉安稠州村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40334"><label> 40334:吉安稠州村镇银行 </label></li>
+
+									<li title="广州花都稠州村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40335"><label> 40335:广州花都稠州村镇银行 </label></li>
+
+									<li title="龙泉驿稠州村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40336"><label> 40336:龙泉驿稠州村镇银行 </label></li>
+
+									<li title="重庆北碚稠州村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40337"><label> 40337:重庆北碚稠州村镇银行 </label></li>
+
+									<li title="重庆忠县稠州村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40338"><label> 40338:重庆忠县稠州村镇银行 </label></li>
+
+									<li title="云南安宁稠州村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40339"><label> 40339:云南安宁稠州村镇银行 </label></li>
+
+									<li title="象山国民村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40340"><label> 40340:象山国民村镇银行 </label></li>
+
+									<li title="澳洲联邦银行(辛集)村镇银行" pKeyCommand="$!{pItem.pLabel}"
+										pKey="" key="40452"><label> 40452:澳洲联邦银行(辛集)村镇银行
+									</label></li>
+
+									<li title="澳联邦银行永年村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40453"><label> 40453:澳联邦银行永年村镇银行 </label></li>
+
+									<li title="澳联邦银行兰考村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40454"><label> 40454:澳联邦银行兰考村镇银行 </label></li>
+
+									<li title="余杭德商村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40455"><label> 40455:余杭德商村镇银行 </label></li>
+
+									<li title="安徽宿松民丰村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40456"><label> 40456:安徽宿松民丰村镇银行 </label></li>
+
+									<li title="安徽明光民丰村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40457"><label> 40457:安徽明光民丰村镇银行 </label></li>
+
+									<li title="山东梁山民丰村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40458"><label> 40458:山东梁山民丰村镇银行 </label></li>
+
+									<li title="山东肥城民丰村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40459"><label> 40459:山东肥城民丰村镇银行 </label></li>
+
+									<li title="永嘉恒升村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40460"><label> 40460:永嘉恒升村镇银行 </label></li>
+
+									<li title="惠水恒升村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40461"><label> 40461:惠水恒升村镇银行 </label></li>
+
+									<li title="大洼恒丰村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40462"><label> 40462:大洼恒丰村镇银行 </label></li>
+
+									<li title="上海龙团信息技术有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="49995"><label> 49995:上海龙团信息技术有限公司 </label></li>
+
+									<li title="广西北部湾股权交易所股份有限公司" pKeyCommand="$!{pItem.pLabel}"
+										pKey="" key="49996"><label>
+
+											49996:广西北部湾股权交易所股份有限公司 </label></li>
+
+									<li title="华润深国投信托有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="49997"><label> 49997:华润深国投信托有限公司 </label></li>
+
+									<li title="上海股权托管交易中心" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="49998"><label> 49998:上海股权托管交易中心 </label></li>
+
+									<li title="信达新兴财富（北京）资产管理有限公司" pKeyCommand="$!{pItem.pLabel}"
+										pKey="" key="49999"><label>
+
+											49999:信达新兴财富（北京）资产管理有限公司 </label></li>
+
+									<li title="中国银联股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="81000"><label> 81000:中国银联股份有限公司 </label></li>
+
+									<li title="泰达宏利基金管理有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01120"><label> 01120:泰达宏利基金管理有限公司 </label></li>
+
+									<li title="泰信基金管理有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01121"><label> 01121:泰信基金管理有限公司 </label></li>
+
+									<li title="天风证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01122"><label> 01122:天风证券股份有限公司 </label></li>
+
+									<li title="万和证券有限责任公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01123"><label> 01123:万和证券有限责任公司 </label></li>
+
+									<li title="万家基金管理有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01124"><label> 01124:万家基金管理有限公司 </label></li>
+
+									<li title="万联证券有限责任公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01125"><label> 01125:万联证券有限责任公司 </label></li>
+
+									<li title="五矿证券有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01126"><label> 01126:五矿证券有限公司 </label></li>
+
+									<li title="西部证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01127"><label> 01127:西部证券股份有限公司 </label></li>
+
+									<li title="西藏同信证券有限责任公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01128"><label> 01128:西藏同信证券有限责任公司 </label></li>
+
+									<li title="长城国瑞证券有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01129"><label> 01129:长城国瑞证券有限公司 </label></li>
+
+									<li title="新时代证券有限责任公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01130"><label> 01130:新时代证券有限责任公司 </label></li>
+
+									<li title="信达澳银基金管理有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01131"><label> 01131:信达澳银基金管理有限公司 </label></li>
+
+									<li title="信达证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01132"><label> 01132:信达证券股份有限公司 </label></li>
+
+									<li title="第一创业摩根大通证券有限责任公司" pKeyCommand="$!{pItem.pLabel}"
+										pKey="" key="01133"><label>
+
+											01133:第一创业摩根大通证券有限责任公司 </label></li>
+
+									<li title="银泰证券有限责任公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01134"><label> 01134:银泰证券有限责任公司 </label></li>
+
+									<li title="英大证券有限责任公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01135"><label> 01135:英大证券有限责任公司 </label></li>
+
+									<li title="招商期货有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01136"><label> 01136:招商期货有限公司 </label></li>
+
+									<li title="浙商证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01137"><label> 01137:浙商证券股份有限公司 </label></li>
+
+									<li title="中国国际金融股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01138"><label> 01138:中国国际金融股份有限公司 </label></li>
+
+									<li title="中航证券有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01139"><label> 01139:中航证券有限公司 </label></li>
+
+									<li title="中金基金管理有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01140"><label> 01140:中金基金管理有限公司 </label></li>
+
+									<li title="中山证券有限责任公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01141"><label> 01141:中山证券有限责任公司 </label></li>
+
+									<li title="中天证券有限责任公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01142"><label> 01142:中天证券有限责任公司 </label></li>
+
+									<li title="中国中投证券有限责任公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01143"><label> 01143:中国中投证券有限责任公司 </label></li>
+
+									<li title="中信证券（浙江）有限责任公司" pKeyCommand="$!{pItem.pLabel}"
+										pKey="" key="01144"><label> 01144:中信证券（浙江）有限责任公司
+									</label></li>
+
+									<li title="中邮创业基金管理有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01145"><label> 01145:中邮创业基金管理有限公司 </label></li>
+
+									<li title="中原证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01146"><label> 01146:中原证券股份有限公司 </label></li>
+
+									<li title="众成证券有限责任公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01147"><label> 01147:众成证券有限责任公司 </label></li>
+
+									<li title="诚浩证券有限责任公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01148"><label> 01148:诚浩证券有限责任公司 </label></li>
+
+									<li title="中国证券登记结算有限责任公司" pKeyCommand="$!{pItem.pLabel}"
+										pKey="" key="80000"><label> 80000:中国证券登记结算有限责任公司
+									</label></li>
+
+									<li title="中证机构间报价系统股份有限公司" pKeyCommand="$!{pItem.pLabel}"
+										pKey="" key="80001"><label> 80001:中证机构间报价系统股份有限公司
+									</label></li>
+
+									<li title="工商银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40001"><label> 40001:工商银行 </label></li>
+
+									<li title="农业银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40002"><label> 40002:农业银行 </label></li>
+
+									<li title="中国银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40003"><label> 40003:中国银行 </label></li>
+
+									<li title="建设银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40004"><label> 40004:建设银行 </label></li>
+
+									<li title="中国邮政储蓄银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40005"><label> 40005:中国邮政储蓄银行 </label></li>
+
+									<li title="交通银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40006"><label> 40006:交通银行 </label></li>
+
+									<li title="中信银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40007"><label> 40007:中信银行 </label></li>
+
+									<li title="光大银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40008"><label> 40008:光大银行 </label></li>
+
+									<li title="华夏银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40009"><label> 40009:华夏银行 </label></li>
+
+									<li title="民生银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40010"><label> 40010:民生银行 </label></li>
+
+									<li title="广发银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40011"><label> 40011:广发银行 </label></li>
+
+									<li title="招商银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40012"><label> 40012:招商银行 </label></li>
+
+									<li title="兴业银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40013"><label> 40013:兴业银行 </label></li>
+
+									<li title="上海浦东发展银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40014"><label> 40014:上海浦东发展银行 </label></li>
+
+									<li title="平安银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40015"><label> 40015:平安银行 </label></li>
+
+									<li title="上海银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40016"><label> 40016:上海银行 </label></li>
+
+									<li title="北京银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40017"><label> 40017:北京银行 </label></li>
+
+									<li title="恒丰银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40018"><label> 40018:恒丰银行 </label></li>
+
+									<li title="浙商银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40019"><label> 40019:浙商银行 </label></li>
+
+									<li title="渤海银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40020"><label> 40020:渤海银行 </label></li>
+
+									<li title="厦门银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40021"><label> 40021:厦门银行 </label></li>
+
+									<li title="烟台银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40022"><label> 40022:烟台银行 </label></li>
+
+									<li title="福建省海峡银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40023"><label> 40023:福建省海峡银行 </label></li>
+
+									<li title="宁波银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40024"><label> 40024:宁波银行 </label></li>
+
+									<li title="齐鲁银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40025"><label> 40025:齐鲁银行 </label></li>
+
+									<li title="焦作商行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40026"><label> 40026:焦作商行 </label></li>
+
+									<li title="温州银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40027"><label> 40027:温州银行 </label></li>
+
+									<li title="广州银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40028"><label> 40028:广州银行 </label></li>
+
+									<li title="汉口银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40029"><label> 40029:汉口银行 </label></li>
+
+									<li title="盛京银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40030"><label> 40030:盛京银行 </label></li>
+
+									<li title="洛阳银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40031"><label> 40031:洛阳银行 </label></li>
+
+									<li title="辽阳银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40032"><label> 40032:辽阳银行 </label></li>
+
+									<li title="大连银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40033"><label> 40033:大连银行 </label></li>
+
+									<li title="河北银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40034"><label> 40034:河北银行 </label></li>
+
+									<li title="杭州银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40035"><label> 40035:杭州银行 </label></li>
+
+									<li title="南京银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40036"><label> 40036:南京银行 </label></li>
+
+									<li title="东莞银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40037"><label> 40037:东莞银行 </label></li>
+
+									<li title="金华银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40038"><label> 40038:金华银行 </label></li>
+
+									<li title="乌鲁木齐商行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40039"><label> 40039:乌鲁木齐商行 </label></li>
+
+									<li title="绍兴银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40040"><label> 40040:绍兴银行 </label></li>
+
+									<li title="成都银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40041"><label> 40041:成都银行 </label></li>
+
+									<li title="抚顺银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40042"><label> 40042:抚顺银行 </label></li>
+
+									<li title="临商银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40043"><label> 40043:临商银行 </label></li>
+
+									<li title="葫芦岛商行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40044"><label> 40044:葫芦岛商行 </label></li>
+
+									<li title="天津银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40045"><label> 40045:天津银行 </label></li>
+
+									<li title="郑州银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40046"><label> 40046:郑州银行 </label></li>
+
+									<li title="宁夏银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40047"><label> 40047:宁夏银行 </label></li>
+
+									<li title="珠海华润银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40048"><label> 40048:珠海华润银行 </label></li>
+
+									<li title="齐商银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40049"><label> 40049:齐商银行 </label></li>
+
+									<li title="锦州银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40050"><label> 40050:锦州银行 </label></li>
+
+									<li title="徽商银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40051"><label> 40051:徽商银行 </label></li>
+
+									<li title="重庆银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40052"><label> 40052:重庆银行 </label></li>
+
+									<li title="哈尔滨银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40053"><label> 40053:哈尔滨银行 </label></li>
+
+									<li title="贵阳银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40054"><label> 40054:贵阳银行 </label></li>
+
+									<li title="西安银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40055"><label> 40055:西安银行 </label></li>
+
+									<li title="丹东商行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40056"><label> 40056:丹东商行 </label></li>
+
+									<li title="兰州银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40057"><label> 40057:兰州银行 </label></li>
+
+									<li title="南昌银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40058"><label> 40058:南昌银行 </label></li>
+
+									<li title="晋商银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40059"><label> 40059:晋商银行 </label></li>
+
+									<li title="青岛银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40060"><label> 40060:青岛银行 </label></li>
+
+									<li title="吉林银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40061"><label> 40061:吉林银行 </label></li>
+
+									<li title="九江银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40062"><label> 40062:九江银行 </label></li>
+
+									<li title="日照商行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40063"><label> 40063:日照商行 </label></li>
+
+									<li title="鞍山银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40064"><label> 40064:鞍山银行 </label></li>
+
+									<li title="秦皇岛银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40065"><label> 40065:秦皇岛银行 </label></li>
+
+									<li title="青海银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40066"><label> 40066:青海银行 </label></li>
+
+									<li title="台州银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40067"><label> 40067:台州银行 </label></li>
+
+									<li title="潍纺银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40069"><label> 40069:潍纺银行 </label></li>
+
+									<li title="赣州银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40070"><label> 40070:赣州银行 </label></li>
+
+									<li title="泉州银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40071"><label> 40071:泉州银行 </label></li>
+
+									<li title="营口银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40072"><label> 40072:营口银行 </label></li>
+
+									<li title="富滇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40073"><label> 40073:富滇银行 </label></li>
+
+									<li title="阜新银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40074"><label> 40074:阜新银行 </label></li>
+
+									<li title="嘉兴银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40075"><label> 40075:嘉兴银行 </label></li>
+
+									<li title="廊坊银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40076"><label> 40076:廊坊银行 </label></li>
+
+									<li title="浙江泰隆商业银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40077"><label> 40077:浙江泰隆商业银行 </label></li>
+
+									<li title="内蒙古银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40078"><label> 40078:内蒙古银行 </label></li>
+
+									<li title="湖州银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40079"><label> 40079:湖州银行 </label></li>
+
+									<li title="沧州银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40080"><label> 40080:沧州银行 </label></li>
+
+									<li title="广西北部湾银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40081"><label> 40081:广西北部湾银行 </label></li>
+
+									<li title="包商银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40082"><label> 40082:包商银行 </label></li>
+
+									<li title="威海商行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40083"><label> 40083:威海商行 </label></li>
+
+									<li title="攀枝花商行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40084"><label> 40084:攀枝花商行 </label></li>
+
+									<li title="绵阳商行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40085"><label> 40085:绵阳商行 </label></li>
+
+									<li title="泸州商行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40086"><label> 40086:泸州商行 </label></li>
+
+									<li title="大同银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40087"><label> 40087:大同银行 </label></li>
+
+									<li title="三门峡银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40088"><label> 40088:三门峡银行 </label></li>
+
+									<li title="广东南粤银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40089"><label> 40089:广东南粤银行 </label></li>
+
+									<li title="张家口商行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40090"><label> 40090:张家口商行 </label></li>
+
+									<li title="桂林银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40091"><label> 40091:桂林银行 </label></li>
+
+									<li title="龙江银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40092"><label> 40092:龙江银行 </label></li>
+
+									<li title="江苏长江商业银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40093"><label> 40093:江苏长江商业银行 </label></li>
+
+									<li title="柳州银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40094"><label> 40094:柳州银行 </label></li>
+
+									<li title="南充商行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40095"><label> 40095:南充商行 </label></li>
+
+									<li title="德阳银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40096"><label> 40096:德阳银行 </label></li>
+
+									<li title="唐山银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40097"><label> 40097:唐山银行 </label></li>
+
+									<li title="莱商银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40098"><label> 40098:莱商银行 </label></li>
+
+									<li title="曲靖商行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40099"><label> 40099:曲靖商行 </label></li>
+
+									<li title="晋城银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40100"><label> 40100:晋城银行 </label></li>
+
+									<li title="江苏银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40101"><label> 40101:江苏银行 </label></li>
+
+									<li title="承德银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40102"><label> 40102:承德银行 </label></li>
+
+									<li title="德州银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40103"><label> 40103:德州银行 </label></li>
+
+									<li title="邯郸商行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40104"><label> 40104:邯郸商行 </label></li>
+
+									<li title="玉溪商行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40105"><label> 40105:玉溪商行 </label></li>
+
+									<li title="浙江民泰商业银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40106"><label> 40106:浙江民泰商业银行 </label></li>
+
+									<li title="东营银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40107"><label> 40107:东营银行 </label></li>
+
+									<li title="泰安商行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40108"><label> 40108:泰安商行 </label></li>
+
+									<li title="浙江稠州商业银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40109"><label> 40109:浙江稠州商业银行 </label></li>
+
+									<li title="乌海银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40110"><label> 40110:乌海银行 </label></li>
+
+									<li title="自贡市商业银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40111"><label> 40111:自贡市商业银行 </label></li>
+
+									<li title="鄂尔多斯市商业银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40112"><label> 40112:鄂尔多斯市商业银行 </label></li>
+
+									<li title="许昌市商业银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40113"><label> 40113:许昌市商业银行 </label></li>
+
+									<li title="济宁银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40114"><label> 40114:济宁银行 </label></li>
+
+									<li title="铁岭银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40115"><label> 40115:铁岭银行 </label></li>
+
+									<li title="乐山商行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40116"><label> 40116:乐山商行 </label></li>
+
+									<li title="长安银行宝鸡分行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40117"><label> 40117:长安银行宝鸡分行 </label></li>
+
+									<li title="重庆三峡银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40118"><label> 40118:重庆三峡银行 </label></li>
+
+									<li title="石嘴山银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40119"><label> 40119:石嘴山银行 </label></li>
+
+									<li title="盘锦商行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40120"><label> 40120:盘锦商行 </label></li>
+
+									<li title="昆仑银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40121"><label> 40121:昆仑银行 </label></li>
+
+									<li title="平顶山银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40122"><label> 40122:平顶山银行 </label></li>
+
+									<li title="朝阳银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40123"><label> 40123:朝阳银行 </label></li>
+
+									<li title="宁波东海银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40124"><label> 40124:宁波东海银行 </label></li>
+
+									<li title="遂宁商行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40125"><label> 40125:遂宁商行 </label></li>
+
+									<li title="保定银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40126"><label> 40126:保定银行 </label></li>
+
+									<li title="邢台商行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40127"><label> 40127:邢台商行 </label></li>
+
+									<li title="凉山商行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40128"><label> 40128:凉山商行 </label></li>
+
+									<li title="漯河银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40129"><label> 40129:漯河银行 </label></li>
+
+									<li title="达州市商业银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40130"><label> 40130:达州市商业银行 </label></li>
+
+									<li title="新乡银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40131"><label> 40131:新乡银行 </label></li>
+
+									<li title="晋中银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40132"><label> 40132:晋中银行 </label></li>
+
+									<li title="驻马店银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40133"><label> 40133:驻马店银行 </label></li>
+
+									<li title="衡水银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40134"><label> 40134:衡水银行 </label></li>
+
+									<li title="周口银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40135"><label> 40135:周口银行 </label></li>
+
+									<li title="阳泉商业银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40136"><label> 40136:阳泉商业银行 </label></li>
+
+									<li title="宜宾市商业银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40137"><label> 40137:宜宾市商业银行 </label></li>
+
+									<li title="库尔勒市商业银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40138"><label> 40138:库尔勒市商业银行 </label></li>
+
+									<li title="雅安市商业银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40139"><label> 40139:雅安市商业银行 </label></li>
+
+									<li title="商丘市商业银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40140"><label> 40140:商丘市商业银行 </label></li>
+
+									<li title="安阳银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40141"><label> 40141:安阳银行 </label></li>
+
+									<li title="信阳银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40142"><label> 40142:信阳银行 </label></li>
+
+									<li title="华融湘江银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40143"><label> 40143:华融湘江银行 </label></li>
+
+									<li title="营口沿海银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40144"><label> 40144:营口沿海银行 </label></li>
+
+									<li title="景德镇商行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40145"><label> 40145:景德镇商行 </label></li>
+
+									<li title="哈密市商业银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40146"><label> 40146:哈密市商业银行 </label></li>
+
+									<li title="湖北银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40147"><label> 40147:湖北银行 </label></li>
+
+									<li title="新疆汇和银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40148"><label> 40148:新疆汇和银行 </label></li>
+
+									<li title="广东华兴银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40149"><label> 40149:广东华兴银行 </label></li>
+
+									<li title="宁波通商银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40150"><label> 40150:宁波通商银行 </label></li>
+
+									<li title="甘肃银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40151"><label> 40151:甘肃银行 </label></li>
+
+									<li title="枣庄银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40152"><label> 40152:枣庄银行 </label></li>
+
+									<li title="本溪市商业银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40153"><label> 40153:本溪市商业银行 </label></li>
+
+									<li title="贵州银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40154"><label> 40154:贵州银行 </label></li>
+
+									<li title="中原银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40155"><label> 40155:中原银行 </label></li>
+
+									<li title="苏州银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40156"><label> 40156:苏州银行 </label></li>
+
+									<li title="上海农商银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40157"><label> 40157:上海农商银行 </label></li>
+
+									<li title="昆山农商银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40158"><label> 40158:昆山农商银行 </label></li>
+
+									<li title="常熟农商银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40159"><label> 40159:常熟农商银行 </label></li>
+
+									<li title="深圳农商银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40160"><label> 40160:深圳农商银行 </label></li>
+
+									<li title="广州农商银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40161"><label> 40161:广州农商银行 </label></li>
+
+									<li title="顺德农商银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40162"><label> 40162:顺德农商银行 </label></li>
+
+									<li title="江阴农商银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40163"><label> 40163:江阴农商银行 </label></li>
+
+									<li title="重庆农商银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40164"><label> 40164:重庆农商银行 </label></li>
+
+									<li title="东莞农村商业银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40165"><label> 40165:东莞农村商业银行 </label></li>
+
+									<li title="张家港农商银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40166"><label> 40166:张家港农商银行 </label></li>
+
+									<li title="北京农商银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40167"><label> 40167:北京农商银行 </label></li>
+
+									<li title="天津农商银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40168"><label> 40168:天津农商银行 </label></li>
+
+									<li title="成都农商银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40169"><label> 40169:成都农商银行 </label></li>
+
+									<li title="吴江农商银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40170"><label> 40170:吴江农商银行 </label></li>
+
+									<li title="太仓农商银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40171"><label> 40171:太仓农商银行 </label></li>
+
+									<li title="山西尧都农商银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40172"><label> 40172:山西尧都农商银行 </label></li>
+
+									<li title="无锡农村商业银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40173"><label> 40173:无锡农村商业银行 </label></li>
+
+									<li title="黄河农村商业银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40174"><label> 40174:黄河农村商业银行 </label></li>
+
+									<li title="天津滨海农商银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40175"><label> 40175:天津滨海农商银行 </label></li>
+
+									<li title="武汉农商银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40176"><label> 40176:武汉农商银行 </label></li>
+
+									<li title="江南农村商业银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40177"><label> 40177:江南农村商业银行 </label></li>
+
+									<li title="东亚银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40178"><label> 40178:东亚银行 </label></li>
+
+									<li title="渣打银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40179"><label> 40179:渣打银行 </label></li>
+
+									<li title="星展银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40180"><label> 40180:星展银行 </label></li>
+
+									<li title="友利银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40181"><label> 40181:友利银行 </label></li>
+
+									<li title="新韩银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40182"><label> 40182:新韩银行 </label></li>
+
+									<li title="韩亚银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40183"><label> 40183:韩亚银行 </label></li>
+
+									<li title="永亨银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40184"><label> 40184:永亨银行 </label></li>
+
+									<li title="南洋商业银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40185"><label> 40185:南洋商业银行 </label></li>
+
+									<li title="鄞州农村合作银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40186"><label> 40186:鄞州农村合作银行 </label></li>
+
+									<li title="杭州农村信用社" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40187"><label> 40187:杭州农村信用社 </label></li>
+
+									<li title="云南农村信用社" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40188"><label> 40188:云南农村信用社 </label></li>
+
+									<li title="济南农村信用社" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40190"><label> 40190:济南农村信用社 </label></li>
+
+									<li title="福建农村信用社" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40191"><label> 40191:福建农村信用社 </label></li>
+
+									<li title="江苏农村信用社" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40192"><label> 40192:江苏农村信用社 </label></li>
+
+									<li title="贵州农村信用社" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40193"><label> 40193:贵州农村信用社 </label></li>
+
+									<li title="湖南农村信用社" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40194"><label> 40194:湖南农村信用社 </label></li>
+
+									<li title="江西农村信用社" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40195"><label> 40195:江西农村信用社 </label></li>
+
+									<li title="南宁江南国民村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40341"><label> 40341:南宁江南国民村镇银行 </label></li>
+
+									<li title="桂林国民村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40342"><label> 40342:桂林国民村镇银行 </label></li>
+
+									<li title="广西银海国民村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40343"><label> 40343:广西银海国民村镇银行 </label></li>
+
+									<li title="合浦国民村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40344"><label> 40344:合浦国民村镇银行 </label></li>
+
+									<li title="平果国民村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40345"><label> 40345:平果国民村镇银行 </label></li>
+
+									<li title="钦州市钦南国民村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40346"><label> 40346:钦州市钦南国民村镇银行 </label></li>
+
+									<li title="防城港防城国民村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40347"><label> 40347:防城港防城国民村镇银行 </label></li>
+
+									<li title="东兴国民村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40348"><label> 40348:东兴国民村镇银行 </label></li>
+
+									<li title="邛崃国民村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40349"><label> 40349:邛崃国民村镇银行 </label></li>
+
+									<li title="新疆绿洲国民村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40350"><label> 40350:新疆绿洲国民村镇银行 </label></li>
+
+									<li title="克拉玛依金龙国民村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40351"><label> 40351:克拉玛依金龙国民村镇银行 </label></li>
+
+									<li title="哈密红星国民村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40352"><label> 40352:哈密红星国民村镇银行 </label></li>
+
+									<li title="昌吉国民村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40353"><label> 40353:昌吉国民村镇银行 </label></li>
+
+									<li title="博乐国民村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40354"><label> 40354:博乐国民村镇银行 </label></li>
+
+									<li title="伊犁国民村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40355"><label> 40355:伊犁国民村镇银行 </label></li>
+
+									<li title="石河子国民村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40356"><label> 40356:石河子国民村镇银行 </label></li>
+
+									<li title="五家渠国民村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40357"><label> 40357:五家渠国民村镇银行 </label></li>
+
+									<li title="文昌国民村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40358"><label> 40358:文昌国民村镇银行 </label></li>
+
+									<li title="琼海国民村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40359"><label> 40359:琼海国民村镇银行 </label></li>
+
+									<li title="迁安襄隆村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40360"><label> 40360:迁安襄隆村镇银行 </label></li>
+
+									<li title="北京门头沟珠江村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40361"><label> 40361:北京门头沟珠江村镇银行 </label></li>
+
+									<li title="大连保税区村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40362"><label> 40362:大连保税区村镇银行 </label></li>
+
+									<li title="江苏盱眙珠江村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40363"><label> 40363:江苏盱眙珠江村镇银行 </label></li>
+
+									<li title="吉州珠江村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40364"><label> 40364:吉州珠江村镇银行 </label></li>
+
+									<li title="福山珠江村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40365"><label> 40365:福山珠江村镇银行 </label></li>
+
+									<li title="海阳珠江村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40366"><label> 40366:海阳珠江村镇银行 </label></li>
+
+									<li title="莱芜珠江村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40367"><label> 40367:莱芜珠江村镇银行 </label></li>
+
+									<li title="安阳珠江村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40368"><label> 40368:安阳珠江村镇银行 </label></li>
+
+									<li title="辉县珠江村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40369"><label> 40369:辉县珠江村镇银行 </label></li>
+
+									<li title="信阳珠江村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40370"><label> 40370:信阳珠江村镇银行 </label></li>
+
+									<li title="三水珠江村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40371"><label> 40371:三水珠江村镇银行 </label></li>
+
+									<li title="新津珠江村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40372"><label> 40372:新津珠江村镇银行 </label></li>
+
+									<li title="广汉珠江村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40373"><label> 40373:广汉珠江村镇银行 </label></li>
+
+									<li title="彭山珠江村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40374"><label> 40374:彭山珠江村镇银行 </label></li>
+
+									<li title="康巴什村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40375"><label> 40375:康巴什村镇银行 </label></li>
+
+									<li title="鄂托克汇泽村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40376"><label> 40376:鄂托克汇泽村镇银行 </label></li>
+
+									<li title="安徽肥西石银村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40377"><label> 40377:安徽肥西石银村镇银行 </label></li>
+
+									<li title="青岛莱西元泰村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40378"><label> 40378:青岛莱西元泰村镇银行 </label></li>
+
+									<li title="重庆南川石银村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40379"><label> 40379:重庆南川石银村镇银行 </label></li>
+
+									<li title="重庆江津石银村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40380"><label> 40380:重庆江津石银村镇银行 </label></li>
+
+									<li title="银川掌政石银村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40381"><label> 40381:银川掌政石银村镇银行 </label></li>
+
+									<li title="大武口石银村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40382"><label> 40382:大武口石银村镇银行 </label></li>
+
+									<li title="吴忠市滨河村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40383"><label> 40383:吴忠市滨河村镇银行 </label></li>
+
+									<li title="广元贵商村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40384"><label> 40384:广元贵商村镇银行 </label></li>
+
+									<li title="樟树顺银村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40385"><label> 40385:樟树顺银村镇银行 </label></li>
+
+									<li title="青岛胶南海汇村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40386"><label> 40386:青岛胶南海汇村镇银行 </label></li>
+
+									<li title="东莞大朗东盈村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40387"><label> 40387:东莞大朗东盈村镇银行 </label></li>
+
+									<li title="云浮新兴东盈村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40388"><label> 40388:云浮新兴东盈村镇银行 </label></li>
+
+									<li title="贺州八步东盈村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40389"><label> 40389:贺州八步东盈村镇银行 </label></li>
+
+									<li title="天津武清村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40390"><label> 40390:天津武清村镇银行 </label></li>
+
+									<li title="东营莱商村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40391"><label> 40391:东营莱商村镇银行 </label></li>
+
+									<li title="河南方城凤裕村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40392"><label> 40392:河南方城凤裕村镇银行 </label></li>
+
+									<li title="长春双阳吉银村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40393"><label> 40393:长春双阳吉银村镇银行 </label></li>
+
+									<li title="舒兰吉银村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40394"><label> 40394:舒兰吉银村镇银行 </label></li>
+
+									<li title="双辽吉银村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40395"><label> 40395:双辽吉银村镇银行 </label></li>
+
+									<li title="咸安武农商村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40396"><label> 40396:咸安武农商村镇银行 </label></li>
+
+									<li title="赤壁武农商村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40397"><label> 40397:赤壁武农商村镇银行 </label></li>
+
+									<li title="广州增城长江村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40398"><label> 40398:广州增城长江村镇银行 </label></li>
+
+									<li title="海南澄迈长江村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40399"><label> 40399:海南澄迈长江村镇银行 </label></li>
+
+									<li title="遂昌富民村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40400"><label> 40400:遂昌富民村镇银行 </label></li>
+
+									<li title="萍乡安源富民村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40401"><label> 40401:萍乡安源富民村镇银行 </label></li>
+
+									<li title="上栗富民村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40402"><label> 40402:上栗富民村镇银行 </label></li>
+
+									<li title="贵阳乌当富民村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40403"><label> 40403:贵阳乌当富民村镇银行 </label></li>
+
+									<li title="贵阳云岩富民村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40404"><label> 40404:贵阳云岩富民村镇银行 </label></li>
+
+									<li title="遵义红花岗富民村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40405"><label> 40405:遵义红花岗富民村镇银行 </label></li>
+
+									<li title="金沙富民村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40406"><label> 40406:金沙富民村镇银行 </label></li>
+
+									<li title="张家港渝农商村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40407"><label> 40407:张家港渝农商村镇银行 </label></li>
+
+									<li title="沙县渝农商村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40408"><label> 40408:沙县渝农商村镇银行 </label></li>
+
+									<li title="广西鹿寨渝农商村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40409"><label> 40409:广西鹿寨渝农商村镇银行 </label></li>
+
+									<li title="大理渝农商村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40410"><label> 40410:大理渝农商村镇银行 </label></li>
+
+									<li title="云南祥云渝农商村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40411"><label> 40411:云南祥云渝农商村镇银行 </label></li>
+
+									<li title="云南鹤庆渝农商村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40412"><label> 40412:云南鹤庆渝农商村镇银行 </label></li>
+
+									<li title="香格里拉渝农商村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40413"><label> 40413:香格里拉渝农商村镇银行 </label></li>
+
+									<li title="沈阳于洪永安村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40414"><label> 40414:沈阳于洪永安村镇银行 </label></li>
+
+									<li title="灵宝融丰村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40415"><label> 40415:灵宝融丰村镇银行 </label></li>
+
+									<li title="安徽五河永泰村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40416"><label> 40416:安徽五河永泰村镇银行 </label></li>
+
+									<li title="华明村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40417"><label> 40417:华明村镇银行 </label></li>
+
+									<li title="芜湖泰寿村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40418"><label> 40418:芜湖泰寿村镇银行 </label></li>
+
+									<li title="尉氏合益村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40419"><label> 40419:尉氏合益村镇银行 </label></li>
+
+									<li title="长葛轩辕村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40420"><label> 40420:长葛轩辕村镇银行 </label></li>
+
+									<li title="广州从化柳银村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40421"><label> 40421:广州从化柳银村镇银行 </label></li>
+
+									<li title="广西柳江柳银村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40422"><label> 40422:广西柳江柳银村镇银行 </label></li>
+
+									<li title="广西融水柳银村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40423"><label> 40423:广西融水柳银村镇银行 </label></li>
+
+									<li title="广西北流柳银村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40424"><label> 40424:广西北流柳银村镇银行 </label></li>
+
+									<li title="广西陆川柳银村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40425"><label> 40425:广西陆川柳银村镇银行 </label></li>
+
+									<li title="广西博白柳银村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40426"><label> 40426:广西博白柳银村镇银行 </label></li>
+
+									<li title="浙江兰溪越商村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40427"><label> 40427:浙江兰溪越商村镇银行 </label></li>
+
+									<li title="集宁包商村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40428"><label> 40428:集宁包商村镇银行 </label></li>
+
+									<li title="化德包商村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40429"><label> 40429:化德包商村镇银行 </label></li>
+
+									<li title="准格尔旗包商村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40430"><label> 40430:准格尔旗包商村镇银行 </label></li>
+
+									<li title="九台龙嘉村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40431"><label> 40431:九台龙嘉村镇银行 </label></li>
+
+									<li title="贵阳花溪建设村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40432"><label> 40432:贵阳花溪建设村镇银行 </label></li>
+
+									<li title="宁夏贺兰回商村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40433"><label> 40433:宁夏贺兰回商村镇银行 </label></li>
+
+									<li title="浙江泰顺温银村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40434"><label> 40434:浙江泰顺温银村镇银行 </label></li>
+
+									<li title="内江兴隆村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40435"><label> 40435:内江兴隆村镇银行 </label></li>
+
+									<li title="枞阳泰业村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40436"><label> 40436:枞阳泰业村镇银行 </label></li>
+
+									<li title="灵山泰业村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40437"><label> 40437:灵山泰业村镇银行 </label></li>
+
+									<li title="开县泰业村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40438"><label> 40438:开县泰业村镇银行 </label></li>
+
+									<li title="萍乡湘东黄海村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40439"><label> 40439:萍乡湘东黄海村镇银行 </label></li>
+
+									<li title="安平惠民村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40440"><label> 40440:安平惠民村镇银行 </label></li>
+
+									<li title="长春高新惠民村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40441"><label> 40441:长春高新惠民村镇银行 </label></li>
+
+									<li title="桦甸惠民村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40442"><label> 40442:桦甸惠民村镇银行 </label></li>
+
+									<li title="吉林丰满惠民村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40443"><label> 40443:吉林丰满惠民村镇银行 </label></li>
+
+									<li title="通城惠民村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40444"><label> 40444:通城惠民村镇银行 </label></li>
+
+									<li title="山东莒南村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40445"><label> 40445:山东莒南村镇银行 </label></li>
+
+									<li title="哈密天山村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40446"><label> 40446:哈密天山村镇银行 </label></li>
+
+									<li title="山东临朐聚丰村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40447"><label> 40447:山东临朐聚丰村镇银行 </label></li>
+
+									<li title="德庆华润村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40448"><label> 40448:德庆华润村镇银行 </label></li>
+
+									<li title="百色右江华润村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40449"><label> 40449:百色右江华润村镇银行 </label></li>
+
+									<li title="西安高陵阳光村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40450"><label> 40450:西安高陵阳光村镇银行 </label></li>
+
+									<li title="浙江缙云杭银村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40451"><label> 40451:浙江缙云杭银村镇银行 </label></li>
+
+									<li title="国泰君安证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01002"><label> 01002:国泰君安证券股份有限公司 </label></li>
+
+									<li title="东吴证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01014"><label> 01014:东吴证券股份有限公司 </label></li>
+
+									<li title="华安基金管理有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01039"><label> 01039:华安基金管理有限公司 </label></li>
+
+									<li title="中邮证券有限责任公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01029"><label> 01029:中邮证券有限责任公司 </label></li>
+
+									<li title="中信证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01001"><label> 01001:中信证券股份有限公司 </label></li>
+
+									<li title="海通证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01003"><label> 01003:海通证券股份有限公司 </label></li>
+
+									<li title="中国银河证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01004"><label> 01004:中国银河证券股份有限公司 </label></li>
+
+									<li title="华泰证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01005"><label> 01005:华泰证券股份有限公司 </label></li>
+
+									<li title="招商证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01006"><label> 01006:招商证券股份有限公司 </label></li>
+
+									<li title="广发证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01007"><label> 01007:广发证券股份有限公司 </label></li>
+
+									<li title="申银万国证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01008"><label> 01008:申银万国证券股份有限公司 </label></li>
+
+									<li title="国信证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01009"><label> 01009:国信证券股份有限公司 </label></li>
+
+									<li title="兴业证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01010"><label> 01010:兴业证券股份有限公司 </label></li>
+
+									<li title="安信证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01011"><label> 01011:安信证券股份有限公司 </label></li>
+
+									<li title="长城证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01012"><label> 01012:长城证券股份有限公司 </label></li>
+
+									<li title="第一创业证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01013"><label> 01013:第一创业证券股份有限公司 </label></li>
+
+									<li title="国海证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01015"><label> 01015:国海证券股份有限公司 </label></li>
+
+									<li title="国元证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01016"><label> 01016:国元证券股份有限公司 </label></li>
+
+									<li title="华融证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01017"><label> 01017:华融证券股份有限公司 </label></li>
+
+									<li title="山西证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01018"><label> 01018:山西证券股份有限公司 </label></li>
+
+									<li title="西南证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01019"><label> 01019:西南证券股份有限公司 </label></li>
+
+									<li title="中信建投证券有限责任公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01020"><label> 01020:中信建投证券有限责任公司 </label></li>
+
+									<li title="东方证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01021"><label> 01021:东方证券股份有限公司 </label></li>
+
+									<li title="光大证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01022"><label> 01022:光大证券股份有限公司 </label></li>
+
+									<li title="平安证券有限责任公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01023"><label> 01023:平安证券有限责任公司 </label></li>
+
+									<li title="德邦证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01024"><label> 01024:德邦证券股份有限公司 </label></li>
+
+									<li title="中泰证券有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01025"><label> 01025:中泰证券有限公司 </label></li>
+
+									<li title="长江证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01026"><label> 01026:长江证券股份有限公司 </label></li>
+
+									<li title="华林证券有限责任公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01027"><label> 01027:华林证券有限责任公司 </label></li>
+
+									<li title="湘财证券有限责任公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01028"><label> 01028:湘财证券有限责任公司 </label></li>
+
+									<li title="南京证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01030"><label> 01030:南京证券股份有限公司 </label></li>
+
+									<li title="联讯证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01031"><label> 01031:联讯证券股份有限公司 </label></li>
+
+									<li title="中银国际证券有限责任公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01032"><label> 01032:中银国际证券有限责任公司 </label></li>
+
+									<li title="华西证券有限责任公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01033"><label> 01033:华西证券有限责任公司 </label></li>
+
+									<li title="华夏基金管理有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01034"><label> 01034:华夏基金管理有限公司 </label></li>
+
+									<li title="嘉实基金管理有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01035"><label> 01035:嘉实基金管理有限公司 </label></li>
+
+									<li title="天弘基金管理有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01036"><label> 01036:天弘基金管理有限公司 </label></li>
+
+									<li title="汇添富基金管理有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01037"><label> 01037:汇添富基金管理有限公司 </label></li>
+
+									<li title="博时基金管理有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01038"><label> 01038:博时基金管理有限公司 </label></li>
+
+									<li title="南方基金管理有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01040"><label> 01040:南方基金管理有限公司 </label></li>
+
+									<li title="易方达基金管理有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01041"><label> 01041:易方达基金管理有限公司 </label></li>
+
+									<li title="招商基金管理有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01042"><label> 01042:招商基金管理有限公司 </label></li>
+
+									<li title="长安基金管理有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01043"><label> 01043:长安基金管理有限公司 </label></li>
+
+									<li title="兴业全球基金管理有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01044"><label> 01044:兴业全球基金管理有限公司 </label></li>
+
+									<li title="长城基金管理有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01045"><label> 01045:长城基金管理有限公司 </label></li>
+
+									<li title="广发基金管理有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01046"><label> 01046:广发基金管理有限公司 </label></li>
+
+									<li title="国泰君安期货有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01047"><label> 01047:国泰君安期货有限公司 </label></li>
+
+									<li title="海通期货有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01048"><label> 01048:海通期货有限公司 </label></li>
+
+									<li title="中信期货有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01049"><label> 01049:中信期货有限公司 </label></li>
+
+									<li title="永安期货股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01050"><label> 01050:永安期货股份有限公司 </label></li>
+
+									<li title="银河期货有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01051"><label> 01051:银河期货有限公司 </label></li>
+
+									<li title="广发期货有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01052"><label> 01052:广发期货有限公司 </label></li>
+
+									<li title="上海通联期货有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01053"><label> 01053:上海通联期货有限公司 </label></li>
+
+									<li title="上海景林投资发展有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01054"><label> 01054:上海景林投资发展有限公司 </label></li>
+
+									<li title="上海重阳投资管理股份有限公司" pKeyCommand="$!{pItem.pLabel}"
+										pKey="" key="01055"><label> 01055:上海重阳投资管理股份有限公司
+									</label></li>
+
+									<li title="北京中融鼎新投资管理有限公司" pKeyCommand="$!{pItem.pLabel}"
+										pKey="" key="01056"><label> 01056:北京中融鼎新投资管理有限公司
+									</label></li>
+
+									<li title="仁和智本有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01057"><label> 01057:仁和智本有限公司 </label></li>
+
+									<li title="上海久富资产管理有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01058"><label> 01058:上海久富资产管理有限公司 </label></li>
+
+									<li title="爱建证券有限责任公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01059"><label> 01059:爱建证券有限责任公司 </label></li>
+
+									<li title="安信基金管理有限责任公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01060"><label> 01060:安信基金管理有限责任公司 </label></li>
+
+									<li title="宝盈基金管理有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01061"><label> 01061:宝盈基金管理有限公司 </label></li>
+
+									<li title="渤海证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01062"><label> 01062:渤海证券股份有限公司 </label></li>
+
+									<li title="财达证券有限责任公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01063"><label> 01063:财达证券有限责任公司 </label></li>
+
+									<li title="财富证券有限责任公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01064"><label> 01064:财富证券有限责任公司 </label></li>
+
+									<li title="财通证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01065"><label> 01065:财通证券股份有限公司 </label></li>
+
+									<li title="长信基金管理有限责任公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01066"><label> 01066:长信基金管理有限责任公司 </label></li>
+
+									<li title="川财证券有限责任公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01067"><label> 01067:川财证券有限责任公司 </label></li>
+
+									<li title="大通证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01068"><label> 01068:大通证券股份有限公司 </label></li>
+
+									<li title="大同证券经纪有限责任公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01069"><label> 01069:大同证券经纪有限责任公司 </label></li>
+
+									<li title="东海证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01070"><label> 01070:东海证券股份有限公司 </label></li>
+
+									<li title="东莞证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01071"><label> 01071:东莞证券股份有限公司 </label></li>
+
+									<li title="东兴证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01072"><label> 01072:东兴证券股份有限公司 </label></li>
+
+									<li title="上海东证期货有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01073"><label> 01073:上海东证期货有限公司 </label></li>
+
+									<li title="方正证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01074"><label> 01074:方正证券股份有限公司 </label></li>
+
+									<li title="北京高华证券有限责任公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01075"><label> 01075:北京高华证券有限责任公司 </label></li>
+
+									<li title="格林大华期货有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01076"><label> 01076:格林大华期货有限公司 </label></li>
+
+									<li title="工银瑞信基金管理有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01077"><label> 01077:工银瑞信基金管理有限公司 </label></li>
+
+									<li title="光大保德信基金管理有限公司" pKeyCommand="$!{pItem.pLabel}"
+										pKey="" key="01078"><label> 01078:光大保德信基金管理有限公司 </label>
+									</li>
+
+									<li title="华福证券有限责任公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01079"><label> 01079:华福证券有限责任公司 </label></li>
+
+									<li title="广州证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01080"><label> 01080:广州证券股份有限公司 </label></li>
+
+									<li title="国都证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01081"><label> 01081:国都证券股份有限公司 </label></li>
+
+									<li title="国际金融GJJR" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01082"><label> 01082:国际金融GJJR </label></li>
+
+									<li title="国金证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01083"><label> 01083:国金证券股份有限公司 </label></li>
+
+									<li title="国开证券有限责任公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01084"><label> 01084:国开证券有限责任公司 </label></li>
+
+									<li title="国联安基金管理有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01085"><label> 01085:国联安基金管理有限公司 </label></li>
+
+									<li title="国联证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01086"><label> 01086:国联证券股份有限公司 </label></li>
+
+									<li title="海富通基金管理有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01087"><label> 01087:海富通基金管理有限公司 </label></li>
+
+									<li title="上海海通证券资产管理有限公司" pKeyCommand="$!{pItem.pLabel}"
+										pKey="" key="01088"><label> 01088:上海海通证券资产管理有限公司
+									</label></li>
+
+									<li title="华金证券有限责任公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01089"><label> 01089:华金证券有限责任公司 </label></li>
+
+									<li title="红塔证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01090"><label> 01090:红塔证券股份有限公司 </label></li>
+
+									<li title="宏信证券有限责任公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01091"><label> 01091:宏信证券有限责任公司 </label></li>
+
+									<li title="宏源证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01092"><label> 01092:宏源证券股份有限公司 </label></li>
+
+									<li title="华安证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01093"><label> 01093:华安证券股份有限公司 </label></li>
+
+									<li title="华宝证券有限责任公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01094"><label> 01094:华宝证券有限责任公司 </label></li>
+
+									<li title="华创证券有限责任公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01095"><label> 01095:华创证券有限责任公司 </label></li>
+
+									<li title="华龙证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01096"><label> 01096:华龙证券股份有限公司 </label></li>
+
+									<li title="华泰柏瑞基金管理有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01097"><label> 01097:华泰柏瑞基金管理有限公司 </label></li>
+
+									<li title="华泰联合证券有限责任公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01098"><label> 01098:华泰联合证券有限责任公司 </label></li>
+
+									<li title="华西期货有限责任公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01099"><label> 01099:华西期货有限责任公司 </label></li>
+
+									<li title="华鑫证券有限责任公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01100"><label> 01100:华鑫证券有限责任公司 </label></li>
+
+									<li title="江海证券有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01101"><label> 01101:江海证券有限公司 </label></li>
+
+									<li title="交银施罗德基金管理有限公司" pKeyCommand="$!{pItem.pLabel}"
+										pKey="" key="01102"><label> 01102:交银施罗德基金管理有限公司 </label>
+									</li>
+
+									<li title="金元证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01103"><label> 01103:金元证券股份有限公司 </label></li>
+
+									<li title="九泰基金管理有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01104"><label> 01104:九泰基金管理有限公司 </label></li>
+
+									<li title="开源证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01105"><label> 01105:开源证券股份有限公司 </label></li>
+
+									<li title="鲁证期货股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01106"><label> 01106:鲁证期货股份有限公司 </label></li>
+
+									<li title="民生证券股份有限公司" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="01107"><label> 01107:民生证券股份有限公司 </label></li>
+
+									<li title="长沙银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40068"><label> 40068:长沙银行 </label></li>
+
+									<li title="湖北农村信用社" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40189"><label> 40189:湖北农村信用社 </label></li>
+
+									<li title="河南农村信用社" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40196"><label> 40196:河南农村信用社 </label></li>
+
+									<li title="河北农村信用社" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40197"><label> 40197:河北农村信用社 </label></li>
+
+									<li title="陕西农村信用社" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40198"><label> 40198:陕西农村信用社 </label></li>
+
+									<li title="广西农村信用社" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40199"><label> 40199:广西农村信用社 </label></li>
+
+									<li title="新疆农村信用社" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40200"><label> 40200:新疆农村信用社 </label></li>
+
+									<li title="吉林农村信用社" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40201"><label> 40201:吉林农村信用社 </label></li>
+
+									<li title="安徽农村信用社" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40202"><label> 40202:安徽农村信用社 </label></li>
+
+									<li title="海南农村信用社" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40203"><label> 40203:海南农村信用社 </label></li>
+
+									<li title="青海农村信用社" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40204"><label> 40204:青海农村信用社 </label></li>
+
+									<li title="广东农村信用社" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40205"><label> 40205:广东农村信用社 </label></li>
+
+									<li title="内蒙农村信用社" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40206"><label> 40206:内蒙农村信用社 </label></li>
+
+									<li title="四川农村信用社" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40207"><label> 40207:四川农村信用社 </label></li>
+
+									<li title="甘肃农村信用社" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40208"><label> 40208:甘肃农村信用社 </label></li>
+
+									<li title="辽宁农村信用社" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40209"><label> 40209:辽宁农村信用社 </label></li>
+
+									<li title="山西农村信用社" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40210"><label> 40210:山西农村信用社 </label></li>
+
+									<li title="黑龙江农村信用社" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40211"><label> 40211:黑龙江农村信用社 </label></li>
+
+									<li title="海口联合农村商业银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40212"><label> 40212:海口联合农村商业银行 </label></li>
+
+									<li title="安吉村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40213"><label> 40213:安吉村镇银行 </label></li>
+
+									<li title="大邑村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40214"><label> 40214:大邑村镇银行 </label></li>
+
+									<li title="石河子交银村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40215"><label> 40215:石河子交银村镇银行 </label></li>
+
+									<li title="嘉鱼吴江村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40216"><label> 40216:嘉鱼吴江村镇银行 </label></li>
+
+									<li title="青岛即墨京都村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40217"><label> 40217:青岛即墨京都村镇银行 </label></li>
+
+									<li title="湖北仙桃北农商村镇银行" pKeyCommand="$!{pItem.pLabel}" pKey=""
+										key="40218"><label> 40218:湖北仙桃北农商村镇银行 </label></li>
+								</ul>
+							</div>
+						</div>
+						<div style="display:none;"></div>
+					</li>
+					<li class="hc_panel-li "><span title="报文编号:"> 报文编号:</span>
+						<div class="hc_textfield">
+							<input type="text" name="gt_msgcd_q" maxlength="" value=""
+								check="" />
+						</div>
+						<div style="display:none;"></div>
+					</li>
+					<li class="hc_panel-li "><span title="业务类型:"> 业务类型:</span>
+						<div class="hc_textfield">
+							<input type="text" name="gt_biztyp_q" maxlength="" value=""
+								check="" />
+						</div>
+						<div style="display:none;"></div>
+					</li>
+					<li class="hc_panel-li "><span title="业务种类:"> 业务种类:</span>
+						<div class="hc_textfield">
+							<input type="text" name="gt_bizKind_q" maxlength="" value=""
+								check="" />
+						</div>
+						<div style="display:none;"></div>
+					</li>
+					<li class="hc_panel-li "><span title="支付机构编号:"> 支付机构编号:</span>
+						<div class="hc_textfield">
+							<input type="text" name="payorgan_id_q" maxlength="" value=""
+								check="" />
+						</div>
+						<div style="display:none;"></div>
+					</li>
+				</ul>
+
+				<div class="btn-box">
+					<button class="btn query">查询</button>
+					<button class="btn add">添加</button>
+					<button class="btn modify">修改</button>
+					<button class="btn remove">删除</button>
+				</div>
+				<div class="">
+					<div class="h_colspan-${cols}">
+						<div class="h_listtable">
+							<table class="h_table" name="ztOrganArgTable"
+								bindformname="queryproducts"
+								url="/pay/bankarg/payztorganargset/query.json"
+								request_num="1000" numbercolumn="true" selectModel="muti"
+								simpleRequest="true">
+								<thead>
+									<th class="h_numbercolumn"></th>
+									<th class="h_querytable_checkboxcolumn"><input
+										type="checkbox" class="h_querytable_select_all" /></th>
+									<th name="gt_ztbank_no" dealFun="deal_gt_ztbank_no">证通机构名称</th>
+									<th name="gt_ztbank_no">证通机构编号</th>
+									<th name="gt_trans_flag_name" dictName="gt_trans_flag">交易标识</th>
+									<th name="gt_biztyp">业务类型</th>
+									<th name="gt_msgcd">报文编号</th>
+									<th name="gt_bizKind">业务种类</th>
+									<th name="right_open_flag" dealFun="deal_right_open_flag">权限是否开通</th>
+									<th name="payorgan_id">支付机构编号</th>
+									<th name="active_flag">当前使用标记</th>
+									<th name="modify_date">修改日期</th>
+									<th name="remark" dealFun="deal_remark">备注</th>
+								</thead>
+								<tbody>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+			<script type="text/javascript">
+var gt_ztbank_no_string = [{"label":"40219","value":"句容茅山村镇银行"},{"label":"40220","value":"海口苏南村镇银行"},{"label":"40221","value":"双流诚民村镇银行"},{"label":"40222","value":"宣汉诚民村镇银行"},{"label":"40223","value":"福建建瓯瑞狮村镇银行"},{"label":"40224","value":"恩施村镇银行"},{"label":"40225","value":"咸丰村镇银行"},{"label":"40226","value":"宝坻浦发村镇银行"},{"label":"40227","value":"泽州浦发村镇银行"},{"label":"40228","value":"公主岭浦发村镇银行"},{"label":"40229","value":"平阳浦发村镇银行"},{"label":"40230","value":"新昌浦发村镇银行"},{"label":"40231","value":"临川浦发村镇银行"},{"label":"40232","value":"邹平浦发村镇银行"},{"label":"40233","value":"巩义浦发村镇银行"},{"label":"40234","value":"资兴浦发村镇银行"},{"label":"40235","value":"临武浦发村镇银行"},{"label":"40236","value":"巴南浦发村镇银行"},{"label":"40237","value":"韩城浦发村镇银行"},{"label":"40238","value":"邗江联合村镇银行"},{"label":"40239","value":"浙江乐清联合村镇银行"},{"label":"40240","value":"嘉善联合村镇银行"},{"label":"40241","value":"长兴联合村镇银行"},{"label":"71032","value":"国泰君安资产管理公司"},{"label":"00000","value":"政通"},{"label":"01108","value":"中国民族证券有限责任公司"},{"label":"01109","value":"浦银安盛基金管理有限公司"},{"label":"01110","value":"前海开源基金管理有限公司"},{"label":"01111","value":"日信证券有限责任公司"},{"label":"01112","value":"上海华信证券有限责任公司"},{"label":"01113","value":"上海证券有限责任公司"},{"label":"01114","value":"上投摩根基金管理有限公司"},{"label":"01115","value":"上银基金管理有限公司"},{"label":"01116","value":"申万菱信基金管理有限公司"},{"label":"01117","value":"世纪证券有限责任公司"},{"label":"01118","value":"首创证券有限责任公司"},{"label":"01119","value":"太平洋证券股份有限公司"},{"label":"40242","value":"柯桥联合村镇银行"},{"label":"40243","value":"义乌联合村镇银行"},{"label":"40244","value":"浙江温岭联合村镇银行"},{"label":"40245","value":"寿县联合村镇银行"},{"label":"40246","value":"霍邱联合村镇银行"},{"label":"40247","value":"沭阳东吴村镇银行"},{"label":"40248","value":"东胜蒙银村镇银行"},{"label":"40249","value":"阿左旗方大村镇银行"},{"label":"40250","value":"龙岗鼎业村镇银行"},{"label":"40251","value":"中山小榄村镇银行"},{"label":"40252","value":"江苏邗江民泰村镇银行"},{"label":"40253","value":"静海新华村镇银行"},{"label":"40254","value":"安徽当涂新华村镇银行"},{"label":"40255","value":"和县新华村镇银行"},{"label":"40256","value":"安徽郎溪新华村镇银行"},{"label":"40257","value":"颍上中银富登村镇银行"},{"label":"40258","value":"界首中银富登村镇银行"},{"label":"40259","value":"来安中银富登村镇银行"},{"label":"40260","value":"全椒中银富登村镇银行"},{"label":"40261","value":"嘉祥中银富登村镇银行"},{"label":"40262","value":"曲阜中银富登村镇银行"},{"label":"40263","value":"临邑中银富登村镇银行"},{"label":"40264","value":"曹县中银富登村镇银行"},{"label":"40265","value":"单县中银富登村镇银行"},{"label":"40266","value":"五莲中银富登村镇银行"},{"label":"40267","value":"临颍中银富登村镇银行"},{"label":"40268","value":"谷城中银富登村镇银行"},{"label":"40269","value":"老河口中银富登村镇银行"},{"label":"40270","value":"枣阳中银富登村镇银行"},{"label":"40271","value":"京山中银富登村镇银行"},{"label":"40272","value":"沙洋中银富登村镇银行"},{"label":"40273","value":"蕲春中银富登村镇银行"},{"label":"40274","value":"潜江中银富登村镇银行"},{"label":"40275","value":"松滋中银富登村镇银行"},{"label":"40276","value":"公安中银富登村镇银行"},{"label":"40277","value":"监利中银富登村镇银行"},{"label":"40278","value":"乾县中银富登村镇银行"},{"label":"40279","value":"顺义银座村镇银行"},{"label":"40280","value":"浙江景宁银座村镇银行"},{"label":"40281","value":"浙江三门银座村镇银行"},{"label":"40282","value":"江西赣州银座村镇银行"},{"label":"40283","value":"福田银座村镇银行"},{"label":"40284","value":"重庆渝北银座村镇银行"},{"label":"40285","value":"重庆黔江银座村镇银行"},{"label":"40286","value":"北京怀柔融兴村镇银行"},{"label":"40287","value":"河间融惠村镇银行"},{"label":"40288","value":"榆树融兴村镇银行"},{"label":"40289","value":"巴彦融兴村镇银行"},{"label":"40290","value":"延寿融兴村镇银行"},{"label":"40291","value":"拜泉融兴村镇银行"},{"label":"40292","value":"偃师融兴村镇银行"},{"label":"40293","value":"耒阳融兴村镇银行"},{"label":"40294","value":"深圳宝安融兴村镇银行"},{"label":"40295","value":"海南保亭融兴村镇银行"},{"label":"40296","value":"遂宁安居融兴村镇银行"},{"label":"40297","value":"重庆市沙坪坝融兴村镇银行"},{"label":"40298","value":"重庆大渡口融兴村镇银行"},{"label":"40299","value":"重庆市酉阳融兴村镇银行"},{"label":"40300","value":"望江新华村镇银行"},{"label":"40301","value":"宁晋民生村镇银行"},{"label":"40302","value":"梅河口民生村镇银行"},{"label":"40303","value":"阜宁民生村镇银行"},{"label":"40304","value":"天台民生村镇银行"},{"label":"40305","value":"宁国民生村镇银行"},{"label":"40306","value":"池州贵池民生村镇银行"},{"label":"40307","value":"翔安民生村镇银行"},{"label":"40308","value":"蓬莱民生村镇银行"},{"label":"40309","value":"武汉江夏民生村镇银行"},{"label":"40310","value":"宜都民生村镇银行"},{"label":"40311","value":"彭州民生村镇银行"},{"label":"40312","value":"资阳民生村镇银行"},{"label":"40313","value":"綦江民生村镇银行"},{"label":"40314","value":"潼南民生村镇银行"},{"label":"40315","value":"普洱民生村镇银行"},{"label":"40316","value":"景洪民生村镇银行"},{"label":"40317","value":"腾冲民生村镇银行"},{"label":"40318","value":"榆林榆阳民生村镇银行"},{"label":"40319","value":"萧山湖商村镇银行"},{"label":"40320","value":"湖商村镇银行"},{"label":"40321","value":"德清湖商村镇银行"},{"label":"40322","value":"安徽濉溪湖商村镇银行"},{"label":"40323","value":"岳西湖商村镇银行"},{"label":"40324","value":"安徽宣州湖商村镇银行"},{"label":"40325","value":"安徽涡阳湖商村镇银行"},{"label":"40326","value":"蒙城湖商村镇银行"},{"label":"40327","value":"安徽利辛湖商村镇银行"},{"label":"40328","value":"安徽谯城湖商村镇银行"},{"label":"40329","value":"榆次融信村镇银行"},{"label":"40330","value":"梅县客家村镇银行"},{"label":"40331","value":"宝生村镇银行"},{"label":"40332","value":"江苏东台稠州村镇银行"},{"label":"40333","value":"浙江舟山普陀稠州村镇银行"},{"label":"40334","value":"吉安稠州村镇银行"},{"label":"40335","value":"广州花都稠州村镇银行"},{"label":"40336","value":"龙泉驿稠州村镇银行"},{"label":"40337","value":"重庆北碚稠州村镇银行"},{"label":"40338","value":"重庆忠县稠州村镇银行"},{"label":"40339","value":"云南安宁稠州村镇银行"},{"label":"40340","value":"象山国民村镇银行"},{"label":"40452","value":"澳洲联邦银行(辛集)村镇银行"},{"label":"40453","value":"澳联邦银行永年村镇银行"},{"label":"40454","value":"澳联邦银行兰考村镇银行"},{"label":"40455","value":"余杭德商村镇银行"},{"label":"40456","value":"安徽宿松民丰村镇银行"},{"label":"40457","value":"安徽明光民丰村镇银行"},{"label":"40458","value":"山东梁山民丰村镇银行"},{"label":"40459","value":"山东肥城民丰村镇银行"},{"label":"40460","value":"永嘉恒升村镇银行"},{"label":"40461","value":"惠水恒升村镇银行"},{"label":"40462","value":"大洼恒丰村镇银行"},{"label":"49995","value":"上海龙团信息技术有限公司"},{"label":"49996","value":"广西北部湾股权交易所股份有限公司"},{"label":"49997","value":"华润深国投信托有限公司"},{"label":"49998","value":"上海股权托管交易中心"},{"label":"49999","value":"信达新兴财富（北京）资产管理有限公司"},{"label":"81000","value":"中国银联股份有限公司"},{"label":"01120","value":"泰达宏利基金管理有限公司"},{"label":"01121","value":"泰信基金管理有限公司"},{"label":"01122","value":"天风证券股份有限公司"},{"label":"01123","value":"万和证券有限责任公司"},{"label":"01124","value":"万家基金管理有限公司"},{"label":"01125","value":"万联证券有限责任公司"},{"label":"01126","value":"五矿证券有限公司"},{"label":"01127","value":"西部证券股份有限公司"},{"label":"01128","value":"西藏同信证券有限责任公司"},{"label":"01129","value":"长城国瑞证券有限公司"},{"label":"01130","value":"新时代证券有限责任公司"},{"label":"01131","value":"信达澳银基金管理有限公司"},{"label":"01132","value":"信达证券股份有限公司"},{"label":"01133","value":"第一创业摩根大通证券有限责任公司"},{"label":"01134","value":"银泰证券有限责任公司"},{"label":"01135","value":"英大证券有限责任公司"},{"label":"01136","value":"招商期货有限公司"},{"label":"01137","value":"浙商证券股份有限公司"},{"label":"01138","value":"中国国际金融股份有限公司"},{"label":"01139","value":"中航证券有限公司"},{"label":"01140","value":"中金基金管理有限公司"},{"label":"01141","value":"中山证券有限责任公司"},{"label":"01142","value":"中天证券有限责任公司"},{"label":"01143","value":"中国中投证券有限责任公司"},{"label":"01144","value":"中信证券（浙江）有限责任公司"},{"label":"01145","value":"中邮创业基金管理有限公司"},{"label":"01146","value":"中原证券股份有限公司"},{"label":"01147","value":"众成证券有限责任公司"},{"label":"01148","value":"诚浩证券有限责任公司"},{"label":"80000","value":"中国证券登记结算有限责任公司"},{"label":"80001","value":"中证机构间报价系统股份有限公司"},{"label":"40001","value":"工商银行"},{"label":"40002","value":"农业银行"},{"label":"40003","value":"中国银行"},{"label":"40004","value":"建设银行"},{"label":"40005","value":"中国邮政储蓄银行"},{"label":"40006","value":"交通银行"},{"label":"40007","value":"中信银行"},{"label":"40008","value":"光大银行"},{"label":"40009","value":"华夏银行"},{"label":"40010","value":"民生银行"},{"label":"40011","value":"广发银行"},{"label":"40012","value":"招商银行"},{"label":"40013","value":"兴业银行"},{"label":"40014","value":"上海浦东发展银行"},{"label":"40015","value":"平安银行"},{"label":"40016","value":"上海银行"},{"label":"40017","value":"北京银行"},{"label":"40018","value":"恒丰银行"},{"label":"40019","value":"浙商银行"},{"label":"40020","value":"渤海银行"},{"label":"40021","value":"厦门银行"},{"label":"40022","value":"烟台银行"},{"label":"40023","value":"福建省海峡银行"},{"label":"40024","value":"宁波银行"},{"label":"40025","value":"齐鲁银行"},{"label":"40026","value":"焦作商行"},{"label":"40027","value":"温州银行"},{"label":"40028","value":"广州银行"},{"label":"40029","value":"汉口银行"},{"label":"40030","value":"盛京银行"},{"label":"40031","value":"洛阳银行"},{"label":"40032","value":"辽阳银行"},{"label":"40033","value":"大连银行"},{"label":"40034","value":"河北银行"},{"label":"40035","value":"杭州银行"},{"label":"40036","value":"南京银行"},{"label":"40037","value":"东莞银行"},{"label":"40038","value":"金华银行"},{"label":"40039","value":"乌鲁木齐商行"},{"label":"40040","value":"绍兴银行"},{"label":"40041","value":"成都银行"},{"label":"40042","value":"抚顺银行"},{"label":"40043","value":"临商银行"},{"label":"40044","value":"葫芦岛商行"},{"label":"40045","value":"天津银行"},{"label":"40046","value":"郑州银行"},{"label":"40047","value":"宁夏银行"},{"label":"40048","value":"珠海华润银行"},{"label":"40049","value":"齐商银行"},{"label":"40050","value":"锦州银行"},{"label":"40051","value":"徽商银行"},{"label":"40052","value":"重庆银行"},{"label":"40053","value":"哈尔滨银行"},{"label":"40054","value":"贵阳银行"},{"label":"40055","value":"西安银行"},{"label":"40056","value":"丹东商行"},{"label":"40057","value":"兰州银行"},{"label":"40058","value":"南昌银行"},{"label":"40059","value":"晋商银行"},{"label":"40060","value":"青岛银行"},{"label":"40061","value":"吉林银行"},{"label":"40062","value":"九江银行"},{"label":"40063","value":"日照商行"},{"label":"40064","value":"鞍山银行"},{"label":"40065","value":"秦皇岛银行"},{"label":"40066","value":"青海银行"},{"label":"40067","value":"台州银行"},{"label":"40069","value":"潍纺银行"},{"label":"40070","value":"赣州银行"},{"label":"40071","value":"泉州银行"},{"label":"40072","value":"营口银行"},{"label":"40073","value":"富滇银行"},{"label":"40074","value":"阜新银行"},{"label":"40075","value":"嘉兴银行"},{"label":"40076","value":"廊坊银行"},{"label":"40077","value":"浙江泰隆商业银行"},{"label":"40078","value":"内蒙古银行"},{"label":"40079","value":"湖州银行"},{"label":"40080","value":"沧州银行"},{"label":"40081","value":"广西北部湾银行"},{"label":"40082","value":"包商银行"},{"label":"40083","value":"威海商行"},{"label":"40084","value":"攀枝花商行"},{"label":"40085","value":"绵阳商行"},{"label":"40086","value":"泸州商行"},{"label":"40087","value":"大同银行"},{"label":"40088","value":"三门峡银行"},{"label":"40089","value":"广东南粤银行"},{"label":"40090","value":"张家口商行"},{"label":"40091","value":"桂林银行"},{"label":"40092","value":"龙江银行"},{"label":"40093","value":"江苏长江商业银行"},{"label":"40094","value":"柳州银行"},{"label":"40095","value":"南充商行"},{"label":"40096","value":"德阳银行"},{"label":"40097","value":"唐山银行"},{"label":"40098","value":"莱商银行"},{"label":"40099","value":"曲靖商行"},{"label":"40100","value":"晋城银行"},{"label":"40101","value":"江苏银行"},{"label":"40102","value":"承德银行"},{"label":"40103","value":"德州银行"},{"label":"40104","value":"邯郸商行"},{"label":"40105","value":"玉溪商行"},{"label":"40106","value":"浙江民泰商业银行"},{"label":"40107","value":"东营银行"},{"label":"40108","value":"泰安商行"},{"label":"40109","value":"浙江稠州商业银行"},{"label":"40110","value":"乌海银行"},{"label":"40111","value":"自贡市商业银行"},{"label":"40112","value":"鄂尔多斯市商业银行"},{"label":"40113","value":"许昌市商业银行"},{"label":"40114","value":"济宁银行"},{"label":"40115","value":"铁岭银行"},{"label":"40116","value":"乐山商行"},{"label":"40117","value":"长安银行宝鸡分行"},{"label":"40118","value":"重庆三峡银行"},{"label":"40119","value":"石嘴山银行"},{"label":"40120","value":"盘锦商行"},{"label":"40121","value":"昆仑银行"},{"label":"40122","value":"平顶山银行"},{"label":"40123","value":"朝阳银行"},{"label":"40124","value":"宁波东海银行"},{"label":"40125","value":"遂宁商行"},{"label":"40126","value":"保定银行"},{"label":"40127","value":"邢台商行"},{"label":"40128","value":"凉山商行"},{"label":"40129","value":"漯河银行"},{"label":"40130","value":"达州市商业银行"},{"label":"40131","value":"新乡银行"},{"label":"40132","value":"晋中银行"},{"label":"40133","value":"驻马店银行"},{"label":"40134","value":"衡水银行"},{"label":"40135","value":"周口银行"},{"label":"40136","value":"阳泉商业银行"},{"label":"40137","value":"宜宾市商业银行"},{"label":"40138","value":"库尔勒市商业银行"},{"label":"40139","value":"雅安市商业银行"},{"label":"40140","value":"商丘市商业银行"},{"label":"40141","value":"安阳银行"},{"label":"40142","value":"信阳银行"},{"label":"40143","value":"华融湘江银行"},{"label":"40144","value":"营口沿海银行"},{"label":"40145","value":"景德镇商行"},{"label":"40146","value":"哈密市商业银行"},{"label":"40147","value":"湖北银行"},{"label":"40148","value":"新疆汇和银行"},{"label":"40149","value":"广东华兴银行"},{"label":"40150","value":"宁波通商银行"},{"label":"40151","value":"甘肃银行"},{"label":"40152","value":"枣庄银行"},{"label":"40153","value":"本溪市商业银行"},{"label":"40154","value":"贵州银行"},{"label":"40155","value":"中原银行"},{"label":"40156","value":"苏州银行"},{"label":"40157","value":"上海农商银行"},{"label":"40158","value":"昆山农商银行"},{"label":"40159","value":"常熟农商银行"},{"label":"40160","value":"深圳农商银行"},{"label":"40161","value":"广州农商银行"},{"label":"40162","value":"顺德农商银行"},{"label":"40163","value":"江阴农商银行"},{"label":"40164","value":"重庆农商银行"},{"label":"40165","value":"东莞农村商业银行"},{"label":"40166","value":"张家港农商银行"},{"label":"40167","value":"北京农商银行"},{"label":"40168","value":"天津农商银行"},{"label":"40169","value":"成都农商银行"},{"label":"40170","value":"吴江农商银行"},{"label":"40171","value":"太仓农商银行"},{"label":"40172","value":"山西尧都农商银行"},{"label":"40173","value":"无锡农村商业银行"},{"label":"40174","value":"黄河农村商业银行"},{"label":"40175","value":"天津滨海农商银行"},{"label":"40176","value":"武汉农商银行"},{"label":"40177","value":"江南农村商业银行"},{"label":"40178","value":"东亚银行"},{"label":"40179","value":"渣打银行"},{"label":"40180","value":"星展银行"},{"label":"40181","value":"友利银行"},{"label":"40182","value":"新韩银行"},{"label":"40183","value":"韩亚银行"},{"label":"40184","value":"永亨银行"},{"label":"40185","value":"南洋商业银行"},{"label":"40186","value":"鄞州农村合作银行"},{"label":"40187","value":"杭州农村信用社"},{"label":"40188","value":"云南农村信用社"},{"label":"40190","value":"济南农村信用社"},{"label":"40191","value":"福建农村信用社"},{"label":"40192","value":"江苏农村信用社"},{"label":"40193","value":"贵州农村信用社"},{"label":"40194","value":"湖南农村信用社"},{"label":"40195","value":"江西农村信用社"},{"label":"40341","value":"南宁江南国民村镇银行"},{"label":"40342","value":"桂林国民村镇银行"},{"label":"40343","value":"广西银海国民村镇银行"},{"label":"40344","value":"合浦国民村镇银行"},{"label":"40345","value":"平果国民村镇银行"},{"label":"40346","value":"钦州市钦南国民村镇银行"},{"label":"40347","value":"防城港防城国民村镇银行"},{"label":"40348","value":"东兴国民村镇银行"},{"label":"40349","value":"邛崃国民村镇银行"},{"label":"40350","value":"新疆绿洲国民村镇银行"},{"label":"40351","value":"克拉玛依金龙国民村镇银行"},{"label":"40352","value":"哈密红星国民村镇银行"},{"label":"40353","value":"昌吉国民村镇银行"},{"label":"40354","value":"博乐国民村镇银行"},{"label":"40355","value":"伊犁国民村镇银行"},{"label":"40356","value":"石河子国民村镇银行"},{"label":"40357","value":"五家渠国民村镇银行"},{"label":"40358","value":"文昌国民村镇银行"},{"label":"40359","value":"琼海国民村镇银行"},{"label":"40360","value":"迁安襄隆村镇银行"},{"label":"40361","value":"北京门头沟珠江村镇银行"},{"label":"40362","value":"大连保税区村镇银行"},{"label":"40363","value":"江苏盱眙珠江村镇银行"},{"label":"40364","value":"吉州珠江村镇银行"},{"label":"40365","value":"福山珠江村镇银行"},{"label":"40366","value":"海阳珠江村镇银行"},{"label":"40367","value":"莱芜珠江村镇银行"},{"label":"40368","value":"安阳珠江村镇银行"},{"label":"40369","value":"辉县珠江村镇银行"},{"label":"40370","value":"信阳珠江村镇银行"},{"label":"40371","value":"三水珠江村镇银行"},{"label":"40372","value":"新津珠江村镇银行"},{"label":"40373","value":"广汉珠江村镇银行"},{"label":"40374","value":"彭山珠江村镇银行"},{"label":"40375","value":"康巴什村镇银行"},{"label":"40376","value":"鄂托克汇泽村镇银行"},{"label":"40377","value":"安徽肥西石银村镇银行"},{"label":"40378","value":"青岛莱西元泰村镇银行"},{"label":"40379","value":"重庆南川石银村镇银行"},{"label":"40380","value":"重庆江津石银村镇银行"},{"label":"40381","value":"银川掌政石银村镇银行"},{"label":"40382","value":"大武口石银村镇银行"},{"label":"40383","value":"吴忠市滨河村镇银行"},{"label":"40384","value":"广元贵商村镇银行"},{"label":"40385","value":"樟树顺银村镇银行"},{"label":"40386","value":"青岛胶南海汇村镇银行"},{"label":"40387","value":"东莞大朗东盈村镇银行"},{"label":"40388","value":"云浮新兴东盈村镇银行"},{"label":"40389","value":"贺州八步东盈村镇银行"},{"label":"40390","value":"天津武清村镇银行"},{"label":"40391","value":"东营莱商村镇银行"},{"label":"40392","value":"河南方城凤裕村镇银行"},{"label":"40393","value":"长春双阳吉银村镇银行"},{"label":"40394","value":"舒兰吉银村镇银行"},{"label":"40395","value":"双辽吉银村镇银行"},{"label":"40396","value":"咸安武农商村镇银行"},{"label":"40397","value":"赤壁武农商村镇银行"},{"label":"40398","value":"广州增城长江村镇银行"},{"label":"40399","value":"海南澄迈长江村镇银行"},{"label":"40400","value":"遂昌富民村镇银行"},{"label":"40401","value":"萍乡安源富民村镇银行"},{"label":"40402","value":"上栗富民村镇银行"},{"label":"40403","value":"贵阳乌当富民村镇银行"},{"label":"40404","value":"贵阳云岩富民村镇银行"},{"label":"40405","value":"遵义红花岗富民村镇银行"},{"label":"40406","value":"金沙富民村镇银行"},{"label":"40407","value":"张家港渝农商村镇银行"},{"label":"40408","value":"沙县渝农商村镇银行"},{"label":"40409","value":"广西鹿寨渝农商村镇银行"},{"label":"40410","value":"大理渝农商村镇银行"},{"label":"40411","value":"云南祥云渝农商村镇银行"},{"label":"40412","value":"云南鹤庆渝农商村镇银行"},{"label":"40413","value":"香格里拉渝农商村镇银行"},{"label":"40414","value":"沈阳于洪永安村镇银行"},{"label":"40415","value":"灵宝融丰村镇银行"},{"label":"40416","value":"安徽五河永泰村镇银行"},{"label":"40417","value":"华明村镇银行"},{"label":"40418","value":"芜湖泰寿村镇银行"},{"label":"40419","value":"尉氏合益村镇银行"},{"label":"40420","value":"长葛轩辕村镇银行"},{"label":"40421","value":"广州从化柳银村镇银行"},{"label":"40422","value":"广西柳江柳银村镇银行"},{"label":"40423","value":"广西融水柳银村镇银行"},{"label":"40424","value":"广西北流柳银村镇银行"},{"label":"40425","value":"广西陆川柳银村镇银行"},{"label":"40426","value":"广西博白柳银村镇银行"},{"label":"40427","value":"浙江兰溪越商村镇银行"},{"label":"40428","value":"集宁包商村镇银行"},{"label":"40429","value":"化德包商村镇银行"},{"label":"40430","value":"准格尔旗包商村镇银行"},{"label":"40431","value":"九台龙嘉村镇银行"},{"label":"40432","value":"贵阳花溪建设村镇银行"},{"label":"40433","value":"宁夏贺兰回商村镇银行"},{"label":"40434","value":"浙江泰顺温银村镇银行"},{"label":"40435","value":"内江兴隆村镇银行"},{"label":"40436","value":"枞阳泰业村镇银行"},{"label":"40437","value":"灵山泰业村镇银行"},{"label":"40438","value":"开县泰业村镇银行"},{"label":"40439","value":"萍乡湘东黄海村镇银行"},{"label":"40440","value":"安平惠民村镇银行"},{"label":"40441","value":"长春高新惠民村镇银行"},{"label":"40442","value":"桦甸惠民村镇银行"},{"label":"40443","value":"吉林丰满惠民村镇银行"},{"label":"40444","value":"通城惠民村镇银行"},{"label":"40445","value":"山东莒南村镇银行"},{"label":"40446","value":"哈密天山村镇银行"},{"label":"40447","value":"山东临朐聚丰村镇银行"},{"label":"40448","value":"德庆华润村镇银行"},{"label":"40449","value":"百色右江华润村镇银行"},{"label":"40450","value":"西安高陵阳光村镇银行"},{"label":"40451","value":"浙江缙云杭银村镇银行"},{"label":"01002","value":"国泰君安证券股份有限公司"},{"label":"01014","value":"东吴证券股份有限公司"},{"label":"01039","value":"华安基金管理有限公司"},{"label":"01029","value":"中邮证券有限责任公司"},{"label":"01001","value":"中信证券股份有限公司"},{"label":"01003","value":"海通证券股份有限公司"},{"label":"01004","value":"中国银河证券股份有限公司"},{"label":"01005","value":"华泰证券股份有限公司"},{"label":"01006","value":"招商证券股份有限公司"},{"label":"01007","value":"广发证券股份有限公司"},{"label":"01008","value":"申银万国证券股份有限公司"},{"label":"01009","value":"国信证券股份有限公司"},{"label":"01010","value":"兴业证券股份有限公司"},{"label":"01011","value":"安信证券股份有限公司"},{"label":"01012","value":"长城证券股份有限公司"},{"label":"01013","value":"第一创业证券股份有限公司"},{"label":"01015","value":"国海证券股份有限公司"},{"label":"01016","value":"国元证券股份有限公司"},{"label":"01017","value":"华融证券股份有限公司"},{"label":"01018","value":"山西证券股份有限公司"},{"label":"01019","value":"西南证券股份有限公司"},{"label":"01020","value":"中信建投证券有限责任公司"},{"label":"01021","value":"东方证券股份有限公司"},{"label":"01022","value":"光大证券股份有限公司"},{"label":"01023","value":"平安证券有限责任公司"},{"label":"01024","value":"德邦证券股份有限公司"},{"label":"01025","value":"中泰证券有限公司"},{"label":"01026","value":"长江证券股份有限公司"},{"label":"01027","value":"华林证券有限责任公司"},{"label":"01028","value":"湘财证券有限责任公司"},{"label":"01030","value":"南京证券股份有限公司"},{"label":"01031","value":"联讯证券股份有限公司"},{"label":"01032","value":"中银国际证券有限责任公司"},{"label":"01033","value":"华西证券有限责任公司"},{"label":"01034","value":"华夏基金管理有限公司"},{"label":"01035","value":"嘉实基金管理有限公司"},{"label":"01036","value":"天弘基金管理有限公司"},{"label":"01037","value":"汇添富基金管理有限公司"},{"label":"01038","value":"博时基金管理有限公司"},{"label":"01040","value":"南方基金管理有限公司"},{"label":"01041","value":"易方达基金管理有限公司"},{"label":"01042","value":"招商基金管理有限公司"},{"label":"01043","value":"长安基金管理有限公司"},{"label":"01044","value":"兴业全球基金管理有限公司"},{"label":"01045","value":"长城基金管理有限公司"},{"label":"01046","value":"广发基金管理有限公司"},{"label":"01047","value":"国泰君安期货有限公司"},{"label":"01048","value":"海通期货有限公司"},{"label":"01049","value":"中信期货有限公司"},{"label":"01050","value":"永安期货股份有限公司"},{"label":"01051","value":"银河期货有限公司"},{"label":"01052","value":"广发期货有限公司"},{"label":"01053","value":"上海通联期货有限公司"},{"label":"01054","value":"上海景林投资发展有限公司"},{"label":"01055","value":"上海重阳投资管理股份有限公司"},{"label":"01056","value":"北京中融鼎新投资管理有限公司"},{"label":"01057","value":"仁和智本有限公司"},{"label":"01058","value":"上海久富资产管理有限公司"},{"label":"01059","value":"爱建证券有限责任公司"},{"label":"01060","value":"安信基金管理有限责任公司"},{"label":"01061","value":"宝盈基金管理有限公司"},{"label":"01062","value":"渤海证券股份有限公司"},{"label":"01063","value":"财达证券有限责任公司"},{"label":"01064","value":"财富证券有限责任公司"},{"label":"01065","value":"财通证券股份有限公司"},{"label":"01066","value":"长信基金管理有限责任公司"},{"label":"01067","value":"川财证券有限责任公司"},{"label":"01068","value":"大通证券股份有限公司"},{"label":"01069","value":"大同证券经纪有限责任公司"},{"label":"01070","value":"东海证券股份有限公司"},{"label":"01071","value":"东莞证券股份有限公司"},{"label":"01072","value":"东兴证券股份有限公司"},{"label":"01073","value":"上海东证期货有限公司"},{"label":"01074","value":"方正证券股份有限公司"},{"label":"01075","value":"北京高华证券有限责任公司"},{"label":"01076","value":"格林大华期货有限公司"},{"label":"01077","value":"工银瑞信基金管理有限公司"},{"label":"01078","value":"光大保德信基金管理有限公司"},{"label":"01079","value":"华福证券有限责任公司"},{"label":"01080","value":"广州证券股份有限公司"},{"label":"01081","value":"国都证券股份有限公司"},{"label":"01082","value":"国际金融GJJR"},{"label":"01083","value":"国金证券股份有限公司"},{"label":"01084","value":"国开证券有限责任公司"},{"label":"01085","value":"国联安基金管理有限公司"},{"label":"01086","value":"国联证券股份有限公司"},{"label":"01087","value":"海富通基金管理有限公司"},{"label":"01088","value":"上海海通证券资产管理有限公司"},{"label":"01089","value":"华金证券有限责任公司"},{"label":"01090","value":"红塔证券股份有限公司"},{"label":"01091","value":"宏信证券有限责任公司"},{"label":"01092","value":"宏源证券股份有限公司"},{"label":"01093","value":"华安证券股份有限公司"},{"label":"01094","value":"华宝证券有限责任公司"},{"label":"01095","value":"华创证券有限责任公司"},{"label":"01096","value":"华龙证券股份有限公司"},{"label":"01097","value":"华泰柏瑞基金管理有限公司"},{"label":"01098","value":"华泰联合证券有限责任公司"},{"label":"01099","value":"华西期货有限责任公司"},{"label":"01100","value":"华鑫证券有限责任公司"},{"label":"01101","value":"江海证券有限公司"},{"label":"01102","value":"交银施罗德基金管理有限公司"},{"label":"01103","value":"金元证券股份有限公司"},{"label":"01104","value":"九泰基金管理有限公司"},{"label":"01105","value":"开源证券股份有限公司"},{"label":"01106","value":"鲁证期货股份有限公司"},{"label":"01107","value":"民生证券股份有限公司"},{"label":"40068","value":"长沙银行"},{"label":"40189","value":"湖北农村信用社"},{"label":"40196","value":"河南农村信用社"},{"label":"40197","value":"河北农村信用社"},{"label":"40198","value":"陕西农村信用社"},{"label":"40199","value":"广西农村信用社"},{"label":"40200","value":"新疆农村信用社"},{"label":"40201","value":"吉林农村信用社"},{"label":"40202","value":"安徽农村信用社"},{"label":"40203","value":"海南农村信用社"},{"label":"40204","value":"青海农村信用社"},{"label":"40205","value":"广东农村信用社"},{"label":"40206","value":"内蒙农村信用社"},{"label":"40207","value":"四川农村信用社"},{"label":"40208","value":"甘肃农村信用社"},{"label":"40209","value":"辽宁农村信用社"},{"label":"40210","value":"山西农村信用社"},{"label":"40211","value":"黑龙江农村信用社"},{"label":"40212","value":"海口联合农村商业银行"},{"label":"40213","value":"安吉村镇银行"},{"label":"40214","value":"大邑村镇银行"},{"label":"40215","value":"石河子交银村镇银行"},{"label":"40216","value":"嘉鱼吴江村镇银行"},{"label":"40217","value":"青岛即墨京都村镇银行"},{"label":"40218","value":"湖北仙桃北农商村镇银行"}];
+var removes=[];
+var right_open_flag_s = [{"label":"0","value":"否"},{"label":"1","value":"是"}];
+//$(document).ready(function(){
+Horn.ready(function(){
+
+    $(".h_querytable_select").live("change",function(){
+        buttonEnabled();
+    });
+    $(".query").click(function(){
+        loadQryTable();
+    });
+    $(".add").click(function(){
+        var params = {url: "/pay/bankarg/payztorganargset/payZtOrganArgAdd.htm"};
+        if(dialog(params)){
+            loadQryTable();
+            buttonEnabled();
+        }
+    });
+    $(".modify").click(function(){
+        buttonEnabled();
+        var datas = Horn.QueryTable.get().selecteds;
+        if($.type(datas)=='array'||datas.length==0) return;
+        var data = [];
+        for(var i in datas){
+            if(datas[i]!=null){
+                data = datas[i];
+            }
+        }
+        if(data.length==0)return;
+        Horn.post("/pay/bankarg/payztorganargset/query.json",data,function(ret){
+	    	$.each(ret,function(i,item){
+	    		data.remark = item.remark;
+	        })
+	        var params = {data: data,url: "/pay/bankarg/payztorganargset/payZtOrganArgModify.htm"}
+	        if(dialog(params)){
+	            loadQryTable();
+	            buttonEnabled();
+	        }
+	    },function(ret){
+	        alert(Horn.getError(ret));
+	    },null,true);
+	    
+
+    });
+    $(".remove").click(function(){
+        var size = $(".h_querytable_select:checked").size();
+        if(size==0)return;
+        if(!confirm("是否确认删除"+size+"个选中项目？\n\r点击“确定”删除所有选择项目。"))return;
+        buttonEnabled();
+        var datas = Horn.QueryTable.get().selecteds;
+        var j = 0;
+        for(var i in datas){
+            if(datas[i]!=null){
+                removes[j] = datas[i];
+                removes[j].gt_ztbank_no = datas[i].gt_ztbank_no.split(":")[0];
+                removes[j].right_open_flag = getLabel(right_open_flag_s, datas[i].right_open_flag);
+                removes[j].action_in = 3;
+                j++;
+            }
+        }
+        remove(0);
+    });
+
+	alert(getBasePath());
+	loadQryTable();
+    buttonEnabled();
+});
+
+function getBasePath(){
+	var obj=window.location;
+	var contextPath=obj.pathname.split("/")[1];
+	alert(obj.pathname.split("/"));
+	alert(obj.pathname);
+	var basePath=obj.protocol+"//"+obj.host+"/"+contextPath;
+	return basePath;
+}
+
+function buttonEnabled(){
+	var checkedSize=$(".h_querytable_select:checked").size();
+	var allSize =$(".h_querytable_select").size();
+	if(checkedSize == allSize && allSize != 0 ){
+		$(".h_querytable_select_all").attr("checked",true);
+	}else{
+		$(".h_querytable_select_all").attr("checked",false);
+	}
+
+    if(checkedSize > 1||checkedSize == 0){
+        $(".modify").attr("disabled",true);
+        $(".remove").attr("disabled",true);
+    }else{
+        $(".modify").attr("disabled",false);
+    }
+    if(checkedSize>0){
+        $(".remove").attr("disabled",false);
+    }
+}
+
+function loadQryTable(){
+    var data={};
+    //
+    var gt_ztbank_no_t = Horn.getComp("gt_ztbank_no_q");
+    var gt_ztbank_no = gt_ztbank_no_t.getValue();
+    if(gt_ztbank_no == "!"){
+    	gt_ztbank_no = "";
+    }
+    data.gt_ztbank_no = gt_ztbank_no;
+    
+    data.gt_msgcd = Horn.Field.getValue("gt_msgcd_q");
+    data.gt_biztyp = Horn.Field.getValue("gt_biztyp_q");
+     
+    data.gt_bizKind = Horn.Field.getValue("gt_bizKind_q");
+    data.payorgan_id = Horn.Field.getValue("payorgan_id_q");
+    var qryTable = Horn.getComp("ztOrganArgTable");
+    qryTable.load(data);
+}
+   
+function remove(i){
+    if(removes.length<=i){
+        loadQryTable();
+        buttonEnabled();
+        return;
+    }
+    Horn.post("/pay/bankarg/payztorganargset/set.json",removes[i],function(data){
+        remove(++i);
+    },function(data){
+        alert(Horn.getError(data));
+    },null,true);
+}
+function format_money_type (val){
+    for(var i in money_types){
+        if(money_types[i].label==val){
+            return val+":"+money_types[i].value;
+        }
+    }
+}
+function format_gt_default_intype(val){
+    for(var i in gt_default_intypes){
+        if(gt_default_intypes[i].label==val){
+            return val+":"+gt_default_intypes[i].value;
+        }
+    }
+}
+function format_gt_segmentflag(val){
+    for(var i in gt_segmentflags){
+        if(gt_segmentflags[i].label==val){
+            return val+":"+gt_segmentflags[i].value;
+        }
+    }
+}
+
+
+function dialog(o){
+    var data = o.data ;
+    var width = 300 ;
+    height = 380 ;
+    var url = o.url ;
+    url = window.context_path + url ;
+    //alert(window.context_path);
+    var ps = [] ;
+    if(ps.length>0){
+        url += "?" + ps.join("&") ;
+    }
+    var px = [] ;
+    px.push("dialogWidth:" + width + "px") ;
+    px.push("dialogHeight:" + height + "px") ;
+    px.push("help:no") ;
+    px.push("resizable:no") ;
+    px.push("scroll:no") ;
+    px.push("status:no") ;
+    //px.push("titlebar:no") ;
+    return window.showModalDialog(url ,data ,px.join(";"));
+}
+
+function deal_right_open_flag(val){
+	return getValue(right_open_flag_s,val);
+}
+
+function deal_gt_ztbank_no(val){
+	return getValue(gt_ztbank_no_string,val);
+}
+
+function getValue(arrays,val){
+	var ret="";
+	$.each(arrays,function(idx,item){
+		if(val.indexOf(item.label)>=0){
+			ret +="," + item.value;
+		}
+	});
+	return ret.substring(1);
+}
+function getLabel(arrays,val){
+	var ret="";
+	$.each(arrays,function(idx,item){
+		if(val.indexOf(item.value)>=0){
+			ret +="," + item.label;
+		}
+	});
+	return ret.substring(1);
+}
+function deal_remark(val){
+    var remarkTip = "<span title='"+ val +"' style='user-select: none;'>"+ (val.length>10?val.substring(0,10)+"...":val) +"<\/span>"
+    return remarkTip;
+}
+</script>
+		</div>
+</body>
+
+</html>

@@ -1,0 +1,633 @@
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>国泰君安综合理财服务系统 -</title>
+<meta content="IE=7" http-equiv="X-UA-Compatible" />
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+<link rel="stylesheet"
+	href="http://10.176.108.50:8080/biz-iwm/css/horn/h_ui.css"
+	type="text/css">
+	<link rel="stylesheet"
+		href="http://10.176.108.50:8080/biz-iwm/components/components.css"
+		type="text/css">
+		<link rel="stylesheet"
+			href="http://10.176.108.50:8080/biz-iwm/plugins/lhgcalendar/skins/lhgcalendar.css"
+			type="text/css">
+			<link rel="stylesheet"
+				href="http://10.176.108.50:8080/biz-iwm/plugins/ztree/zTreeStyle/zTreeStyle.css"
+				type="text/css">
+				<link rel="stylesheet"
+					href="http://10.176.108.50:8080/biz-iwm/css/horn/h_iframe.css"
+					type="text/css">
+					<link rel="stylesheet"
+						href="http://10.176.108.50:8080/biz-iwm/css/horn/h_index.css"
+						type="text/css">
+						<link rel="stylesheet"
+							href="http://10.176.108.50:8080/biz-iwm/css/user/user.css"
+							type="text/css">
+							<link rel="stylesheet"
+								href="http://10.176.108.50:8080/biz-iwm/dhtmlx/dhtmlx.css"
+								type="text/css">
+								<script
+									src="http://10.176.108.50:8080/biz-iwm/scripts/bigpipe.mini.js"
+									type="text/javascript"></script>
+								<script
+									src="http://10.176.108.50:8080/biz-iwm/scripts/jquery.mini.js"
+									type="text/javascript"></script>
+								<script
+									src="http://10.176.108.50:8080/biz-iwm/scripts/horn/horn.core.js"
+									type="text/javascript"></script>
+								<script
+									src="http://10.176.108.50:8080/biz-iwm/components/components.js"
+									type="text/javascript"></script>
+								<script
+									src="http://10.176.108.50:8080/biz-iwm/plugins/lhgcalendar/lhgcalendar.js"
+									type="text/javascript"></script>
+								<script
+									src="http://10.176.108.50:8080/biz-iwm/plugins/lhgcalendar/lhgcalendar.min.js"
+									type="text/javascript"></script>
+								<script
+									src="http://10.176.108.50:8080/biz-iwm/plugins/lhgcalendar/lhgcore.lhgcalendar.min.js"
+									type="text/javascript"></script>
+								<script
+									src="http://10.176.108.50:8080/biz-iwm/plugins/ztree/jquery.ztree.core-3.5.min.js"
+									type="text/javascript"></script>
+								<script
+									src="http://10.176.108.50:8080/biz-iwm/plugins/ztree/jquery.ztree.excheck-3.5.min.js"
+									type="text/javascript"></script>
+								<script
+									src="http://10.176.108.50:8080/biz-iwm/plugins/ztree/jquery.ztree.exhide-3.5.min.js"
+									type="text/javascript"></script>
+								<script
+									src="http://10.176.108.50:8080/biz-iwm/scripts/horn/hc_gtja.js"
+									type="text/javascript"></script>
+								<script src="http://10.176.108.50:8080/biz-iwm/dhtmlx/dhtmlx.js"
+									type="text/javascript"></script>
+								<script
+									src="http://10.176.108.50:8080/biz-iwm/dhtmlx/hc_dhtmlx.js"
+									type="text/javascript"></script>
+								<script src="http://10.176.108.50:8080/biz-iwm/scripts/iwm.js"
+									type="text/javascript"></script>
+								<script
+									src="http://10.176.108.50:8080/biz-iwm/scripts/iwm.querytable.js"
+									type="text/javascript"></script>
+								<script
+									src="http://10.176.108.50:8080/biz-iwm/scripts/iwm.select.js"
+									type="text/javascript"></script>
+								<script
+									src="http://10.176.108.50:8080/biz-iwm/scripts/iwm.pwd.js"
+									type="text/javascript"></script>
+
+								<script type="text/javascript">
+		var context_path = "http://10.176.108.50:8080/biz-iwm/" ;
+		if(context_path.lastIndexOf("/")==context_path.length-1){
+			context_path = context_path.substr(0,context_path.length-1) ;
+		}
+	</script>
+</head>
+<body>
+	<script src="http://10.176.108.50:8080/biz-iwm/scripts/iwm.imm.js"
+		type="text/javascript"></script>
+	<script type="text/javascript">
+var menu_id = "230801" ;
+</script>
+
+	<div class="h_screen">
+		<div class="h_screen-content-3">
+			<h1>
+				<span>支付银行参数设置</span>
+			</h1>
+			<div class="h_columns-4">
+				<div class="h_colspan-3" style="height:510px;">
+					<ul class="h_panel">
+
+
+						<li class="hc_panel-li "><span title="支付机构"> 支付机构</span>
+							<div class="hc_combox" pKeyField=pLabel keyField=label
+								titleField=value showLabel="true">
+								<input type="hidden" name="payorgan_id_qry" value="!" check="" />
+								<input multiple="" type="text" onchange="loadTable()"
+									readonly="readonly" value="!:全部" delimiter="," />
+
+								<div class="hc_checkboxdiv" multiple_line="false">
+									<ul>
+
+
+										<li title="全部" pKeyCommand="$!{pItem.pLabel}" pKey="" key="!"><label>
+
+												!:全部 </label>
+										</li>
+
+										<li title="通联转账" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="3000"><label> 3000:通联转账 </label>
+										</li>
+
+										<li title="通联消费支付" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="3090"><label> 3090:通联消费支付 </label>
+										</li>
+
+										<li title="通联生活服务" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="3091"><label> 3091:通联生活服务 </label>
+										</li>
+
+										<li title="人行转账" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="8000"><label> 8000:人行转账 </label>
+										</li>
+
+										<li title="证通支付机构编号" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="9000"><label> 9000:证通支付机构编号 </label>
+										</li>
+
+										<li title="证通支付机构编号" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="9001"><label> 9001:证通支付机构编号 </label>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div style="display:none;"></div></li>
+						<li class="hc_panel-li "><span title="银行号"> 银行号</span>
+							<div class="hc_textfield">
+								<input type="text" name="bank_no_qry" maxlength="4" value=""
+									check="" />
+							</div>
+							<div style="display:none;"></div></li>
+						<li class="hc_panel-li "><span style="display:none"></span>
+							<div class="hc_button" name="">
+								<button type="button" class="" name="" onclick="loadTable()">查询</button>
+							</div>
+							<div style="display:none;"></div></li>
+					</ul>
+
+
+					<div class=" userborderB">
+						<div
+							style="width:100%;height:400px;overflow-x:hidden;overflow-y:auto;">
+							<div class="h_colspan-3">
+								<div class="h_listtable">
+									<table class="h_table" name="queryTable"
+										url="/pay/bankarg/payBankArgsQry.json" request_num="500"
+										autoLoad="false" callback="callBack()" selectModel="single">
+										<thead>
+											<th class="h_querytable_checkboxcolumn"></th>
+											<th name="payorgan_name">支付机构</th>
+											<th name="bank_no">支付银行代码</th>
+											<th name="bank_name">支付银行名称</th>
+											<th name="bank_type_name">银行类型</th>
+											<th name="en_sign_way_name">允许签约方式</th>
+											<th name="pay_bank_no">外部银行号</th>
+										</thead>
+										<tbody>
+										</tbody>
+									</table>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="h_colspan-4">
+						<div class="h_btndiv" name="">
+							<button type="button" name="" onclick="addProcess()">新增</button>
+							<button type="button" name="" onclick="modifyProcess()">修改</button>
+							<button type="button" name="" onclick="delProcess()">删除</button>
+						</div>
+					</div>
+
+					<div id="payBankArgWin" class="h_dhtml_window" width='400'
+						height='350' center='true' modal='true' caption='支付参数设置'>
+						<div class="h_columns-0">
+							<div class="h_columns-2">
+								<div class="h_colspan-3">
+									<form method="post" action="" ajax="" beforeSubmit=""
+										onSuccess="" name="payBankArgForm" autocomplete="off">
+										<input type="hidden" name="sourceurl"
+											value="/pay/bankarg/payBankArgsSet" /> <input type="hidden"
+											name="tab" value="true" />
+
+										<div class="h_tabpanel" name="xx">
+											<div class="h_tabul">
+												<a href="#" class="h_tablefta"></a> <a href="#"
+													class="h_tabrightacur"></a>
+												<div class="h_tabuldiv">
+													<ul>
+													</ul>
+												</div>
+											</div>
+											<ul>
+												<li ref="t1" title="支付参数设置">支付参数设置</li>
+											</ul>
+											<div ref_target="t1" class="h_tabpanel-content"
+												style="display:none">
+												<ul class="h_panel">
+
+
+													<li class="hc_panel-li "><span title="支付机构"> <b
+															class="hc_red">*</b> 支付机构</span>
+														<div class="hc_combox" pKeyField=pLabel keyField=label
+															titleField=value showLabel="true">
+															<input type="hidden" name="payorgan_id" value="3000"
+																check="required;" /> <input multiple="" type="text"
+																onchange="getBank()" readonly="readonly"
+																value="3000:通联转账" delimiter="," />
+
+															<div class="hc_checkboxdiv" multiple_line="false">
+																<ul>
+
+
+																	<li title="通联转账" pKeyCommand="$!{pItem.pLabel}" pKey=""
+																		key="3000"><label> 3000:通联转账 </label>
+																	</li>
+
+																	<li title="通联消费支付" pKeyCommand="$!{pItem.pLabel}"
+																		pKey="" key="3090"><label> 3090:通联消费支付 </label>
+																	</li>
+
+																	<li title="通联生活服务" pKeyCommand="$!{pItem.pLabel}"
+																		pKey="" key="3091"><label> 3091:通联生活服务 </label>
+																	</li>
+
+																	<li title="人行转账" pKeyCommand="$!{pItem.pLabel}" pKey=""
+																		key="8000"><label> 8000:人行转账 </label>
+																	</li>
+
+																	<li title="证通支付机构编号" pKeyCommand="$!{pItem.pLabel}"
+																		pKey="" key="9000"><label> 9000:证通支付机构编号
+																	</label>
+																	</li>
+
+																	<li title="证通支付机构编号" pKeyCommand="$!{pItem.pLabel}"
+																		pKey="" key="9001"><label> 9001:证通支付机构编号
+																	</label>
+																	</li>
+																</ul>
+															</div>
+														</div>
+														<div style="display:none;"></div></li>
+
+													<li class="hc_panel-li "><span title="支付银行名称">
+															<b class="hc_red">*</b> 支付银行名称</span>
+														<div class="hc_combox" pKeyField=pLabel keyField=label
+															titleField=value showLabel="true">
+															<input type="hidden" name="bank_no" check="required;" />
+															<input multiple="" type="text" readonly="readonly"
+																delimiter="," />
+
+															<div class="hc_checkboxdiv" multiple_line="false">
+																<ul>
+
+																</ul>
+															</div>
+														</div>
+														<div style="display:none;"></div></li> ;
+
+													<li class="hc_panel-li "><span title="允许签约方式">
+															允许签约方式</span>
+														<div class="hc_combox" pKeyField=pLabel keyField=label
+															titleField=value showLabel="true">
+															<input type="hidden" name="en_sign_way" check="" /> <input
+																multiple="true" type="text" ref="en_sign_way_m"
+																readonly="readonly" delimiter="," />
+															<div>en_sign_way horn</div>
+
+
+														</div>
+														<div style="display:none;"></div></li> ;
+													<li class="hc_panel-li "><span title="外部银行号">
+															外部银行号</span>
+														<div class="hc_textfield">
+															<input type="text" name="pay_bank_no" maxlength="20"
+																value="" check="checkBKNO('20');" />
+														</div>
+														<div style="display:none;"></div></li>
+													<input type="hidden" name="bank_type" value="9" /> ;
+													<input type="hidden" name="bank_status" value="1" /> ;
+													<input type="hidden" name="am_open" value="0" /> ;
+													<input type="hidden" name="am_close" value="0" /> ;
+													<input type="hidden" name="pm_open" value="0" /> ;
+													<input type="hidden" name="pm_close" value="0" /> ;
+													<input type="hidden" name="init_date" value="0" /> ;
+													<input type="hidden" name="business_date" value="0" /> ;
+													<input type="hidden" name=" " value="" /> ;
+													<input type="hidden" name="bankarg_flag" value="" /> ;
+												</ul>
+
+											</div>
+
+											<ul>
+												<li ref="t2" title="配置项">配置项</li>
+											</ul>
+											<div ref_target="t2" class="h_tabpanel-content"
+												style="display:none">
+												<ul class="h_panel">
+
+													<div class="h_colspan-3">
+														<div class="h_listtable">
+															<table class="h_table" name="paramTable"
+																url="/pay/bankarg/payBankArgsParamsQry.json"
+																request_num="20" autoLoad="false" callback="">
+																<thead>
+																	<th name="" dealFun="setPayBkArgFlags"></th>
+																	<th name="position">位</th>
+																	<th name="content">参数内容</th>
+																</thead>
+																<tbody>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</ul>
+
+											</div>
+
+										</div>
+
+
+										<div class="h_colspan-2">
+											<div class="h_btndiv" name="">
+												<button type="button" name="" onclick="operateSubmit()">提交</button>
+												<button type="button" name="" onclick="closeWin()">关闭</button>
+											</div>
+										</div>
+
+
+									</form>
+
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+			<script type="text/javascript">
+var action_in = ""; //分辨是增加与修改
+var selectData; //当前选择的记录
+Horn.ready(function(){
+	loadTable();
+});
+
+function loadTable() {
+	var payorgan_id_qry = Horn.getComp("payorgan_id_qry"); 
+	var payorgan_id = payorgan_id_qry.getValue();
+	if(payorgan_id == "!"){
+		payorgan_id = "";
+	}
+	
+	var bank_no_qry = Horn.getComp("bank_no_qry"); 
+	var bank_no = bank_no_qry.getValue();
+	if($.trim(bank_no) == ""){
+		bank_no = "";
+	}
+	var queryTable = Horn.getComp("queryTable"); 
+	queryTable.load({"payorgan_id":payorgan_id,"bank_no":bank_no});
+}
+
+function checkBKNO(str,val){ 
+    var badChar ="ABCDEFGHIJKLMNOPQRSTUVWXYZ"; 
+    badChar += "abcdefghijklmnopqrstuvwxyz"; 
+    badChar += "0123456789"; 
+    badChar += " "+"　";//半角与全角空格 
+    badChar += "`~!@#$%^&()-_=+]\\\\|:;\"\\\'<,>?/";//不包含*或.的英文符号 
+    var sum = str.length;
+    if(""==str){ 
+		return "不能为空"; 
+    } 
+    for(var i=0;i<str.length;i++){ 
+        var c = str.charAt(i);//字符串str中的字符 
+        if(badChar.indexOf(c) > -1){ 
+			
+		}else{
+			sum = sum+1;
+		}
+    } 
+	if(sum>val){
+		return "中文最多"+val/2+"个汉字，英文数字最多"+val+"个字符！";
+	}
+    return true; 
+}
+
+function addProcess(){
+	action_in = "1";
+	var win = Horn.Dhtmlx.get("payBankArgWin");
+	var form = Horn.getComp("payBankArgForm");
+	
+	//设置下拉框为禁用
+	var payorgan_id = Horn.getComp("payorgan_id");
+	var bank_no = Horn.getComp("bank_no");
+	payorgan_id.setEnable(true);
+	bank_no.setEnable(true);
+	payorgan_id.selectFirst();
+	getBank();
+	
+	win.setModal(true);
+	win.show();
+	win.centerOnScreen();
+	
+	//重新加载表格
+	var paramTable = Horn.getComp("paramTable"); //表格
+	paramTable.load();
+}
+
+function modifyProcess(){
+	action_in = "2";
+	var queryTable = Horn.getComp("queryTable");
+	selectData = queryTable.getSelecteds(true);
+	
+	if(selectData.length == 0){
+		alert("请选择记录");
+		return ;
+	}
+	
+	//设置下拉框为禁用
+	var payorgan_id = Horn.getComp("payorgan_id");
+	var bank_no = Horn.getComp("bank_no");
+	payorgan_id.setEnable(false);
+	bank_no.setEnable(false);
+	
+	var win = Horn.Dhtmlx.get("payBankArgWin");
+	var form = Horn.getComp("payBankArgForm");
+	form.setValues(selectData[0]);
+	
+	form.setValues({'payorgan_id':selectData[0].payorgan_id});
+	getBank();
+	form.setValues({'en_sign_way':selectData[0].en_sign_way});
+	
+	win.setModal(true);
+	win.show();
+	win.centerOnScreen();
+	 
+	//重新加载表格
+	var paramTable = Horn.getComp("paramTable"); //表格
+	paramTable.load();
+}
+
+function delProcess(){
+	action_in = "3";
+	var queryTable = Horn.getComp("queryTable");
+	var data = queryTable.getSelecteds(true);
+	
+	if(data.length == 0){
+		alert("请选择记录");
+		return ;
+	}
+	
+	if(confirm("确定删除?")){
+		$.post(context_path + "/pay/bankarg/payBankFareQry.json",{},function(dat){
+			for(var i=0;i<dat.length;i++){
+				if(dat[i].bank_no == data[0].bank_no){
+					if(dat[i].payorgan_id==data[0].payorgan_id){
+						alert("该银行有关联收费设置记录");
+						return;
+					}
+				}
+			}
+			$.post(context_path + "/pay/bankarg/payBankControlArgsQry.json",{payorgan_id:'',bank_no:''},function(dat){
+				for(var i=0;i<dat.length;i++){
+					if(dat[i].bank_no == data[0].bank_no){
+						if(dat[i].payorgan_id==data[0].payorgan_id){
+							alert("该银行有关联收费设置记录");
+							return;
+						}
+					}
+				}
+				var param = data[0];
+				param.action_in = action_in;
+			
+				Horn.post("/pay/bankarg/payBankArgsMgr.json", param, function(data){
+					alert("操作成功");
+		    		loadTable();
+					closeWin();
+		    	});
+			});
+		});
+	}
+}
+
+function getBank(){
+	var payorgan_id = Horn.getComp("payorgan_id").getValue();
+	var param = {"payorgan_id":payorgan_id};
+	Horn.post("/pay/bankarg/payBankArgsQryByOrganType.json", param, function(returnData){
+		if(returnData){
+			var dataArray = new Array();
+			for(var i in returnData){
+				dataArray.push({"label":returnData[i].bank_no,"value":returnData[i].bank_name});
+			}
+			
+			Horn.getComp("bank_no").clearList();
+			Horn.getComp("bank_no").addDatas(dataArray);
+			Horn.getComp("bank_no").selectFirst();
+			
+			//修改的时候，设置银行名称
+			if(action_in == "2"){
+			   //alert(selectData[0].bank_no);
+			   var form = Horn.getComp("payBankArgForm");
+				form.setValues({'bank_no':selectData[0].bank_no});
+			}
+		}
+	});
+}
+
+//设置配置参数列表的选项值
+function setPayBkArgFlags(col,row,list,rowIndex,colIndex){
+	var payOrganForm = Horn.getComp("payBankArgForm");//表单
+	var param = payOrganForm.getValues();
+	var bankarg_flag = param.bankarg_flag;
+	
+	var flag = bankarg_flag.charAt(rowIndex);
+	var id = 'checkbox_bankargFlags'+rowIndex;
+	if(flag == '1'){
+		return "<input type='checkbox' id='" + id + "' class='checkbox_bankargFlags'  checked='checked' />";
+	}else{
+		return "<input type='checkbox' id='" + id + "' class='checkbox_bankargFlags' />";
+	}	
+}
+
+//获取配置参数列表的选项值
+function getBankargFlags(){
+	var bankarg_flag = "";
+	$(".checkbox_bankargFlags").each(function(i){
+		if(this.checked){
+			bankarg_flag += "1";
+		}else{
+			bankarg_flag += "0";
+		}
+	});
+	return bankarg_flag;
+}
+
+function closeWin(){
+	//关闭对话框
+	var win = Horn.Dhtmlx.get("payBankArgWin");
+	win.hide();
+	win.setModal(false);
+}
+
+function operateSubmit(){
+	var form = Horn.getComp("payBankArgForm") ;
+	var isValid = Horn.Validate.isFormValidate(form.form);
+	var bankNo=Horn.getComp("bank_no").getValue();
+	if(isValid){
+		var param = form.getValues();
+		param.action_in = action_in; //添加标识
+		param.bankarg_flag = getBankargFlags();
+		//在这里判断银行名称是否已存在
+		for (var a = 0; a < bank_no_array.length; a++) {
+			if (bank_no_array[a]==bankNo) {
+				alert("该银行已存在");
+				return;
+			}
+		}
+		Horn.post("/pay/bankarg/payBankArgsMgr.json", param, function(data){
+			alert("操作成功");
+    		loadTable();
+			closeWin();
+    	});
+		return false;
+	}
+}
+
+var bank_no_array = [];
+function callBack(data){
+	for(var i = 0; i < data.length; i++) {
+		bank_no_array.push(data[i].bank_no);
+	}
+}
+</script>
+			<div class="hc_hide_div">
+				<div class="hc_checkboxdiv" multiple_line="true"
+					ref_target="en_sign_way_m">
+					<ul>
+						<li key="1" pKey="" title="网上签约"><label> <input
+								type="checkbox"> 1:网上签约 
+						</label></li>
+						<li key="2" pKey="" title="银行卡身份验证"><label> <input
+								type="checkbox"> 2:银行卡身份验证 
+						</label></li>
+					</ul>
+				</div>
+				<script type="text/javascript">
+						Horn.Tip.clear() ;
+					</script>
+			</div>
+		</div>
+
+
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,3304 @@
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>国泰君安综合理财服务系统 -</title>
+<meta content="IE=7" http-equiv="X-UA-Compatible" />
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+<link rel="stylesheet"
+	href="http://10.176.108.50:8080/biz-iwm/css/horn/h_ui.css"
+	type="text/css">
+	<link rel="stylesheet"
+		href="http://10.176.108.50:8080/biz-iwm/components/components.css"
+		type="text/css">
+		<link rel="stylesheet"
+			href="http://10.176.108.50:8080/biz-iwm/plugins/lhgcalendar/skins/lhgcalendar.css"
+			type="text/css">
+			<link rel="stylesheet"
+				href="http://10.176.108.50:8080/biz-iwm/plugins/ztree/zTreeStyle/zTreeStyle.css"
+				type="text/css">
+				<link rel="stylesheet"
+					href="http://10.176.108.50:8080/biz-iwm/css/horn/h_iframe.css"
+					type="text/css">
+					<link rel="stylesheet"
+						href="http://10.176.108.50:8080/biz-iwm/css/horn/h_index.css"
+						type="text/css">
+						<link rel="stylesheet"
+							href="http://10.176.108.50:8080/biz-iwm/css/user/user.css"
+							type="text/css">
+							<link rel="stylesheet"
+								href="http://10.176.108.50:8080/biz-iwm/dhtmlx/dhtmlx.css"
+								type="text/css">
+								<script
+									src="http://10.176.108.50:8080/biz-iwm/scripts/bigpipe.mini.js"
+									type="text/javascript"></script>
+								<script
+									src="http://10.176.108.50:8080/biz-iwm/scripts/jquery.mini.js"
+									type="text/javascript"></script>
+								<script
+									src="http://10.176.108.50:8080/biz-iwm/scripts/horn/horn.core.js"
+									type="text/javascript"></script>
+								<script
+									src="http://10.176.108.50:8080/biz-iwm/components/components.js"
+									type="text/javascript"></script>
+								<script
+									src="http://10.176.108.50:8080/biz-iwm/plugins/lhgcalendar/lhgcalendar.js"
+									type="text/javascript"></script>
+								<script
+									src="http://10.176.108.50:8080/biz-iwm/plugins/lhgcalendar/lhgcalendar.min.js"
+									type="text/javascript"></script>
+								<script
+									src="http://10.176.108.50:8080/biz-iwm/plugins/lhgcalendar/lhgcore.lhgcalendar.min.js"
+									type="text/javascript"></script>
+								<script
+									src="http://10.176.108.50:8080/biz-iwm/plugins/ztree/jquery.ztree.core-3.5.min.js"
+									type="text/javascript"></script>
+								<script
+									src="http://10.176.108.50:8080/biz-iwm/plugins/ztree/jquery.ztree.excheck-3.5.min.js"
+									type="text/javascript"></script>
+								<script
+									src="http://10.176.108.50:8080/biz-iwm/plugins/ztree/jquery.ztree.exhide-3.5.min.js"
+									type="text/javascript"></script>
+								<script
+									src="http://10.176.108.50:8080/biz-iwm/scripts/iwm.idcard.js"
+									type="text/javascript"></script>
+								<script
+									src="http://10.176.108.50:8080/biz-iwm/scripts/horn/hc_gtja.js"
+									type="text/javascript"></script>
+								<script src="http://10.176.108.50:8080/biz-iwm/dhtmlx/dhtmlx.js"
+									type="text/javascript"></script>
+								<script
+									src="http://10.176.108.50:8080/biz-iwm/dhtmlx/hc_dhtmlx.js"
+									type="text/javascript"></script>
+								<script src="http://10.176.108.50:8080/biz-iwm/scripts/iwm.js"
+									type="text/javascript"></script>
+								<script
+									src="http://10.176.108.50:8080/biz-iwm/scripts/iwm.querytable.js"
+									type="text/javascript"></script>
+								<script
+									src="http://10.176.108.50:8080/biz-iwm/scripts/iwm.select.js"
+									type="text/javascript"></script>
+								<script
+									src="http://10.176.108.50:8080/biz-iwm/scripts/iwm.pwd.js"
+									type="text/javascript"></script>
+
+								<script type="text/javascript">
+		var context_path = "http://10.176.108.50:8080/biz-iwm/" ;
+		if(context_path.lastIndexOf("/")==context_path.length-1){
+			context_path = context_path.substr(0,context_path.length-1) ;
+		}
+	</script>
+</head>
+<body>
+	<script src="http://10.176.108.50:8080/biz-iwm/scripts/iwm.imm.js"
+		type="text/javascript"></script>
+	<script type="text/javascript">
+var menu_id = "230909" ;
+</script>
+
+	<div class="h_screen">
+		<div class="h_screen-content-3">
+			<h1>
+				<span></span>
+			</h1>
+
+			<style type="text/css">
+.bank-branch-box {
+	padding: 0;
+	margin: 0;
+}
+
+.bank-branch {
+	background: #fff
+		url(http://10.176.108.50:8080/biz-iwm/components/hc_base/img/hc_inputbg-field.gif)
+		no-repeat right -40px;
+	padding-right: 20px;
+	width: 370px;
+	max-width: 370px;
+	overflow: hidden;
+	border: 1px #ccc solid;
+	height: 20px;
+	cursor: pointer;
+}
+
+.bank-branch-list {
+	position: absolute;
+	width: 390px;
+	max-height: 120px;
+	left: 96px;
+	display: none;
+	top: 185px;
+	border: solid 1px #ccc;
+	background: #fcfdfd;
+	overflow-y: auto;
+	padding: 3px 0px;
+}
+
+.bank-branch-list ul {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.bank-branch-list li {
+	padding: 3px;
+	white-space: nowrap;
+}
+
+.bank-branch-list li:hover {
+	background-color: #eee;
+}
+</style>
+			<div class="h_columns-3">
+				<form method="post" action="outSubmit.htm" ajax="" beforeSubmit=""
+					onSuccess="" name="tranferOutForm" autocomplete="off">
+					<input type="hidden" name="sourceurl"
+						value="/iwm/ftz/pay/toTheBankCard" /> <input type="hidden"
+						name="tab" value="true" />
+					<div class="h_colspan-2" style="height:390px;" name="_colspan">
+						<div class=" userborderT userborderR userborderB"
+							style="height:388px;" name="_border">
+							<ul class="h_panel" name="">
+
+
+
+
+
+
+
+
+
+								<li class="hc_panel-li "><span title="身份证号码"
+									style="visibility:hidden;"> <b class="hc_red">*</b>
+										身份证号码</span>
+									<div class="hc_switchfield">
+										<input type="text" name="account_content" value=""
+											check="required;" url="/switchFieldCheck/getCifInfo.json"
+											param="" success="switchField_success()"
+											error="switchField_error()" />
+										<div class="hc_checkboxdiv">
+											<ul>
+											</ul>
+										</div>
+									</div>
+									<div style="display:none;"></div>
+									<div class="hc_switchfieldlabel ">
+										<span title="身份证号码"> <b class="hc_red"> * </b> 身份证号码<input
+											type="hidden" name="input_content" value="70" />
+										</span>
+										<ul>
+											<li title="一户通号" key="0"><label> 一户通号
+											</label>
+											</li>
+											<li title="身份证号码" key="70" class="h_cur"><label>
+													身份证号码 </label>
+											</li>
+											<li title="其他证件号" key="7"><label>
+													其他证件号 </label>
+											</li>
+											<li title="客户代码" key="6"><label> 客户代码
+											</label>
+											</li>
+											<li title="一码通号" key="m"><label> 一码通号
+											</label>
+											</li>
+										</ul>
+									</div></li>
+
+								<input type="hidden" name="card_id_enddate" value="" />
+								<input type="hidden" name="action_Type_No" value="" />
+								<input type="hidden" name="action_Type_No1" value="" />
+								<input type="hidden" name="hsMune_Type0" value="" />
+								<input type="hidden" name="gt_menu_type0" value="" />
+								<input type="hidden" name="gt_menu_type1" value="" />
+								<input type="hidden" name="hsMune_Type1" value="" />
+								<input type="hidden" name="organ_flag_stauts_type" value="" />
+								<input type="hidden" name="organ_flag_status1" value="" />
+								<input type="hidden" name="organ_flag_status0" value="" />
+								<input type="hidden" name="cif_account_NO" value="" />
+								<input type="hidden" name="jxtx_fllow_flag_type" value="" />
+								<input type="hidden" name="jxtx_fllow_flag_type1" value="" />
+								<input type="hidden" name="id_auth_type" value="" />
+								<input type="hidden" name="check_flag" value="" />
+								<input type="hidden" name="showClientControl_flag" value="" />
+
+
+								<script type="text/javascript">
+var sfInfourl = "/switchFieldCheck/getCifInfoCifAccount.json" ;
+var sFshowList = Horn.SwitchField.prototype.showList ;
+var sFbodyClick = Horn.SwitchField.prototype.bodyClick ;
+var sFonBeforeSend = Horn.SwitchField.prototype.onBeforeSend ;
+var g_account_content;
+Horn.override(Horn.SwitchField , {
+	userListEl : null,
+	showList : function(){
+		return ;
+		if(this.listEl.css("display")=="block"){
+			return ;
+		}
+		var li = this.listEl.children("ul").children("li[key]") ;
+		if(li.size()==0){
+			li.css("height","0px");
+		}
+	},
+	bodyClick : function(e){
+		sFbodyClick.apply(this,arguments) ;
+		if(e.target!=this.field.get(0)){
+			$(document).one("click",Horn.Util.apply(this.userBodyClick,this));
+		}
+	},
+	addUserList : function(list,url,success,failure){
+		if(this.userListEl==null){
+			var html = '<div class="hc_checkboxdiv" ref_target="'+this.name+'">' ;
+			html += '<ul>' ;
+			html += '</ul>' ;
+			html += '</div>' ;
+			this.userListEl = $(html) ;
+			$("div.hc_hide_div").append(this.userListEl) ;
+		}
+		var ul = this.userListEl.children("ul") ;
+		ul.children("li").remove() ;
+		if (list && list.length > 0) {
+			var width = this.field.outerWidth() + 10
+			jQuery.each(list, function(index, obj) {
+				if (obj.label) {
+					var text = obj.label + ":" + obj.value ;
+					var liHtml = "<li key='" + obj.label + "' "
+						+ "title='"	+ obj.value + "'"
+						+ " branch_no='" + obj.branch_no + "'"
+						+ "><label>"
+						+ text + "</label></li>";
+					ul.append(jQuery(liHtml));
+					if(text.getRealLength() * 5.6>width){
+						width = text.getRealLength() * 6 ;
+					}
+				}
+			});
+			var data = {'url':url,'success':success,'failure':failure} ;
+			var li = ul.children("li") ;
+    		// 列表事件绑定
+    		li.bind('click.li', data, Horn.Util.apply(this.userListClick,this));
+			this.showUserList(width) ;
+		}
+	},
+	showUserList : function(width) {
+		if(this.userListEl.css("display")=="block"){
+			return ;
+		}
+		var ul = this.userListEl.children("ul") ;
+		var li = ul.children("li[key]") ;
+		var offset = this.field.offset(), listOuterHeight = this.field.outerHeight();
+		// 显示位置
+		this.userListEl.css("left",offset.left + "px") ;
+		this.userListEl.css("top",(offset.top + listOuterHeight) + "px") ;
+		this.userListEl.css("width",width + "px") ;
+		// 显示
+		this.userListEl.css("display","block");
+		li.first().addClass("h_cur");
+	} ,
+	hideUserList : function(){
+		this.userListEl.css("display","none") ;
+	},
+	userListClick : function(e){
+		var li = $(e.currentTarget);
+		this.userItemClick(e,li) ;
+	},
+	userItemClick : function(e,li){
+		if(li && li.size()>0){
+    		var field = this.field ;
+    		var oldVal = field.val();
+			var branch_no = li.attr("branch_no") ;
+			var cif_account = li.attr("key") ;
+    		// field.val(jQuery.trim(cif_account));
+    		li.siblings().removeClass("h_cur");
+    		li.addClass("h_cur");
+    		this.hideUserList() ;
+			this.ajaxCifAccount(e,cif_account,branch_no) ;
+		}
+	},
+	userBodyClick : function(e){
+		if(this.userListEl){
+    		if(e.target==this.field.get(0)){
+    			$(document).one("click",Horn.Util.apply(this.userBodyClick,this));
+    		}
+    		else if(this.userListEl.css("display")=="block"){
+        		var ul = this.userListEl.children("ul") ;
+        		var li = ul.children("li.h_cur") ;
+				li.triggerHandler("click.li") ;
+        		// this.userItemClick(e,li) ;
+    		}
+		}
+	},
+	ajaxCifAccount : function(e,cif_account,branch_no){
+    	var check_right = "1" ;
+    	var gt_menu_type0 = "" ;
+    	var gt_menu_type1 = "" ;
+    	var organ_flag_status0="";
+    	var organ_flag_status1="";
+    	
+    	var showClientControl = "1" ;
+    	showClientControl = showClientControl || "1" ;
+    	
+    	    	var failure = "secu.comFailure()" ;
+    	failure = Horn.Util.getFunObj(failure).fn ;
+    	    	check_right = check_right || "1" ;
+		var url = e.data.url || sfInfourl ;
+		var param = {"check_right":check_right,"branch_no":branch_no,"cif_account":cif_account,"gt_menu_type0":gt_menu_type0,"gt_menu_type1":gt_menu_type1,"organ_flag_status1":organ_flag_status1,"organ_flag_status0":organ_flag_status0,"showClientControl":showClientControl} 
+		Horn.post(url,param,e.data.success||switchField_success,e.data.failure||failure) ;
+		// Horn.focusEnd(this.field[0]);
+	},
+	onBeforeSend : function(xhr){
+		Horn.loadMask("loading...") ;
+		var labelfield = this.labelfield ;
+    	var form = labelfield[0].form ;
+    	if(form){
+    		var jForm = $(form) ;
+    		jForm.one("reset",jQuery.proxy(function(){
+    			xhr.abort() ;
+    		},this)) ;
+    	}
+    	// 2015.01.20 xiajia 增加客户代码查询特殊处理 start
+    	var name = "account_content" ;
+    	var input_content = Horn.getComp(name).getLabelValue() ;
+    	if(input_content == "6"){
+    		var account_content = Horn.getComp(name).getValue();
+    		if(account_content.length <= 12){
+    			var accountContent = "03" + "000000000000".substring(account_content.length) + account_content;
+    			Horn.Field.setValue(name, accountContent);
+    			Horn.getComp('account_content').field.focusout();
+    			Horn.hideMask() ;
+    			return false;
+    		}
+    	}
+    	// *********************************************** end
+    	var account_content=Horn.Field.getValue("account_content");
+    	var action_Type_No=Horn.Field.getValue("action_Type_No");
+    	if(g_account_content==account_content){
+    		g_account_content="";
+			if(action_Type_No==1){//为什么判断等于零是，两次事件先会走到apply，然后按照队列循序去调用ajax
+				Horn.hideMask() ;
+				return false;//第二次循环会走这里
+			}else if(action_Type_No==0){
+				Horn.hideMask() ;//如果加载延迟那就会走这里
+				return false;
+			}
+    	}else if(action_Type_No!="1"){//第一次循环会走这里。
+    		g_account_content=account_content;
+    	}else {
+    		g_account_content="";//如果第一次输入身份证会走这里
+    	}
+    	return sFonBeforeSend.apply(this,arguments) ;
+	}
+});
+function switchField_success(data){
+	Horn.Field.setValue("organ_flag_stauts_type", data.organ_flag);
+	var ret = true;    
+	var action_Type_No=Horn.Field.getValue("action_Type_No");
+  	var cif_account=data.cif_account;
+	var cif_branch_no=data.branch_no;
+	var check_flag=data.check;
+	Horn.Field.setValue("check_flag", check_flag);
+	var hsMune_Type=Horn.Field.getValue("hsMune_Type0");
+	var hsMune_Type1=Horn.Field.getValue("hsMune_Type1");
+	var organ_flag_status0=Horn.Field.getValue("organ_flag_status0");
+	var organ_flag_status1=Horn.Field.getValue("organ_flag_status1");
+	var organ_flag_stauts_type=Horn.Field.getValue("organ_flag_stauts_type");
+	var menu_id_type = Horn.Util.getParamValue("menu_id") ;
+	
+	if(action_Type_No==0){
+		Horn.Field.setValue("action_Type_No1", "0");
+	}else{
+		Horn.Field.setValue("action_Type_No1", "1");
+	}
+	//获取判断当前客户的证件类型是否是身份证
+	var id_auth_type = "";
+	Horn.Field.setValue("id_auth_type", "");
+	if(id_auth_type=="1"){
+		var check_ind_kind=data.id_kind;
+		if(check_ind_kind=="0"){
+			var action_Type_No1=Horn.Field.getValue("action_Type_No1");
+			if(action_Type_No1=="1"){
+				alert("身份证客户必须要刷卡");
+				Horn.getComp("account_content").setValue("", true) ;
+				Horn.hideMask() ;
+				return;
+			}
+		}
+	}
+	
+	// 2015.11.12	夏佳		增加刷身份证时，身份证中有效期和数据库有效期不一致，则提示操作员确认！但不强制要求修改
+	if(cif_account && action_Type_No == "0" && data.organ_flag == "0"){
+		var card_id_enddate = Horn.Field.getValue("card_id_enddate");
+		if(!data.id_enddate || (data.id_enddate && $.trim(data.id_enddate) != card_id_enddate)){
+			alert("身份证证件有效期与系统留存证件有效期不一致，请注意确认！");
+		}
+	}
+	
+	/**
+	 * hsMune_Type值为1，刷卡时不需要校验，输身份证校验密码， hsMune_Type值为2，刷卡和输入身份证都需要校验密码
+	 * hsMune_Type值为3，只支持刷卡  
+	 */ 
+	Horn.Field.setValue("jxtx_fllow_flag_type", "");//缓存如果是个人或者机构要校验客户密码的值
+	Horn.Field.setValue("jxtx_fllow_flag_type1", "");//缓存如果是个人或者机构要校验客户密码的值
+	if(check_flag==1){
+		if(cif_account){
+			alert("客户需通过君行天下办理此业务");
+		if("4220"!=menu_id_type &&"4221"!=menu_id_type){//屏蔽打印凭条和打印开户凭条校验君行君行天下密码功能
+		 if(organ_flag_stauts_type==0){
+			if(organ_flag_status0==organ_flag_stauts_type){
+				if(hsMune_Type==2){
+					var ret =Iwm.Pwd.jxtxCheckPwd("","",cif_account,null,null,null,null);
+				}else if(hsMune_Type==3){
+					if(action_Type_No==1){
+						alert("该操作必须要通过刷身份证完成");
+						Horn.getComp("account_content").setValue("", true) ;
+						Horn.hideMask() ;
+						return;
+					}
+				}else if(hsMune_Type==1){
+					if(action_Type_No==1){
+						var ret =Iwm.Pwd.jxtxCheckPwd("","",cif_account,null,null,null,null);
+					}
+				}
+			}else{
+				if(hsMune_Type1==2){
+					var ret =Iwm.Pwd.jxtxCheckPwd("","",cif_account,null,null,null,null);
+				}else if(hsMune_Type1==3){
+					if(action_Type_No==1){
+						alert("该操作必须要通过刷身份证完成");
+						Horn.getComp("account_content").setValue("", true) ;
+						Horn.hideMask() ;
+						return;
+					}
+				}
+				if(hsMune_Type1==1){
+					if(action_Type_No==1){
+						var ret =Iwm.Pwd.jxtxCheckPwd("","",cif_account,null,null,null,null);
+					}
+				}
+			}
+		  }else{
+			  var ret =Iwm.Pwd.jxtxCheckPwd("","",cif_account,null,null,null,null);
+		 }
+		  if(ret){
+		      }else{
+		    Horn.getComp("account_content").setValue("", true) ;
+			 Horn.hideMask() ;
+			 return false;
+		      }
+		   }
+	   }
+}
+	if("170305"==menu_id_type||"170303"==menu_id_type||"170302"==menu_id||"591104"==menu_id){
+	  if(cif_account){
+		  var action_Type_No1=Horn.Field.getValue("action_Type_No1");
+		if(organ_flag_stauts_type==0){
+			Horn.Field.setValue("jxtx_fllow_flag_type", "");
+			if(hsMune_Type==3){
+				if(action_Type_No1==1){
+					alert("该操作必须要通过刷身份证完成");
+					Horn.getComp("account_content").setValue("", true) ;
+					Horn.hideMask() ;
+					return;
+				}
+			}
+			if(hsMune_Type==2){
+				var ret =Iwm.Pwd.jxtxCheckPwd("","",cif_account,null,null,null,null);
+			}
+			if(hsMune_Type==1){
+				if(action_Type_No==1){
+					var ret =Iwm.Pwd.jxtxCheckPwd("","",cif_account,null,null,null,null);
+				}
+			}
+		}else{
+			Horn.Field.setValue("jxtx_fllow_flag_type", "");//缓存如果是个人或者机构要校验客户密码的值
+			if(action_Type_No==1){
+				if(cif_account){
+					var ret =Iwm.Pwd.jxtxCheckPwd("","",cif_account,null,null,null,null);
+				}
+			}
+		}
+			if(ret){
+		      }else{
+		    Horn.getComp("account_content").setValue("", true) ;
+			 Horn.hideMask() ;
+			 return false;
+		      }
+			
+	 }
+	}
+	if(cif_account){
+		Horn.Field.setValue("action_Type_No", "1");
+	}
+	Horn.hideMask() ;
+		var success = "secu.comSuccess()" ;
+	success = Horn.Util.getFunObj(success).fn ;
+			var failure = "secu.comFailure()" ;
+	failure = Horn.Util.getFunObj(failure).fn ;
+		var that = this ;
+	if(data.errorNo && data.errorNo!='0'){
+		var error = Horn.getError(data) ;
+		if(jQuery.isFunction(failure)){
+			failure.call(this,data) ;
+		}
+		else{
+			alert(error) ;
+		}
+	}
+	else{
+		if(jQuery.type(data)=="array"){
+			jQuery.each(data,function(index,item){
+				item['label'] = item['cif_account'] ;
+				item['value'] = (jQuery.trim(item['full_name']) || item['client_name']) +"["+ item['branch_no_name']+"]" +"["+ item['cifacct_status_name']+"]" ;
+			})
+			this.addUserList(data);
+		}
+		else{
+			success.call(this,data) ;
+		}
+	}
+}
+function switchField_error(xhr, textStatus, errorThrown){
+	Horn.hideMask() ;
+	alert(textStatus) ;
+};
+Horn.ready(function(){
+	var name = "account_content" ;
+	var check_right = "1" ;
+	check_right = check_right || "1" ;
+	/**
+	 * 判断该菜单是否有客户代码控件
+	 */
+	var showClientControl = "1" ;
+	showClientControl = showClientControl || "1" ;
+	var sf = Horn.getComp(name) ;
+	var param = sf.param ;
+	var menu_id = Horn.Util.getParamValue("menu_id") ;
+	param.push({"name":"menu_id","value":menu_id}) ;
+	param.push({"name":"check_right","value":check_right}) ;
+	param.push({"name":"showClientControl","value":showClientControl}) ;
+	Horn.Field.setValue("showClientControl_flag", showClientControl);//复核君行天下业务标志
+	Horn.Field.setValue("hsMune_Type0", "");// 密码校验标志
+	Horn.Field.setValue("hsMune_Type1", "");
+	Horn.Field.setValue("organ_flag_status0", "");
+	Horn.Field.setValue("organ_flag_status1", "");// 客户状态
+	Horn.Field.setValue("gt_menu_type0", "");// 客户状态
+	Horn.Field.setValue("gt_menu_type1", "");// 客户状态
+	param.push({"name":"gt_menu_type0","value":""}) ;// 业务菜单类型
+	param.push({"name":"gt_menu_type1","value":""}) ;
+	param.push({"name":"organ_flag_status0","value":""}) ;
+	param.push({"name":"organ_flag_status1","value":""}) ;
+	Horn.Field.setValue("action_Type_No", "1");
+	sf.field.bind("keydown",Horn.Util.apply(function(e){
+		var field = this.field ;
+        var keyCode = e.keyCode;
+        if (keyCode === 13) {
+			if(this.userListEl && this.userListEl.css("display")=="block"){
+        		var ul = this.userListEl.children("ul") ;
+        		var li = ul.children("li.h_cur") ;
+				// field.blur() ;
+				li.triggerHandler("click.li") ;
+                // this.userItemClick(e,li) ;
+			}
+			else if(field.val()){
+			}
+			Horn.Util.stopPropagation(e);
+            return false;
+        }
+	},sf)) ;
+	var form = sf.labelfield[0].form ;
+	if(form){
+		var jForm = $(form) ;
+		jForm.bind("reset",function(){
+			sf.setLabelValue(sf.labelfield.prop("defaultValue")) ;
+		}) ;
+	}
+	
+	readIDCard();
+}) ;
+function readIDCard(){
+	var reader = null;
+	var labelValue = Horn.getComp("account_content").getLabelValue() ;
+	if(labelValue=="70"){
+		reader = new Iwm.IdCard(
+			function(idInfo){
+				Horn.Field.setValue("card_id_enddate", idInfo.id_enddate);
+				Horn.Field.setValue("action_Type_No", "0");
+				Horn.getComp("account_content").setValue(idInfo.id_no, true) ;
+				readIDCard();
+				//流水信息记录
+				var params =  idInfo;
+				params.issued_depart = idInfo.grant_organ;
+				params.id_nation = idInfo.nation;
+				Horn.post('/switchField/recordIdCardReadHis.json',idInfo,function(data){
+					if(!data||'false'==data){
+						alert('身份证读卡器流水记录失败');
+					}
+				});
+			}
+		);
+		reader.start() ;
+	}else{
+		if(reader!=null){
+			reader.stop();
+		}
+	}
+}
+</script>
+
+
+								<li class="hc_panel-li "><span title="客户代码"> <b
+										class="hc_red">*</b> 客户代码</span>
+									<div class="hc_combox" pKeyField=pLabel keyField=label
+										titleField=value showLabel="false">
+										<input type="hidden" name="client_id" check="required;" />
+										<input multiple="" type="text" onchange="changeClientId(this)"
+											readonly="readonly" delimiter="," />
+
+										<div class="hc_checkboxdiv" multiple_line="false">
+											<ul>
+
+											</ul>
+										</div>
+									</div>
+									<div style="display:none;"></div></li>
+
+								<li class="hc_panel-li "><span title="资金账户"> <b
+										class="hc_red">*</b> 资金账户</span>
+									<div class="hc_combox" pKeyField=pLabel keyField=label
+										titleField=value showLabel="false">
+										<input type="hidden" name="busin_account" check="required;" />
+										<input multiple="" type="text"
+											onchange="changeBusinAccount(this)" readonly="readonly"
+											delimiter="," />
+
+										<div class="hc_checkboxdiv" multiple_line="false">
+											<ul>
+
+											</ul>
+										</div>
+									</div>
+									<div style="display:none;"></div></li>
+
+
+								<li class="hc_panel-li "><span title="代理人"> 代理人</span>
+									<div class="hc_combox" pKeyField=pLabel keyField=label
+										titleField=value showLabel="false">
+										<input type="hidden" name="deputy_id" check="" /> <input
+											multiple="" type="text" onchange="changeDeputy()"
+											readonly="readonly" delimiter="," />
+
+										<div class="hc_checkboxdiv" multiple_line="false">
+											<ul>
+
+											</ul>
+										</div>
+									</div>
+									<div style="display:none;"></div></li>
+								<input type="hidden" name="deputy_scantask_id" value="" />
+
+								<script type="text/javascript">
+var deputyList = [];	// 代理人列表
+var deputyData = {};	// 代理人
+var comOrganFlag;	// 机构/个人
+var comRemarkName;	// 备注字段名称
+var defaultRemarkName = "deputy_remark";
+
+Horn.ready(function(){
+	
+});
+/**
+ * 加载代理人（其他菜单引入接口）
+ * @param organFlag 个人 / 机构标志：0 个人；1 机构
+ * @param deputyFlag 个人客户是否启用代理人标志：0 不启用；1 启用
+ * @param remarkName 备注字段名称
+ * @param clientFlag 界面是否显示客户代码标志：0 不显示；1 显示（不显示客户代码时，传0；显示客户代码时，可不传）
+ * @param clientIdName 客户代码字段名称
+ * @param cifAccountName 一户通字段名称
+ * @param temDeputyFlag 临时代理人标志：传1就不查询代理人直接加载临时代理人下拉框
+ * @author xiajia
+ * @date 2015.08.10
+ */
+function loadDeputy(organFlag, deputyFlag, remarkName, clientFlag, clientIdName, cifAccountName,temDeputyFlag){
+	comOrganFlag=organFlag;
+	comRemarkName=remarkName;
+	if(organFlag == "0" && deputyFlag == "0"){
+		// 隐藏代理人
+		showDeputy(false, remarkName);
+	}else{
+		// 启用代理人
+		showDeputy(true, remarkName);
+		// 加载代理人列表
+		loadDeputyList(organFlag, remarkName, clientFlag, clientIdName, cifAccountName,temDeputyFlag);
+	}
+}
+/**
+ * 代理人显示控制：个人通过配置控制，机构都显示代理人
+ * @param flag 代理人标志：true 启用；false 不启用
+ * @param remarkName 备注字段名称
+ * @author xiajia
+ * @date 2015.08.10
+ */
+function showDeputy(flag, remarkName){
+	var deputyRemarkName = "";
+	if(remarkName){	// 页面自定义的备注字段名称，不传就是默认remark
+		deputyRemarkName = remarkName;
+	}else{
+		deputyRemarkName = defaultRemarkName;
+	}
+	if(flag){	// 启用代理人
+		Horn.getComp("deputy_id").show();
+		Horn.getComp("deputy_id").setEnable(true);
+		Horn.getComp(deputyRemarkName).show();
+		$("#"+deputyRemarkName+"_desc").show();
+	}else{	// 不启用代理人
+		Horn.getComp("deputy_id").hide();
+		Horn.getComp("deputy_id").setEnable(false);
+		Horn.getComp(deputyRemarkName).hide();
+		$("#"+deputyRemarkName+"_desc").hide();
+	}
+	Horn.getComp(deputyRemarkName).setNotRequired();
+	Horn.Validate.removeError(Horn.getComp(deputyRemarkName).get());
+	Horn.Field.setValue(deputyRemarkName, "");
+	Horn.Field.setValue("deputy_id", "");
+	Horn.Field.setValue("deputy_scantask_id", "");
+}
+/**
+ * 加载代理人列表
+ * @param organFlag 个人 / 机构标志：0 个人；1 机构
+ * @param remarkName 备注字段名称
+ * @param clientFlag 界面是否显示客户代码标志：0 不显示；1 显示
+ * @param clientIdName 客户代码字段名称
+ * @param cifAccountName 一户通字段名称
+ * @param temDeputyFlag 临时代理人标志：传1就不查询代理人直接加载临时代理人下拉框
+ * @author xiajia
+ * @date 2015.08.10
+ */
+function loadDeputyList(organFlag, remarkName, clientFlag, clientIdName, cifAccountName,temDeputyFlag){
+	if(temDeputyFlag!="1"){
+		var customNum = "";
+		var gtAccountType = "";
+		if(clientFlag && clientFlag == "0"){
+			// 查询一户通及以下所有客户代码对应的代理协议代理人
+			if(!cifAccountName){
+				customNum = Horn.Field.getValue("cif_account");
+			}else{
+				customNum = Horn.Field.getValue(cifAccountName);
+			}
+			gtAccountType = "0";
+		}else{
+			// 查询客户代码和其一户通对应代理协议代理人
+			if(!clientIdName){
+				customNum = Horn.Field.getValue("client_id");
+			}else{
+				customNum = Horn.Field.getValue(clientIdName);
+			}
+			gtAccountType = "1";
+		}
+		// 获取有协议的代理人列表
+		getDeputyRelationList(customNum, gtAccountType);
+	}
+	// 加载代理人列表
+	var list = [];
+	var singleData = {};	
+	for ( var i = 0; i < deputyList.length; i++) {
+		singleData = {"value":deputyList[i].deputy_id+"("+deputyList[i].deputy_name+")","label":deputyList[i].deputy_id};
+		list.push(singleData);
+	}
+	// 在第一行增加一个选项
+	singleData = {"value":"新增代理人","label":"add"};
+	list.unshift(singleData);
+	singleData = {"value":"无代理人","label":" "};
+	list.unshift(singleData);
+	Horn.getComp("deputy_id").addDatas(list,true);
+	Horn.getComp("deputy_id").setValue(" ");
+	Horn.Field.setValue("deputy_scantask_id", "");
+	// 切换代理人
+	changeDeputy(organFlag, remarkName);
+	
+}
+/**
+ * 获取有协议的代理人列表
+ * @param customNum 账户号码
+ * @param gtAccountType 账户类型：0 一户通； 1 客户代码
+ * @author xiajia
+ * @date 2015.08.10
+ */
+function getDeputyRelationList(customNum, gtAccountType){
+	deputyList = [];
+	Horn.post("/iwm/secu/common/getDeputyRelationList.json",{"custom_num":customNum, "gt_account_type":gtAccountType},
+			function(data){
+				if(data && data.length > 0){
+					deputyList = data;
+				}
+			},function(data){
+				var error = Horn.getError(data) ;
+				alert(error) ;
+			},
+		null, false);
+}
+/**
+ * 显示/隐藏代理人备注和提示
+ * @param organFlag 个人/机构标志
+ * @param remarkName 备注字段名称
+ * @author xiajia
+ * @date 2015.08.10
+ */
+function showDeputyRemark(organFlag, remarkName){
+	if(organFlag == "0"){
+		if(remarkName){	// 页面自定义的备注字段名称，不传就是默认remark
+			Horn.getComp(remarkName).setNotRequired();
+			var remarkNameTemp = escapeJquery(remarkName);
+			$("#"+remarkNameTemp+"_desc").hide();
+		}else{
+			Horn.getComp(defaultRemarkName).setNotRequired();
+			$("#"+defaultRemarkName+"_desc").hide();
+		}
+	}else if(organFlag == "1"){
+		if(remarkName){	// 页面自定义的备注字段名称，不传就是默认remark
+			Horn.getComp(remarkName).setRequired();
+			var remarkNameTemp = escapeJquery(remarkName);
+			$("#"+remarkNameTemp+"_desc").show();
+		}else{
+			Horn.getComp(defaultRemarkName).setRequired();
+			$("#"+defaultRemarkName+"_desc").show();
+		}
+	}
+}
+/**
+ * 切换代理人
+ * @param remarkName 备注字段名称
+ * @author xiajia
+ * @date 2015.08.10
+ */
+function changeDeputy(organFlag, remarkName){
+	if(!organFlag){
+		organFlag = comOrganFlag;
+	}
+	if(!remarkName){
+		remarkName = comRemarkName;
+	}
+	var deputy_id = Horn.getComp("deputy_id").getValue();
+	if(deputy_id.trim() == ""){
+		// 显示/隐藏代理人备注和提示
+		showDeputyRemark(organFlag, remarkName);
+		Horn.Field.setValue("deputy_scantask_id", "");
+		return;
+	}else{
+		if(deputy_id.trim() != "add"){
+			if(remarkName){	// 页面自定义的备注字段名称，不传就是默认remark
+				Horn.getComp(remarkName).setNotRequired();
+				var remarkNameTemp = escapeJquery(remarkName);
+				$("#"+remarkNameTemp+"_desc").hide();
+			}else{
+				Horn.getComp(defaultRemarkName).setNotRequired();
+				$("#"+defaultRemarkName+"_desc").hide();
+			}
+		}
+	}
+	if(remarkName){	// 页面自定义的备注字段名称，不传就是默认remark
+		Horn.Validate.removeError(Horn.getComp(remarkName).get());
+	}else{
+		Horn.Validate.removeError(Horn.getComp(defaultRemarkName).get());
+	}
+	if(deputy_id == "add"){	// 新增一次性代理人
+		addDeputy(organFlag, remarkName);
+		return;
+	}
+	// 选择长期代理人
+	var deputyFlag = true;	// 一次性代理人标记
+	var dateFlag = false;
+	deputyData = {};
+	for ( var i = 0; i < deputyList.length; i++ ) {
+		if(deputy_id == deputyList[i].deputy_id){	 // 匹配选中的代理人
+			deputyData = deputyList[i];
+			deputyFlag = false;
+			if(deputyData.agreement_status == "0"){
+				var init_date = Horn.Field.getValue("init_date");
+				var start_date = deputyData.start_date;
+				var end_date = deputyData.end_date;
+				if(parseInt(start_date, 10) > parseInt(init_date, 10)){
+					alert("该代理人和客户的协议开始日期是："+start_date+"；还未到协议开始日期，请选择其他代理人！");
+					dateFlag = true;
+					break;
+				}
+				if(parseInt(init_date, 10) > parseInt(end_date, 10)){
+					alert("该代理人和客户的协议已过期！");
+					dateFlag = true;
+					break;
+				}
+				
+			}else{
+				alert("该代理人和客户的协议状态不正常："+deputyData.agreement_status_name+"！");
+				dateFlag = true;
+				break;
+			}
+		}
+	}
+	if(dateFlag){
+		Horn.getComp("deputy_id").setValue(" ");
+		Horn.Field.setValue("deputy_scantask_id", "");
+		// 显示/隐藏代理人备注和提示
+		showDeputyRemark(organFlag, remarkName);
+		deputyData = {};
+		return;
+	}
+	if(!deputyFlag){	// 非一次性代理人显示代理人协议信息
+		// 显示代理人关系协议信息
+		showDeputyRelationInfo(organFlag, remarkName);
+	}else{
+		alert("你选择的是一次性代理人！");
+	}
+}
+/**
+ * 显示代理人关系协议信息
+ * @param remarkName 备注字段名称
+ * @author xiajia
+ * @date 2015.08.10
+ */
+function showDeputyRelationInfo(organFlag, remarkName){
+	var data = {} ;
+	var width = 750 ;
+	height = 600 ;
+	var newWindowLeft = (screen.width-width)/2;
+	var newWindowTop = (screen.height-height)/2;
+	var url = "/iwm/secu/common/showDeputyRelationInfo.htm" ;
+	url = window.context_path + url ;
+	var ps = [] ;
+	if(window.menu_id){
+		ps.push('menu_id=' + window.menu_id) ;
+		data["menu_id"] = window.menu_id ;
+	}
+	if(deputyData.agreement_id){
+		ps.push('agreement_id=' + deputyData.agreement_id) ;
+		data["agreement_id"] = deputyData.agreement_id ;
+	}
+	if(deputyData.deputy_name){
+		ps.push('deputy_name=' + deputyData.deputy_name) ;
+		data["deputy_name"] = deputyData.deputy_name ;
+	}
+	if(deputyData.id_kind){
+		ps.push('id_kind=' + deputyData.id_kind) ;
+		data["id_kind"] = deputyData.id_kind ;
+	}
+	if(deputyData.id_no){
+		ps.push('id_no=' + deputyData.id_no) ;
+		data["id_no"] = deputyData.id_no ;
+	}
+	if(ps.length>0){
+		url += "?" + ps.join("&") ;
+	}
+	var px = [] ;
+	px.push("dialogWidth:" + width + "px") ;
+	px.push("dialogHeight:" + height + "px") ;
+	px.push("dialogLeft:" + newWindowLeft + "px") ;
+	px.push("dialogTop:" + newWindowTop + "px") ;
+	px.push("help:no") ;
+	px.push("resizable:yes") ;
+	px.push("scroll:yes") ;
+	px.push("status:no") ;
+	px.push("titlebar:yes") ;
+	px.push("location:no") ;
+	var returnValue = window.showModalDialog(url ,data,px.join(";"));
+	if(!returnValue){
+		Horn.getComp("deputy_id").setValue(" ");
+		Horn.Field.setValue("deputy_scantask_id", "");
+		// 显示/隐藏代理人备注和提示
+		showDeputyRemark(organFlag, remarkName);
+	}else{
+		Horn.Field.setValue("deputy_scantask_id", deputyData.deputy_scantask_id);
+	}
+}
+/**
+ * 新增代理人
+ * @param remarkName 备注字段名称
+ * @author xiajia
+ * @date 2015.08.10
+ */
+function addDeputy(organFlag, remarkName){
+	if(!confirm("确定为该客户新增代理人？")){
+		Horn.getComp("deputy_id").setValue(" ");
+		// 显示/隐藏代理人备注和提示
+		showDeputyRemark(organFlag, remarkName);
+		return;	
+	}
+	var data = {} ;
+	var width = 540 ;
+	height = 350 ;
+	var newWindowLeft = (screen.width-width)/2;
+	var newWindowTop = (screen.height-height)/2;
+	var url = '/iwm/secu/common/addDeputyInfo.htm' ;
+	url = window.context_path + url ;
+	var ps = [] ;
+	if(window.menu_id){
+		ps.push('menu_id=' + window.menu_id) ;
+		data["menu_id"] = window.menu_id ;
+	}
+	if(ps.length>0){
+		url += "?" + ps.join("&") ;
+	}
+	var px = [] ;
+	px.push("dialogWidth:" + width + "px") ;
+	px.push("dialogHeight:" + height + "px") ;
+	px.push("dialogLeft:" + newWindowLeft + "px") ;
+	px.push("dialogTop:" + newWindowTop + "px") ;
+	px.push("help:no") ;
+	px.push("resizable:yes") ;
+	px.push("scroll:yes") ;
+	px.push("status:no") ;
+	px.push("titlebar:yes") ;
+	px.push("location:no") ;
+	var returnValue = window.showModalDialog(url ,data,px.join(";"));
+	if(!returnValue){
+		Horn.getComp("deputy_id").setValue(" ");
+		Horn.Field.setValue("deputy_scantask_id", "");
+		// 显示/隐藏代理人备注和提示
+		showDeputyRemark(organFlag, remarkName);
+	}else{
+		// 加载代理人列表
+		var list = [];
+		var singleData = {};
+		for ( var i = 0; i < deputyList.length; i++) {
+			singleData = {"value":deputyList[i].deputy_name+"("+deputyList[i].deputy_id+")","label":deputyList[i].deputy_id};
+			list.push(singleData);
+		}
+		// 在第一行增加一个选项
+		singleData = {"value":"新增代理人","label":"add"};
+		list.unshift(singleData);
+		singleData = {"value":"无代理人","label":" "};
+		list.unshift(singleData);
+		list.push(returnValue);	// 新增的一次性代理人，无协议
+		Horn.getComp("deputy_id").addDatas(list,true);
+		Horn.getComp("deputy_id").setValue(returnValue.label);
+		if(organFlag == "1"){
+			if(remarkName){	// 页面自定义的备注字段名称，不传就是默认remark
+				Horn.getComp(remarkName).setNotRequired();
+				var remarkNameTemp = escapeJquery(remarkName);
+				$("#"+remarkNameTemp+"_desc").hide();
+			}else{
+				Horn.getComp(defaultRemarkName).setNotRequired();
+				$("#"+defaultRemarkName+"_desc").hide();
+			}
+		}
+	}
+}
+
+</script>
+
+
+
+								<input type="hidden" name="branch_no" value="" />
+								<input type="hidden" name="businsys_id" value="" />
+								<input type="hidden" name="busin_businsys_id" value="" />
+								<input type="hidden" name="cif_account" value="" />
+								<input type="hidden" name="organ_flag" value="" />
+								<input type="hidden" name="image_up_flag" value="" />
+								<input type="hidden" name="init_date" value="20161021" />
+								<input type="hidden" name="aixiliary_check" value="" />
+
+								<input type="hidden" name="fund_account" value="" />
+
+								<script type="text/javascript">
+	var clientData = [];
+	var businData = [];
+	var stockData = [];
+	var switchFieldPayData = {};
+	var switchFieldPayCifResult = {};
+	var switchFieldClientData = {};
+	var client_id_flag = "0";	// 状态正常的客户代码标识
+	var busin_account_flag = "0";	// 状态正常的资金账户标识
+	var stock_account_flag = "0";	// 状态正常的理财资金账户标识
+	var cif_branch_no = "";
+    var retainClientStatus = "0".split(",");	// 界面传入，需要保留的客户代码状态，默认是正常状态 0
+    var retainBusinStatus = "0".split(",");		// 界面传入，需要保留的资金账户状态，默认是正常状态 0
+    var retainStockStatus = "0".split(",");		// 界面传入，需要保留的证券账户状态，默认是正常状态 0
+    
+    Horn.ready(function(){
+    		});
+	var secu = {
+		comSuccess:function(cifResult){
+			var form = Horn.getComp("tranferOutForm");
+			if(cifResult){
+				switchFieldPayCifResult=cifResult;
+				if(cifResult.cifacct_status!=0){
+					alert('一户通号: '+cifResult.cif_account+'  状态: '+cifResult.cifacct_status_name+', 不能进行此业务!');
+					Horn.getComp('account_content').setValue("");
+					Horn.getComp('account_content').field.focus();
+				}else{
+					// 个人15位身份证升位判断
+											// 个人客户，一户通对应身份证号为15位，需先去升位
+						if(cifResult.organ_flag == "0" && cifResult.id_kind == "0" && cifResult.id_no && cifResult.id_no.length == 15){
+							alert("系统中该客户身份证号是15位的，需要去“一户通”-“联合修改”-“身份证号升位”菜单做身份证号升位！");
+							clearCommonData();
+					    	return;
+						}
+										// 默认显示客户代码信息，不加载一户通信息
+																Horn.Field.setValue("remark", "");
+										Horn.Field.setValue("cif_account", cifResult.cif_account);
+					Horn.Field.setValue("organ_flag", cifResult.organ_flag);
+					Horn.Field.setValue("branch_no", cifResult.branch_no);
+					cif_branch_no = cifResult.branch_no;
+					//银行身份信息修改
+										// 加载客户代码之前执行
+										// 加载客户代码
+											// 判断是否启用客户代码显示控制
+						var hideClientFlag = "";
+						if(cifResult.organ_flag != $.trim(hideClientFlag)){
+							getClientId(cifResult.cif_account, cifResult.organ_flag);
+							// 没有查询到客户代码
+							if(client_id_flag == "0"){	// 不存在或是没有状态正常的客户代码
+								// 清数据
+								clearCommonData();
+								return;
+							}
+							// 客户代码切换
+							changeClientId();
+						}
+										// ----------------- 下面是引用界面自定义方法的实现 ------------------
+					// 一户通号切换后处理
+										
+				}
+			}else{
+			    clearCommonData();
+				Horn.getComp('account_content').setValue("");
+				Horn.getComp('account_content').field.focus();
+			}
+			
+						
+		},
+		comFailure:function(cifResult){
+			clearCommonData();
+			var error = Horn.getError(cifResult) ;
+			alert(error) ;
+		}
+	};
+	/**
+	 * 获取客户代码
+	 */
+	function getClientId(cif_account, organ_flag){
+		var params = {"cif_account":cif_account};
+				params["asset_prop"] = Horn.Field.getValue("asset_prop");
+		// 不过滤销户账户
+				// 显示客户代码的子系统
+					params["businsys_id"] = 50;
+				Horn.getComp('client_id').clearList();
+		Horn.post("/iwm/secu/common/getClientId.json",params,
+	        function(clientResult){
+	            if(clientResult && clientResult.length > 0){
+	            	switchFieldClientData = {};
+			        var list = [];
+			        var client_id_first = "";
+			        var getFirstClientId = true;
+			        var isExistClientId = false;
+			        // 缓存客户代码列表，切换客户代码时使用
+			        clientData = clientResult;
+            		for(i=0;i<clientResult.length;i++){
+            			if(retainClientStatus[0] == "all" || $.inArray(clientResult[i].client_status, retainClientStatus) >= 0){
+            				// 获取第一个状态正常或者符合要求的客户代码
+        					if(getFirstClientId){
+        						// 个人客户，获取身份证号为18位的正常客户代码
+        						if(organ_flag == "0"){
+        							        								// 个人，非身份证号，不判断证件长度
+        								// 个人，身份证号，18位，不判断证件长度
+            							if((clientResult[i].id_kind != "0") || (clientResult[i].id_kind == "0" && clientResult[i].id_no && $.trim(clientResult[i].id_no).length == 18)){
+            								client_id_first = clientResult[i].client_id;
+            								Horn.Field.setValue("branch_no", clientResult[i].branch_no);
+            								Horn.Field.setValue("businsys_id", clientResult[i].businsys_id);
+            								getFirstClientId = false;
+            							}else{
+            								// 个人，身份证号，15位，判断证件长度
+            							}
+        							        						}else{	// 机构，不判断证件长度
+        							client_id_first = clientResult[i].client_id;
+    								Horn.Field.setValue("branch_no", clientResult[i].branch_no);
+    								Horn.Field.setValue("businsys_id", clientResult[i].businsys_id);
+    								getFirstClientId = false;
+        						}
+        					}
+        					isExistClientId = true;
+        				}
+            			switchFieldClientData = clientResult;
+            			Horn.Field.setValue("aixiliary_check", clientResult[0].check);//转账辅账判断扁平化是否报错
+        				var singleData = {"value":clientResult[i].client_id+"("+clientResult[i].branch_no_name+")","label":clientResult[i].client_id};
+        				list.push(singleData);
+            		}
+            		client_id_flag = "2";
+            		// 存在状态正常的客户代码
+            		if(isExistClientId){
+            			// 个人15位身份证升位判断
+            				            			// 状态正常的客户代码，但身份证号都为15位
+	            			if(organ_flag == "0" && $.trim(client_id_first) == ""){
+	            				client_id_flag = "0";
+	            				alert("该客户的客户代码对应身份证号是15位，需要去“一户通”-“联合修改”-“身份证号升位”菜单做身份证号升位！");
+	            				return;
+	            			}
+            			            		}else{
+            			client_id_flag = "0";
+						alert("没有状态正常的客户代码");
+						return;
+            		}
+					Horn.getComp("client_id").addDatas(list,true);
+											Horn.getComp("client_id").setValue("");
+								    }else{
+			    	client_id_flag = "0";
+			    	alert("未查询到客户代码");
+			    	return;
+			    }
+	        },
+	        function(clientResult){
+	    		var error = Horn.getError(clientResult) ;
+	    		client_id_flag = "0";
+				alert(error) ;
+	    	},
+	        null,false);
+	}
+	
+	/**
+	 * 客户代码切换
+	 */
+	function changeClientId(){
+		var client_id = Horn.Field.getValue("client_id");
+		var cif_account = Horn.Field.getValue("cif_account");
+				// 加载界面时，如果客户代码为空，不再继续执行
+		if(!client_id || $.trim(client_id) == ""){
+			return;
+		}
+		var organ_flag = Horn.Field.getValue("organ_flag");
+		var client_status = "";
+		var id_no_15 = "";
+		for(i=0; i<clientData.length; i++){
+			// 获取选中的客户代码状态
+            if(client_id == clientData[i].client_id){
+            	var branch_Auxili=clientData[i].branch_no;
+            	if(retainClientStatus[0] != "all" && $.inArray(clientData[i].client_status, retainClientStatus) < 0){
+            		client_status = clientData[i].client_status_name;
+            		break;
+            	}
+            	Horn.Field.setValue("branch_no", clientData[i].branch_no);
+            	Horn.Field.setValue("id_no", clientData[i].id_no);
+            	/**
+        		 * 君行天下密码校验
+        		 */
+        		var check_flag = Horn.Field.getValue("check_flag");
+        		var action_Type_No1 = Horn.Field.getValue("action_Type_No1");
+        		var jxtxbranch_no = clientData[i].branch_no;
+        		var jxtx_fllow_flag_type = Horn.Field.getValue("jxtx_fllow_flag_type");
+        		var menu_id = Horn.Util.getParamValue("menu_id") ;
+        		var hsMune_Type=Horn.Field.getValue("hsMune_Type0");
+        		var cif_account_jxtx=Horn.Field.getValue("cif_account");
+        		var branch_no_jxtx=Horn.Field.getValue("branch_no");
+        		var gt_menu_type0=Horn.Field.getValue("gt_menu_type0");
+        		var gt_menu_type1=Horn.Field.getValue("gt_menu_type1");
+        		var organ_flag_status0=Horn.Field.getValue("organ_flag_status0");
+        		var organ_flag_status1=Horn.Field.getValue("organ_flag_status1");
+        		var organ_flag=Horn.Field.getValue("organ_flag");
+        		var jxtxret=true;
+        		var jxtxcheck=true;
+        		/**
+        		 * 判断当前操作员是否能够操作当前客户代码
+        		 */
+                	Horn.post("/iwm/secu/common/getClientCheckIdByCifAccount.json",{"cif_account":cif_account_jxtx,"client_id":client_id,"branch_no":branch_no_jxtx,"gt_menu_type0":gt_menu_type0,"gt_menu_type1":gt_menu_type1,"organ_flag_status0":organ_flag_status0,"organ_flag_status1":organ_flag_status1,"organ_flag":organ_flag},function(data){
+                		if(data=="0"){
+                			alert("客户需通过君行天下办理此业务");
+                			/**
+                    		 * 君行天下密码校验
+                    		 */                			
+                			Horn.Field.setValue("check_flag", "1");
+                    		var jxtxbranch_no = Horn.Field.getValue("jxtxbranch_no");
+                    		var hsMune_Type = Horn.Field.getValue("hsMune_Type0");
+                    		var jxtx_fllow_flag_type = Horn.Field.getValue("jxtx_fllow_flag_type");
+                    		var jxtx_fllow_flag_type1 = Horn.Field.getValue("jxtx_fllow_flag_type1");
+                    		var organ_flag_jxtx = Horn.Field.getValue("organ_flag");
+                    		var menu_id = Horn.Util.getParamValue("menu_id") ;
+                    			if(organ_flag_jxtx=="0"){
+                    				if(action_Type_No1!="0"){//证明不是读卡的
+                    					if(hsMune_Type=="3"){
+                    						alert("该操作必须要通过刷身份证完成");
+                    						Horn.getComp("account_content").setValue("", true) ;
+                    						Horn.getComp("client_id").setValue("", true) ;
+                    						Horn.getComp("busin_account").setValue("", true) ;
+                    						Horn.hideMask() ;
+                    						jxtxcheck=false;
+                    					}else if (hsMune_Type=="1"||hsMune_Type=="2"){
+                    						var jxtxret =Iwm.Pwd.jxtxCheckPwdCommon(menu_id,jxtx_fllow_flag_type,cif_account,client_id,null,branch_no_jxtx,null);
+                    						jxtxcheck=jxtxret;
+                    					}
+                    				}else if (action_Type_No1!="1"){//证明这是刷卡的
+                    					if(hsMune_Type=="2"){
+                    						var jxtxret =Iwm.Pwd.jxtxCheckPwdCommon(menu_id,jxtx_fllow_flag_type,cif_account,client_id,null,branch_no_jxtx,null);
+                    						jxtxcheck=jxtxret;
+                    					}
+                    				}
+                    			}else {
+                    				var jxtxret =Iwm.Pwd.jxtxCheckPwdCommon(menu_id,jxtx_fllow_flag_type1,cif_account,client_id,null,branch_no_jxtx,null);
+            						jxtxcheck=jxtxret;
+                    			}
+                		}else if(data=="1"){
+                			Horn.Field.setValue("check_flag", "0");
+                		}
+                	},function(data){
+                		jxtxcheck=false;
+                		alert(data.errorInfo);
+                		clearCommonData();
+                	},null,false);
+                	if(!jxtxcheck){
+                		Horn.getComp("client_id").setValue("");
+                		return;
+                	}
+            	            		Horn.Field.setValue("id_kind", clientData[i].id_kind);
+            		Horn.Field.setValue("full_name", clientData[i].full_name);
+            	            	Horn.Field.setValue("businsys_id", clientData[i].businsys_id);
+            		            	// 个人客户代码状态正常，但是对应身份证号是15位
+	            	if(organ_flag == "0" && clientData[i].id_kind == "0" && clientData[i].id_no && $.trim(clientData[i].id_no).length == 15){
+	            		id_no_15 = clientData[i].id_no;
+	            		break;
+	            	}
+            	            	// 界面显示AC对应的信息
+            	            		Horn.Field.setValue("branch_no1", clientData[i].branch_no);
+            		Horn.Field.setValue("branch_no_name", clientData[i].branch_no_name);
+            		Horn.Field.setValue("full_name1", clientData[i].full_name);
+            		Horn.Field.setValue("client_name", clientData[i].client_name);
+            		Horn.Field.setValue("client_name1", clientData[i].client_name);
+            		Horn.Field.setValue("organ_flag_name", clientData[i].organ_flag_name);
+            		Horn.Field.setValue("id_kind_name", clientData[i].id_kind_name);
+            		Horn.Field.setValue("id_no1", clientData[i].id_no);
+            		Horn.Field.setValue("custacct_type_name", clientData[i].custacct_type_name);
+            		Horn.Field.setValue("custacct_group_name", clientData[i].custacct_group_name);
+            		Horn.Field.setValue("cust_property_name", clientData[i].cust_property_name);
+            		Horn.Field.setValue("client_status_name", clientData[i].client_status_name);
+            		Horn.Field.setValue("corp_risk_level_name", clientData[i].corp_risk_level_name);
+            		Horn.Field.setValue("nationality_name", clientData[i].nationality_name);
+            		Horn.Field.setValue("client_gender", clientData[i].client_gender);
+            	            }
+		}
+		
+		// 不合格账户判断
+				
+		if($.trim(client_status) != ""){
+			alert("该客户代码状态不正常:" + client_status);
+			Horn.Field.setValue("client_id", "");
+			clearCommonData("AC");
+			return;
+		}
+		// 个人15位身份证升位判断
+					if($.trim(id_no_15) != ""){
+				alert("客户代码:"+client_id+"对应身份证号是15位，需要去“一户通”-“联合修改”-“身份证号升位”菜单做身份证号升位！");
+				Horn.Field.setValue("client_id", "");
+				clearCommonData("AC");
+				return;
+			}
+				// 客户代码切换后获取资金账户前处理
+				// 加载资金账户
+					loadBusinAccount();
+			// 不存在状态正常的资金账户
+			if(busin_account_flag == "0"){
+				clearCommonData("AF");
+				return;
+			}
+			// 资金账户切换
+			changeBusinAccount();
+				
+		// 显示客户代码，通过客户代码查询代理人
+					// 加载代理人信息
+			loadDeputy(organ_flag, "", "deputy_remark", "");
+				
+		//加载资产账户
+				
+		
+		// ----------------- 下面是引用界面自定义方法的实现 ------------------
+		// 客户代码切换后处理
+				
+		// 自动加载表格数据
+				
+	}
+	
+	/**
+	 * 加载资金账户模板
+	 */
+	function loadBusinAccountModel(){
+		var branch_no = Horn.Field.getValue("branch_no");
+		Horn.post("/iwm/credit/credit/loadBusinTemplate.json",{"branch_no":branch_no},function(data){
+			Horn.getComp("businAccount.gt_azjmb").addDatas(data.gt_azjmb,true);
+			Horn.getComp("businAccount.busiacct_type").addDatas(data.busiacct_type,true);
+			Horn.getComp("businAccount.busiacct_room").addDatas(data.busiacct_room,true);
+			Horn.getComp("businAccount.busiacct_group").addDatas(data.busiacct_group,true);
+			Horn.getComp("businAccount.money_type").addDatas(data.money_type,true);
+			Horn.getComp("businAccount.rate_kind").addDatas(data.rate_kind,true);
+			Horn.getComp("businAccount.en_entrust_way").addDatas(data.en_entrust_way,true);
+			Horn.getComp("businAccount.busiacct_agent_rights").addDatas(data.busiacct_agent_rights,true);
+			Horn.getComp("businAccount.busin_rights").addDatas(data.busin_rights,true);
+			Horn.getComp("businAccount.busin_restriction").addDatas(data.busin_restriction,true);
+			Horn.getComp("businAccount.busiacct_trade_rights").addDatas(data.busiacct_trade_rights,true);
+		},function(data){
+			var error = Horn.getError(data) ;
+			alert(error) ;
+		},null,false);
+	}
+	
+	/**
+	 * 普通信用切换
+	 */
+	function changeAssetProp(){
+		// 加载资金账户
+					loadBusinAccount();
+			// 不存在状态正常的资金账户
+			if(busin_account_flag == "0"){
+				clearCommonData("AF");
+				return;
+			}
+			// 资金账户切换
+			changeBusinAccount();
+			}
+	
+	/**
+	 * 获取资金账户
+	 */
+	function loadBusinAccount(){
+		var client_id = Horn.Field.getValue("client_id");
+		var businsys_id = Horn.Field.getValue("businsys_id");
+		if(!client_id || $.trim(client_id) == ""){
+			return;
+		}
+		var params = {"client_id":client_id};
+		// 显示资金账号的子系统
+					params["businsys_id"] = 50;
+				// 显示普通资金账户（默认显示）
+					params["retainGeneral"] = true;
+				// 显示信用资金账户（默认不显示）
+				// 显示期权资金账户（默认不显示）
+				// 过滤辅资金账户（默认不过滤）
+				// 不过滤销户账户（默认过滤）
+				/*
+		 * 方臻 **2015.08.20 增加过滤资金账户方法
+		 */
+		// 过滤资金账户（默认不过滤）
+				
+				Horn.getComp('busin_account').clearList();
+		Horn.post("/iwm/secu/common/getBusinAccount.json",params,
+			function(businResult){
+				if(businResult && businResult.length > 0){
+					businData = businResult;
+			        var list = [];
+			        var busin_account_first = "";
+			        var getFirstBusinAccount = true;
+			        var isExistBusinAccount = false;
+	        		for(i=0;i<businResult.length;i++){
+	        			// 获取第一个状态正常或是符合要求的资金账户
+	        			if(retainBusinStatus[0] == "all" || $.inArray(businResult[i].businacct_status, retainBusinStatus) >= 0){
+	        				if(getFirstBusinAccount){
+	        					busin_account_first = businResult[i].busin_account;
+	        					Horn.Field.setValue("fund_account",businResult[i].fund_account);
+								getFirstBusinAccount = false;
+	        				}
+	        				isExistBusinAccount = true;
+	        			}
+	        			var singleData = {"value":businResult[i].busin_account,"label":businResult[i].busin_account};
+        			    list.push(singleData);
+	        		}
+	        		busin_account_flag = "2";
+	        		Horn.getComp("busin_account").addDatas(list,true);
+	        		// 存在状态正常的资金账户
+            		if(!isExistBusinAccount){
+            			busin_account_flag = "0";
+						alert("没有状态正常的资金账户");
+						return;
+            		}
+            								Horn.getComp("busin_account").setValue(busin_account_first);
+								    }else{
+			       busin_account_flag = "0";
+			       alert("未查询到资金账户");
+				   return;
+			    }
+	        },
+	        function(businResult){
+	     		var error = Horn.getError(businResult) ;
+	     		busin_account_flag = "0";
+	 			alert(error) ;
+	     	},
+	        null,false);
+	}
+	
+	/**
+	 * 资金账户切换
+	 */
+	function changeBusinAccount(){
+		var busin_account = Horn.Field.getValue("busin_account");
+		if( !busin_account || $.trim(busin_account) == "" ){
+			return;
+		}
+		var businacct_status = "";
+		for(i=0; i<businData.length; i++){
+			// 获取选中的资金账户状态
+            if(busin_account == businData[i].busin_account){
+            	if(retainBusinStatus[0] != "all" && $.inArray(businData[i].businacct_status, retainBusinStatus) < 0){
+            		businacct_status = businData[i].businacct_status_name;
+            		break;
+            	}
+            	// 选中的资金账户主辅标识
+            	Horn.Field.setValue("main_flag",businData[i].main_flag);
+            	Horn.Field.setValue("fund_account",businData[i].fund_account);
+            	Horn.Field.setValue("busin_businsys_id",businData[i].businsys_id);
+            }
+		}
+		if($.trim(businacct_status) != ""){
+			alert("该资金账户状态不正常:" + businacct_status);
+			Horn.Field.setValue("busin_account", "");
+			clearCommonData("AF");
+			return;
+		}
+		// 加载证券账户，市场类别exchange_type不显示时，默认加载证券账户；显示市场类别，切换exchange_type时，再加载证券账户
+									
+		// ------------- 下面是引用界面自定义方法的实现 -----------------
+		// 资金账户切换后处理
+					businChange();
+				
+	}
+	
+	/**
+	 * 加载交易市场类别列表
+	 */
+	function loadExchangeType(exchange_types){
+		if(!exchange_types){
+			exchange_types = "";
+		}
+		Horn.post("/iwm/secu/common/getExchangeTypes.json",{"exchange_types":exchange_types},
+			function(exchangeTypesResult){
+				var list = [];
+				if(exchangeTypesResult && exchangeTypesResult.length > 0){
+					for ( var e = 0; e < exchangeTypesResult.length; e++) {
+						var singleData = {"value":exchangeTypesResult[e].value,"label":exchangeTypesResult[e].label};
+						list.push(singleData);
+					}
+					Horn.getComp("exchange_type").addDatas(list,true);
+				}
+	        },
+	        function(exchangeTypesResult){
+	     		var error = Horn.getError(exchangeTypesResult) ;
+	 			alert(error) ;
+	     	},
+	        null,false);
+	}
+	
+	/**
+	 * 一码通切换
+	 */
+	function changeAcodeAccount(){
+		// ------------- 下面是引用界面自定义方法的实现 -----------------
+		// 一码通切换后处理
+			}
+	/**
+	 * 交易市场切换
+	 */
+	function changeExchangeType(){
+		// 交易市场切换后处理
+				var exchange_type = Horn.Field.getValue("exchange_type");
+		if(!exchange_type || exchange_type == ""){
+			return;
+		}
+				// ------------- 下面是引用界面自定义方法的实现 -----------------
+		// 交易市场切换后处理
+			}
+	/**
+	 * 查询中登证券账户
+	 */
+	function loadCSDCStockAccount(){
+		
+	}
+	/**
+	 * 查询本地证券账户
+	 */
+	function loadNativeStockAccount(){
+		var busin_account = Horn.Field.getValue("busin_account");
+		if(!busin_account || $.trim(busin_account) == ""){
+			return;
+		}
+		Horn.getComp("stock_account").clearList();
+		var exchange_type = Horn.Field.getValue("exchange_type");
+		var businsys_id = Horn.Field.getValue("busin_businsys_id");
+		var params = {"busin_account":busin_account, "exchange_type":exchange_type, "businsys_id":businsys_id};
+		Horn.post("/iwm/secu/common/getStockAccount.json",params,
+			function(stockResult){
+				if(stockResult && stockResult.length > 0){
+					stockData = stockResult;
+			        var list = [];
+			        var stock_account_first = "";
+			        var getFirstStockAccount = true;
+			        var isExistStockAccount = false;
+	        		for(i=0;i<stockResult.length;i++){
+	        			if(retainStockStatus[0] == "all" || $.inArray(stockResult[i].holder_status, retainStockStatus) >= 0){
+	        				// 获取第一个状态正常或者符合要求的证券账户
+	        				if(getFirstStockAccount){
+	        					stock_account_first = stockResult[i].stock_account;
+								getFirstStockAccount = false;
+	        				}
+	        				isExistStockAccount = true;
+	        			}
+	        			var singleData = {"value":stockResult[i].stock_account,"label":stockResult[i].stock_account};
+        			    list.push(singleData);
+	        		}
+	        		stock_account_flag = "2";
+	        		Horn.getComp("stock_account").addDatas(list,true);
+	        		// 存在状态正常的证券账户
+            		if(!isExistStockAccount){
+            			stock_account_flag = "0";
+            			            				alert("没有状态正常的证券账户");
+            									return;
+            		}
+					Horn.getComp("stock_account").setValue(stock_account_first);
+			    }else{
+			    	stock_account_flag = "0";
+			    	alert("未查询到证券账户");
+			    	return;
+			    }
+	        },
+	        function(stockResult){
+	     		var error = Horn.getError(stockResult) ;
+	     		stock_account_flag = "0";
+	 			alert(error) ;
+	     	},
+	        null,false);
+	}
+	
+	/**
+	 * 查询本地证券账户
+	 */
+	function loadDistribStockAccount(){
+		var busin_account = Horn.Field.getValue("busin_account");
+		if(!busin_account || $.trim(busin_account) == ""){
+			return;
+		}
+		Horn.getComp("stock_account").clearList();
+		var exchange_type = Horn.Field.getValue("exchange_type");
+		var businsys_id = Horn.Field.getValue("busin_businsys_id");
+		var client_id = Horn.Field.getValue("client_id");
+		var params = {"client_id":client_id, "exchange_type":exchange_type, "businsys_id":businsys_id};
+		Horn.post("/iwm/secu/common/getStockAcctByClientId.json",params,
+			function(stockResult){
+				if(stockResult && stockResult.length > 0){
+					stockData = stockResult;
+			        var list = [];
+			        var stock_account_first = "";
+			        var getFirstStockAccount = true;
+			        var isExistStockAccount = false;
+	        		for(i=0;i<stockResult.length;i++){
+	        			if(retainStockStatus[0] == "all" || $.inArray(stockResult[i].holder_status, retainStockStatus) >= 0){
+	        				// 获取第一个状态正常或者符合要求的证券账户
+	        				if(getFirstStockAccount){
+	        					stock_account_first = stockResult[i].stock_account;
+								getFirstStockAccount = false;
+	        				}
+	        				isExistStockAccount = true;
+	        			}
+	        			var singleData = {"value":stockResult[i].stock_account,"label":stockResult[i].stock_account};
+        			    list.push(singleData);
+	        		}
+	        		stock_account_flag = "2";
+	        		Horn.getComp("stock_account").addDatas(list,true);
+	        		// 存在状态正常的证券账户
+            		if(!isExistStockAccount){
+            			stock_account_flag = "0";
+            			            				alert("没有状态正常的证券账户");
+            									return;
+            		}
+					Horn.getComp("stock_account").setValue(stock_account_first);
+			    }else{
+			    	stock_account_flag = "0";
+			    	alert("未查询到证券账户");
+			    	return;
+			    }
+	        },
+	        function(stockResult){
+	     		var error = Horn.getError(stockResult) ;
+	     		stock_account_flag = "0";
+	 			alert(error) ;
+	     	},
+	        null,false);
+	}
+	
+	/**
+	 * 证券账户切换
+	 */
+	function changeStockAccount(){
+		var stock_account = Horn.Field.getValue("stock_account");
+		if( !stock_account || $.trim(stock_account) == "" ){
+			return;
+		}
+		var holder_status = "";
+		for(i=0; i<stockData.length; i++){
+			// 获取选中的资金账户状态
+            if(stock_account == stockData[i].stock_account){
+            	if(retainStockStatus[0] != "all" && $.inArray(stockData[i].holder_status, retainStockStatus) < 0){
+            		holder_status = stockData[i].holder_status_name;
+            		break;
+            	}
+            }
+		}
+		if($.trim(holder_status) != ""){
+			alert("该证券账户状态不正常:" + holder_status);
+			Horn.Field.setValue("stock_account", "");
+			return;
+		}
+		
+		// ------------- 下面是引用界面自定义方法的实现 -----------------
+		// 证券账户切换后处理
+				
+	}
+	
+	/**
+	 * 提交表单
+	 * @param commonCheckPwd 是否需要校验密码：0 不校验；1或不传 校验。需配合checkCifPwd和function_id使用
+	 */
+	function pageSubmit(commonCheckPwd){
+		var cif_account = Horn.Field.getValue("cif_account");
+		var client_id = "";
+		var busin_account = "";
+		var client_branch_no = "";
+					client_id = Horn.Field.getValue("client_id");
+			client_branch_no = Horn.Field.getValue("branch_no");
+							busin_account = Horn.Field.getValue("busin_account");
+				
+		var menu_id_type1 = Horn.Util.getParamValue("menu_id") ;
+		if(menu_id_type1=="591103"||menu_id_type1=="170305"){
+			if(passwordHidden=="0"){
+				Horn.getComp("fund_password").setNotRequired();
+			}
+		}
+		
+		var form = Horn.getComp("tranferOutForm");
+		if(Horn.Validate.isFormValidate(form)){
+							form.submit();
+					}
+	}
+	
+	/**
+	 * 清空数据
+	 * @param flag：AC，AF
+	 */
+	function clearCommonData(flag){
+    	var form = Horn.getComp("tranferOutForm") ;
+    	if(!flag){
+    		form.setValues({'account_content':'','cif_account':'','organ_flag':'','branch_no':'','businsys_id':'','busin_businsys_id':'','fund_account':'','init_date':''});
+    	}
+    	if(!flag || flag == "AC"){
+    		form.setValues({"branch_no1":"", "branch_no_name":"", "full_name1":"", "client_name":"", "organ_flag_name":"", "id_kind_name":"", "id_no":"", "id_no1":"", 
+        		"custacct_type_name":"", "custacct_group_name":"", "cust_property_name":"", "client_status_name":"", "cancel_reason":"", "remark":""});
+    	}
+    	form.setValues({"isOpenStockAccount":""});
+					if(!flag){
+				Horn.getComp('client_id').clearList();
+			}
+									if(!flag || flag == "AC"){
+				Horn.getComp('busin_account').clearList();
+			}
+															if(Horn.getComp("deputy_id")!=undefined){
+				Horn.getComp('deputy_id').clearList();
+				showDeputy(true);// 初始化代理人
+									Horn.Field.setValue("deputy_remark", "");
+					$("#"+"deputy_remark"+"_desc").hide();
+								Horn.Field.setValue("deputy_scantask_id", "");
+			}
+					}
+	
+	
+	//获取资产账户
+	function getAsset_account(){
+		var client_id = Horn.Field.getValue("client_id");
+		var branch_no = Horn.Field.getValue("branch_no");
+		var cif_account = Horn.Field.getValue("cif_account");
+		var businsys_id = Horn.Field.getValue("businsys_id");
+		var param = {"client_id":client_id,"branch_no":branch_no,"cif_account":cif_account,"businsys_id":businsys_id};
+		var fundAccountUrl = '';
+		if("tranferOutForm" == "passwordSet_form"){
+			fundAccountUrl = 'http://10.176.108.50:8080/biz-iwm/pay/cf/findFundAccounts.json';
+		}else{
+			fundAccountUrl = 'http://10.176.108.50:8080/biz-iwm/pay/cf/findPayFundAccounts.json';
+		}
+		Horn.post(fundAccountUrl,param,          
+		    function(fund_data) { 
+			    if(fund_data){
+			    	fundAccountArray = fund_data;
+			    	switchFieldPayData.fundAccountInfo = fund_data[0];
+		    		addPayFundAccountSelectOption(fund_data);
+		    		//获取客户代码
+		    		//getClientId(cif_data.cif_account);
+			     }
+			},
+			function(data){					
+									var failure = null ;
+								if(data.errorNo && data.errorNo!='0'){
+					var error = Horn.getError(data) ;
+					if(jQuery.isFunction(failure)){
+						clearPayFundAccountSelectOption();
+						failure.call(this,data) ;
+					}
+					else{
+						alert(error) ;
+					}
+				}
+			}
+		);
+		
+	}
+	function addPayFundAccountSelectOption (data){
+		clearPayFundAccountSelectOption();
+		if(data){
+			if(data.length > 0){
+				var i = 0;
+				var dataArray = new Array();
+				for(i in data){	
+					dataArray.push({"label":data[i].busin_account,"value":data[i].busin_account+"("+data[i].branch_no_name+")"});
+				}
+				var fAccount = Horn.getComp("asset_account") ;
+				fAccount.addDatas(dataArray);
+//				fAccount.selectFirst();
+				$(document).trigger("click") ;
+				fAccount.field.trigger("focus") ;
+			}
+		}
+	}
+	
+	function pay_switch_field_events(obj){
+		
+					var success = jQuery.noop ;
+				var i = 0;
+		for(i in fundAccountArray){
+		    var fund_account = Horn.getComp("asset_account").getValue();
+			if(fund_account==fundAccountArray[i].busin_account){//海外和外汇子系统使用
+			     Horn.Field.setValue("businsys_id",fundAccountArray[i].businsys_id);
+			}
+			var objValue=obj.value;
+			objValue=objValue.substring(0, objValue.lastIndexOf('('));
+			
+			//切换资产账号校验密码前执行
+						
+			if(objValue == fundAccountArray[i].busin_account){
+				/**
+				 * 君行天下密码校验
+				 */
+				var check_flag = Horn.Field.getValue("check_flag");
+        		var jxtx_fllow_flag_type = Horn.Field.getValue("jxtx_fllow_flag_type");
+        		var menu_id = Horn.Util.getParamValue("menu_id") ;
+        		var hsMune_Type=Horn.Field.getValue("hsMune_Type0");
+        		var action_Type_No1=Horn.Field.getValue("action_Type_No1");
+        		var jxtxbranch_no=fundAccountArray[i].branch_no;
+        		var jxtxret=true;
+        		if(check_flag=="1"){
+        			if(hsMune_Type=="2"){
+        				var jxtxret =Iwm.Pwd.jxtxCheckPwd(menu_id,jxtx_fllow_flag_type,null,null,objValue,jxtxbranch_no,null);
+        			}else{
+        				if(hsMune_Type=="1"){
+        					if(action_Type_No1!="0"){
+        						var jxtxret =Iwm.Pwd.jxtxCheckPwd(menu_id,jxtx_fllow_flag_type,null,null,objValue,jxtxbranch_no,null);
+        					}
+        				}else{
+        					if(action_Type_No1!="0"){
+        						var jxtxret =Iwm.Pwd.jxtxCheckPwd(menu_id,jxtx_fllow_flag_type,null,null,objValue,jxtxbranch_no,null);
+        					}
+        				}
+        			}
+        		}
+        		if(jxtxret){
+        			
+        		}else{
+        			Horn.getComp('asset_account').setValue("");
+        			return;
+        		}
+				switchFieldPayData.fundAccountInfo = fundAccountArray[i];
+			}
+			
+			//如果是走君行天下的话那就必须在校验完资金账户以后才能去获取影像
+						
+		}
+		success.call(this,switchFieldPayData);
+	}
+	
+function clearPayFundAccountSelectOption(){		
+	Horn.getComp("asset_account").clearList();
+}
+	
+</script>
+
+								<input type="hidden" name="action_in" id="action_in"
+									class="not-clear" value="0" />
+								<input type="hidden" name="busin_type" id="busin_type"
+									class="not-clear" value="0" />
+								<input type="hidden" name="join_business_type" class="not-clear"
+									value="0" />
+								<input type="hidden" name="bank_trans_way" id="bank_trans_way"
+									class="not-clear" value="0" />
+								<input type="hidden" name="payee_account_type" class="not-clear"
+									value="0" />
+								<input type="hidden" name="auth_product_type"
+									id="auth_product_type" class="not-clear" value="a" />
+								<input type="hidden" id="password_info" />
+								<li class="hc_panel-li "><span title="支付密码"> <b
+										class="hc_red">*</b> 支付密码</span>
+									<div class="hc_password">
+										<input type="password" name="fund_password" maxlength=""
+											value="" onblur=""
+											check="required;num;length(6,8);getFundPasswordInfo;checkFundPassword;" />
+									</div>
+									<div style="display:none;"></div></li>
+								<li class="hc_panel-li "><span title="收款人姓名"> <b
+										class="hc_red">*</b> 收款人姓名</span>
+									<div class="hc_textfield">
+										<input type="text" name="payee_name" maxlength="" value=""
+											onchange="" check="required;length(1,60);" />
+									</div>
+									<div style="display:none;"></div></li>
+
+								<li class="hc_panel-li "><span title="收款方银行"> 收款方银行</span>
+									<div class="hc_combox" pKeyField=pLabel keyField=label
+										titleField=value showLabel="true">
+										<input type="hidden" name="bank_no" check="" /> <input
+											multiple="" type="text" onchange="bankChange()"
+											readonly="readonly" delimiter="," />
+
+										<div class="hc_checkboxdiv" multiple_line="false">
+											<ul>
+
+											</ul>
+										</div>
+									</div>
+									<div style="display:none;"></div></li>
+
+								<li class="hc_panel-li "><span title="开户行省份"> 开户行省份</span>
+									<div class="hc_combox" pKeyField=pLabel keyField=label
+										titleField=value showLabel="true">
+										<input type="hidden" name="province_code" check="" /> <input
+											multiple="" type="text" onchange="provinceChange()"
+											readonly="readonly" delimiter="," />
+
+										<div class="hc_checkboxdiv" multiple_line="false">
+											<ul>
+
+											</ul>
+										</div>
+									</div>
+									<div style="display:none;"></div></li>
+
+								<li class="hc_panel-li "><span title="开户行市/县">
+										开户行市/县</span>
+									<div class="hc_combox" pKeyField=pLabel keyField=label
+										titleField=value showLabel="true">
+										<input type="hidden" name="city_code" check="" /> <input
+											multiple="" type="text" onchange="cityChange()"
+											readonly="readonly" delimiter="," />
+
+										<div class="hc_checkboxdiv" multiple_line="false">
+											<ul>
+
+											</ul>
+										</div>
+									</div>
+									<div style="display:none;"></div></li>
+								<li class="hc_panel-li h_licols-2"><span title=开户行网点><b
+										class=hc_red>*</b> 开户行网点</span>
+									<div class='bank-branch-box'>
+										<input type='hidden' class="bank-branch-value"
+											name='bank_branch' check="required;"> <input
+											class="bank-branch" onkeydown='bankBranchChange()'
+											delimiter="," multiple="">
+									</div>
+									<div style="display: none"></div>
+									<li>
+										<div class="bank-branch-list" style="" multiple_line="false">
+											<ul></ul>
+										</div>
+										<li class="hc_panel-li h_licols-2"><span title="银行卡号">
+												<b class="hc_red">*</b> 银行卡号</span>
+											<div class="hc_textfield">
+												<input type="text" name="payee_account" maxlength=""
+													value="" onchange="resetPayeeAccount()" check="required;" />
+											</div>
+											<div style="display:none;"></div></li>
+
+										<li class="hc_panel-li "><span title="币种"> <b
+												class="hc_red">*</b> 币种</span>
+											<div class="hc_combox" pKeyField=pLabel keyField=label
+												titleField=value showLabel="true">
+												<input type="hidden" name="money_type" value="0"
+													check="required;;" /> <input multiple="" type="text"
+													onchange="getBalance()" readonly="readonly" value="0:人民币"
+													delimiter="," />
+
+												<div class="hc_checkboxdiv" multiple_line="false">
+													<ul>
+
+
+														<li title="人民币" pKeyCommand="$!{pItem.pLabel}" pKey=""
+															key="0"><label> 0:人民币 </label>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div style="display:none;"></div></li>
+										<li class="hc_panel-li "><span title="转出金额"> <b
+												class="hc_red">*</b> 转出金额</span>
+											<div class="hc_textfield">
+												<input type="text" name="occur_balance" maxlength=""
+													value="" onkeyup="upRmb(this.value)"
+													check="required;checkOccurBalance;" />
+											</div>
+											<div style="display:none;"></div></li>
+										<li class="hc_panel-li h_licols-2"><div id="rmb"
+												style="height:30px;color:red;text-align:right;padding-right:20px;">&nbsp;</div>
+									</li>
+										<li class="hc_panel-li "><span title="收款人手机号">
+												收款人手机号</span>
+											<div class="hc_textfield">
+												<input type="text" name="payee_mobile" maxlength="" value=""
+													onchange="" check="num;" />
+											</div>
+											<div style="display:none;"></div></li>
+
+										<li class="hc_panel-li "><span title="交易性质"> <b
+												class="hc_red">*</b> 交易性质</span>
+											<div class="hc_combox" pKeyField=pLabel keyField=label
+												titleField=value showLabel="true">
+												<input type="hidden" name="gt_ftu_trantype" value="121010"
+													check="required;" /> <input multiple="" type="text"
+													$event.event="$event.function" ref="gt_ftu_trantype_s"
+													readonly="readonly" value="121010:一般贸易" delimiter="," />
+												<div>gt_ftu_trantype horn</div>
+
+
+											</div>
+											<div style="display:none;"></div></li>
+
+										<li class="hc_panel-li "><span title="对方国籍"> <b
+												class="hc_red">*</b> 对方国籍</span>
+											<div class="hc_combox" pKeyField=pLabel keyField=label
+												titleField=value showLabel="true">
+												<input type="hidden" name="nationality" value="CHN"
+													check="required;" /> <input multiple="" type="text"
+													onchange="nationalityChange()" ref="csdc_nationality_s"
+													readonly="readonly" value="CHN:中国" delimiter="," />
+												<div>csdc_nationality horn</div>
+
+
+											</div>
+											<div style="display:none;"></div></li>
+
+										<li class="hc_panel-li "><span title="对方地区码"> <b
+												class="hc_red">*</b> 对方地区码</span>
+											<div class="hc_combox" pKeyField=pLabel keyField=label
+												titleField=value showLabel="true">
+												<input type="hidden" name="opp_area_code" value="310000"
+													check="required;" /> <input multiple="" type="text"
+													$event.event="$event.function" ref="opp_area_code_s"
+													readonly="readonly" value="310000:上海市" delimiter="," />
+												<div>opp_area_code horn</div>
+
+
+											</div>
+											<div style="display:none;"></div></li>
+										<li class="hc_panel-li "><span title="备注"> 备注</span>
+											<div class="hc_textfield">
+												<input type="text" name="remark" maxlength="" value=""
+													check="" />
+											</div>
+											<div style="display:none;"></div></li>
+										<li class="hc_panel-li "><span title="代理备注"> 代理备注</span>
+											<div class="hc_textfield">
+												<input type="text" name="deputy_remark" maxlength="2000"
+													value="" check="" />
+											</div>
+											<div style="display:none;"></div></li>
+										<li class='hc_panel-li'>
+											<div id='deputy_remark_desc'
+												style='padding-left:95px;display:none;'>
+												<font color='#FF0000'>*请备注无代理人原因</font>
+											</div></li>
+							</ul>
+						</div>
+					</div>
+					<div class="h_colspan-1" style="height:390px;" name="_colspan">
+						<div class=" userborderT userborderR userborderB"
+							style="height:388px;" name="_border">
+							<ul class="h_panel" name="">
+								<li class="hc_panel-li "><span title="机构编号：">机构编号：</span>
+									<div name="branch_no1" title="" class="hc_label"></div>
+									<div style="display:none;"></div></li>
+								<li class="hc_panel-li "><span title="机构名称：">机构名称：</span>
+									<div name="branch_no_name" title="" class="hc_label"></div>
+									<div style="display:none;"></div></li>
+								<li class="hc_panel-li "><span title="客户姓名：">客户姓名：</span>
+									<div name="client_name1" title="" class="hc_label"></div>
+									<div style="display:none;"></div></li>
+								<li class="hc_panel-li "><span title="客户性别：">客户性别：</span>
+									<div name="client_gender_name" title="" class="hc_label"></div>
+									<div style="display:none;"></div></li>
+								<li class="hc_panel-li "><span title="证件类别：">证件类别：</span>
+									<div name="id_kind_name" title="" class="hc_label"></div>
+									<div style="display:none;"></div></li>
+								<li class="hc_panel-li "><span title="证件号码：">证件号码：</span>
+									<div name="id_no1" title="" class="hc_label"></div>
+									<div style="display:none;"></div></li>
+								<li class="hc_panel-li "><span title="账户状态：">账户状态：</span>
+									<div name="businacct_status" title="" class="hc_label"></div>
+									<div style="display:none;"></div></li>
+								<li class="hc_panel-li "><span title="资金余额：">资金余额：</span>
+									<div name="transfer_balance" title="" class="hc_label"></div>
+									<div style="display:none;"></div></li>
+
+
+							</ul>
+						</div>
+					</div>
+					<div id="scanFinish" class="h_dhtml_window" width='220'
+						height='120' center='true' modal='true' caption='请对比印鉴卡，不存在请关闭'>
+						<div class="h_columns-0">
+							若存在印鉴卡影像，请完成印鉴卡对比，再点击“确定”按钮。
+							<div class="h_colspan-0">
+								<div class="h_btndiv" name="">
+									<button type="button" name="" onclick="scanFinish();">确定</button>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="h_colspan-0">
+						<div class="h_btndiv" name="">
+							<button type="button" name="" onclick="pay.submit()">提交</button>
+							<button type="button" name="reset" onclick="pay.reset()">重置</button>
+						</div>
+					</div>
+				</form>
+
+				<object id="HsEncoder_E1DC706E925B"
+					classid="clsid:59F16F7C-EABF-4EE2-8B52-E1DC706E925B" width='0px'
+					height='0px' style='' codebase=''> </object>
+				<object id="HsPwd_D0E5CC529727"
+					classid="clsid:DC108423-551C-4AF8-9393-D0E5CC529727" width='0px'
+					height='0px' style='' codebase=''> </object>
+
+			</div>
+			<script type="text/javascript">
+var form='',clients,
+nationalitys=eval('[{"label":"ABW","value":"阿鲁巴"},{"label":"ADR","value":"安道尔"},{"label":"AFG","value":"阿富汗"},{"label":"AGO","value":"安哥拉"},{"label":"AIA","value":"安圭拉"},{"label":"ALB","value":"阿尔巴尼亚"},{"label":"ALG","value":"阿尔及利亚"},{"label":"ANT","value":"荷属安的列斯"},{"label":"ARE","value":"阿拉伯联合酋长国"},{"label":"ARG","value":"阿根廷"},{"label":"ARM","value":"亚美尼亚共和国"},{"label":"ASM","value":"美属萨摩亚"},{"label":"ATA","value":"南极洲"},{"label":"ATF","value":"法属南部领土"},{"label":"ATG","value":"安提瓜和巴布达"},{"label":"AUS","value":"澳大利亚"},{"label":"AUT","value":"奥地利"},{"label":"AZE","value":"阿塞拜疆共和国"},{"label":"BAH","value":"巴哈林"},{"label":"BDI","value":"布隆迪"},{"label":"BEL","value":"比利时"},{"label":"BEN","value":"贝宁"},{"label":"BFA","value":"布基纳法索"},{"label":"BGD","value":"孟加拉"},{"label":"BGR","value":"保加利亚"},{"label":"BHR","value":"巴林"},{"label":"BHS","value":"巴哈马"},{"label":"BIH","value":"波黑"},{"label":"BLR","value":"白俄罗斯"},{"label":"BLZ","value":"伯利兹"},{"label":"BMU","value":"百慕大"},{"label":"BOL","value":"玻利维亚"},{"label":"BRA","value":"巴西"},{"label":"BRB","value":"巴巴多斯"},{"label":"BRN","value":"文莱"},{"label":"BTN","value":"不丹"},{"label":"BVI","value":"英属维京群岛"},{"label":"BVT","value":"布维岛"},{"label":"BWA","value":"博茨瓦纳"},{"label":"CAF","value":"中非共和国"},{"label":"CAN","value":"加拿大"},{"label":"CCK","value":"科科斯(基林)群岛"},{"label":"CHE","value":"瑞士"},{"label":"CHL","value":"智利"},{"label":"CHN","value":"中国"},{"label":"CIV","value":"科特迪瓦"},{"label":"CMR","value":"喀麦隆共和国"},{"label":"CNI","value":"海峡群岛"},{"label":"COD","value":"刚果（金）"},{"label":"COG","value":"刚果共和国"},{"label":"COK","value":"库克岛"},{"label":"COL","value":"哥伦比亚"},{"label":"COM","value":"科摩罗"},{"label":"CPV","value":"佛得角"},{"label":"CRI","value":"哥斯达黎加"},{"label":"CSR","value":"圣诞岛"},{"label":"CTN","value":"中国台湾"},{"label":"CUB","value":"古巴"},{"label":"CXR","value":"圣诞岛"},{"label":"CYM","value":"开曼群岛"},{"label":"CYP","value":"塞浦路斯"},{"label":"CZE","value":"捷克"},{"label":"DEU","value":"德国"},{"label":"DJI","value":"吉布提"},{"label":"DMA","value":"多米尼克"},{"label":"DNK","value":"丹麦"},{"label":"DOM","value":"多米尼加"},{"label":"ECU","value":"厄瓜多尔"},{"label":"EGY","value":"埃及"},{"label":"ERI","value":"厄立特亚国"},{"label":"ESH","value":"西撒哈拉"},{"label":"ESP","value":"西班牙"},{"label":"EST","value":"爱沙尼亚"},{"label":"ETH","value":"埃塞俄比亚"},{"label":"FIN","value":"芬兰"},{"label":"FJI","value":"斐济"},{"label":"FLK","value":"福克兰群岛（马尔维纳斯群岛）"},{"label":"FRA","value":"法国"},{"label":"FRO","value":"法罗群岛"},{"label":"FSM","value":"密克罗尼西亚联邦"},{"label":"GAB","value":"加蓬"},{"label":"GBR","value":"英国"},{"label":"GEO","value":"格鲁吉亚"},{"label":"GHA","value":"加纳共和国"},{"label":"GIB","value":"直布罗陀"},{"label":"GIN","value":"几内亚"},{"label":"GLP","value":"瓜德罗普"},{"label":"GMB","value":"冈比亚"},{"label":"GNB","value":"几内亚比绍"},{"label":"GNQ","value":"赤道几内亚共和国"},{"label":"GRC","value":"希腊"},{"label":"GRD","value":"格林纳达"},{"label":"GRL","value":"格陵兰"},{"label":"GTM","value":"危地马拉"},{"label":"GUF","value":"法属圭亚那"},{"label":"GUM","value":"关岛"},{"label":"GUS","value":"格恩西"},{"label":"GUY","value":"圭亚那"},{"label":"HKG","value":"中国香港"},{"label":"HMD","value":"赫德岛和麦克唐纳岛"},{"label":"HND","value":"洪都拉斯"},{"label":"HRV","value":"克罗地亚"},{"label":"HTI","value":"海地共和国"},{"label":"HUN","value":"匈牙利"},{"label":"IDN","value":"印尼"},{"label":"IND","value":"印度"},{"label":"INE","value":"尼维斯岛"},{"label":"IOM","value":"马恩岛"},{"label":"IOT","value":"英属印度洋领地"},{"label":"IRL","value":"爱尔兰"},{"label":"IRN","value":"伊朗"},{"label":"IRQ","value":"伊拉克"},{"label":"ISL","value":"冰岛"},{"label":"ISR","value":"以色列"},{"label":"ITA","value":"意大利"},{"label":"JAM","value":"牙买加"},{"label":"JOR","value":"约旦"},{"label":"JPN","value":"日本"},{"label":"JSY","value":"泽西"},{"label":"KAZ","value":"哈萨克斯坦共和国"},{"label":"KEN","value":"肯尼亚共和国"},{"label":"KGZ","value":"吉尔吉斯斯坦"},{"label":"KHM","value":"柬埔寨"},{"label":"KIR","value":"基里巴斯共和国"},{"label":"KNA","value":"圣基茨和尼维斯联邦"},{"label":"KOR","value":"韩国"},{"label":"KWT","value":"科威特"},{"label":"LAO","value":"老挝"},{"label":"LBN","value":"黎巴嫩"},{"label":"LBR","value":"利比里亚"},{"label":"LBY","value":"利比亚"},{"label":"LCA","value":"圣卢西亚"},{"label":"LIE","value":"列支敦士登"},{"label":"LKA","value":"斯里兰卡"},{"label":"LSO","value":"莱索托"},{"label":"LTU","value":"立陶宛共和国"},{"label":"LUX","value":"卢森堡"},{"label":"LVA","value":"拉脱维亚"},{"label":"MAC","value":"中国澳门"},{"label":"MAN","value":"曼岛"},{"label":"MAR","value":"摩洛哥"},{"label":"MCO","value":"摩纳哥"},{"label":"MDA","value":"摩尔多瓦"},{"label":"MDG","value":"马达加斯加"},{"label":"MDV","value":"马尔代夫"},{"label":"MEX","value":"墨西哥"},{"label":"MHL","value":"马绍尔群岛共和国"},{"label":"MKD","value":"马其顿"},{"label":"MLI","value":"马里共和国"},{"label":"MLT","value":"马耳他"},{"label":"MMR","value":"缅甸"},{"label":"MNG","value":"蒙古"},{"label":"MNP","value":"北马里亚纳"},{"label":"MOZ","value":"莫桑比克"},{"label":"MRT","value":"毛里塔尼亚"},{"label":"MSR","value":"蒙特塞拉特"},{"label":"MTQ","value":"马提尼克"},{"label":"MUS","value":"毛里求斯"},{"label":"MWI","value":"马拉维"},{"label":"MYS","value":"马来西亚"},{"label":"MYT","value":"马约特"},{"label":"NAM","value":"纳米比亚共和国"},{"label":"NCL","value":"新喀里多尼亚"},{"label":"NER","value":"尼日尔"},{"label":"NFK","value":"诺福克岛"},{"label":"NGA","value":"尼日利亚"},{"label":"NIC","value":"尼加拉瓜"},{"label":"NIU","value":"纽埃"},{"label":"NLA","value":"荷兰属地"},{"label":"NLD","value":"荷兰"},{"label":"NOR","value":"挪威"},{"label":"NPL","value":"尼泊尔"},{"label":"NRU","value":"瑙鲁共和国"},{"label":"NZL","value":"新西兰"},{"label":"OTH","value":"其它国家地区"},{"label":"OWN","value":"阿曼"},{"label":"PAK","value":"巴基斯坦"},{"label":"PAN","value":"巴拿马"},{"label":"PCN","value":"皮特凯恩群岛"},{"label":"PER","value":"秘鲁"},{"label":"PHL","value":"菲律宾"},{"label":"PLW","value":"帕劳"},{"label":"PNG","value":"巴布亚新几内亚独立国"},{"label":"POL","value":"波兰"},{"label":"PRI","value":"波多黎各"},{"label":"PRK","value":"朝鲜"},{"label":"PRT","value":"葡萄牙"},{"label":"PRY","value":"巴拉圭"},{"label":"PSE","value":"巴勒斯坦"},{"label":"PST","value":"巴勒斯坦"},{"label":"PYF","value":"法属波利尼西亚"},{"label":"QAT","value":"卡塔尔"},{"label":"REU","value":"留尼汪"},{"label":"ROM","value":"罗马尼亚"},{"label":"RUS","value":"俄罗斯联邦"},{"label":"RWA","value":"卢旺达"},{"label":"SAU","value":"沙特阿拉伯"},{"label":"SCG","value":"塞尔维亚和黑山"},{"label":"SDN","value":"苏丹"},{"label":"SEN","value":"塞内加尔"},{"label":"SGP","value":"新加坡"},{"label":"SGS","value":"南乔治亚岛和南桑德韦奇岛"},{"label":"SHN","value":"圣赫勒拿"},{"label":"SJM","value":"斯瓦尔巴岛和扬马延岛"},{"label":"SLB","value":"所罗门群岛"},{"label":"SLE","value":"塞拉利昂"},{"label":"SLV","value":"萨尔瓦多"},{"label":"SMR","value":"圣马力诺"},{"label":"SOM","value":"索马里"},{"label":"SPM","value":"圣皮埃尔和密克隆"},{"label":"STP","value":"圣多美和普林西比"},{"label":"SUR","value":"苏里南共和国"},{"label":"SVK","value":"斯洛伐克"},{"label":"SVN","value":"斯洛文尼亚"},{"label":"SWE","value":"瑞典"},{"label":"SWZ","value":"斯威士兰"},{"label":"SYC","value":"塞舌尔"},{"label":"SYR","value":"叙利亚"},{"label":"TCA","value":"特克斯科斯群岛"},{"label":"TCD","value":"乍得"},{"label":"TGO","value":"多哥"},{"label":"THA","value":"泰国"},{"label":"TJK","value":"塔吉克斯坦"},{"label":"TKL","value":"托克劳"},{"label":"TKM","value":"土库曼斯坦"},{"label":"TMP","value":"东帝汶"},{"label":"TON","value":"汤加"},{"label":"TTO","value":"特立尼达和多巴哥"},{"label":"TUN","value":"突尼斯"},{"label":"TUR","value":"土耳其"},{"label":"TUV","value":"图瓦卢"},{"label":"TZA","value":"坦桑尼亚"},{"label":"UGA","value":"乌干达共和国"},{"label":"UKR","value":"乌克兰"},{"label":"UMI","value":"美国本土外小岛屿"},{"label":"URY","value":"乌拉圭"},{"label":"USA","value":"美国"},{"label":"UZB","value":"乌兹别克斯坦"},{"label":"VAT","value":"梵蒂冈"},{"label":"VCT","value":"圣文森特和格林纳丁斯"},{"label":"VEN","value":"委内瑞拉"},{"label":"VGB","value":"英属维尔京群岛"},{"label":"VIR","value":"美属维尔京群岛"},{"label":"VNM","value":"越南"},{"label":"VUT","value":"瓦努阿图"},{"label":"WLF","value":"瓦利斯和富图纳"},{"label":"WSM","value":"西萨摩亚"},{"label":"YEM","value":"也门"},{"label":"YUG","value":"南斯拉夫"},{"label":"ZAF","value":"南非"},{"label":"ZAR","value":"扎伊尔"},{"label":"ZMB","value":"赞比亚"},{"label":"ZWE","value":"津巴布韦"}]');
+$(document).ready(function(){
+	$("input[name='branch_no']").val('8888');
+	form = Horn.getComp("tranferOutForm");
+	initBank();
+	$(".bank-branch").focus(function(){
+		$(".bank-branch-list").show();
+	});
+	$("body").click(function(e){
+		var target = $(e.target); 
+		if(target.closest(".bank-branch-list").length == 0&&target.closest(".bank-branch").length!=1){
+			$(".bank-branch-list").hide();
+		}
+	});
+});
+var pay = {
+	submit: function(){
+		if(Horn.Validate.isFormValidate(form)){
+			form.submit();
+		}
+	},
+	reset: function(){
+		$("form input[name]").not(".not-clear").each(function(){
+			var name = $(this).attr("name");
+			if(Horn.getComp(name)!=undefined)
+				Horn.getComp(name).setValue("");
+		});
+		$(".bank-branch").val("");
+	},
+	success:function(data){
+		var form = Horn.getComp("tranferOutForm");
+		if(data){
+			var vals = {cif_account:data.cif_account,client_name:data.client_name,client_gender_name:data.client_gender_name,id_kind_name:data.id_kind_name,id_no:data.id_no}
+			form.setValues(vals);
+			getClientCode(data.cif_account);
+			Horn.Field.setValue("organ_flag",data.organ_flag);
+		}else{
+			var accountLabel = $("div.hc_switchfieldlabel span").text();
+			Horn.Validate.addError("account_content","输入\""+accountLabel +"\"不正确,请确认后重新输入！")
+		}
+	},
+	failure: function(data){
+		var error=Horn.getError(data);
+		alert(error);
+		Horn.getComp("account_content").field.focus();
+	}
+};
+var list=[];
+
+/**
+ * 资金账号为FTN转出国籍去除"中国"选项
+ */
+function resetPayeeAccount(){
+	var nats=[];
+	var n=0;
+	var payee_account = Horn.getComp("payee_account").getValue();
+	if(payee_account=="")return ;
+	if(/^(FTN|FTF)/.test(payee_account)){
+		for(i=0;i<nationalitys.length;i++){
+			if(nationalitys[i].label!='CHN'){
+				nats[n++] = nationalitys[i];
+			}
+		}
+		Horn.getComp("nationality").addDatas(nats, true);
+	}else{
+		Horn.getComp("nationality").addDatas(nationalitys, true);
+		Horn.getComp("nationality").setValue("CHN");
+	}
+	nationalityChange();
+}
+function getFundPasswordInfo(){
+	var busin_account = Horn.Field.getValue("busin_account");
+	var fund_password = HsEncoder_E1DC706E925B.Encode(Horn.getComp("fund_password").getValue());
+	var branch_no = Horn.Field.getValue("branch_no");
+	Horn.post("/iwm/ftz/pay/checkPayPassword.json",{fund_password: fund_password,fund_account: busin_account,branch_no: branch_no},function(data){
+		$("#password_info").val("");
+	},function(data){
+		$("#password_info").val(Horn.getError(data));
+	},null,false);
+	return true;
+}
+
+function checkFundPassword(){
+	var info = $("#password_info").val();
+	if(info==''){
+		return true;
+	}else{
+		return info;
+	}
+}
+function checkOccurBalance(val){
+	if(!/^\d+(\.\d{1,2})?$/.test(val)){
+		return "转出金额为保留两位小数的正整数";
+	}else{
+		return true;
+	}
+}
+function businChange(){
+	var busin_account=Horn.Field.getValue("busin_account");
+	Horn.post("/iwm/ftz/common/getInfoByBusinAccunt.json",{busin_account: busin_account},
+        function(result){
+            if(jQuery.type(result) == 'array'){
+            	var status={S_0:'正常',S_1:'冻结'};
+				eval("var businacct_status = status.S_"+result[0].businacct_status);
+				Horn.getComp("businacct_status").setValue(businacct_status);
+			}else{
+               alert(Horn.Util.encode(result));
+               return;
+            }
+        },
+        function(error){
+            alert(Horn.getError(error)) ;
+        },
+    null,true);
+    getBalance();
+    scanImage();
+}
+
+function nationalityChange(){
+	var nationality=Horn.getComp("nationality").getValue();
+	if(nationality=='CHN'){
+		Horn.getComp("opp_area_code").setEnable(true);
+		Horn.getComp("opp_area_code").setRequired();
+		Horn.getComp("opp_area_code").setValue("310000");
+	}else{
+		Horn.getComp("opp_area_code").setEnable(false);
+		Horn.getComp("opp_area_code").setNotRequired();
+		Horn.getComp("opp_area_code").setValue("");
+	}
+}
+
+function getBalance(){
+    var cif_account=Horn.Field.getValue("cif_account");
+    var busin_account=Horn.Field.getValue("busin_account");
+    var money_type=Horn.Field.getValue("money_type");
+    Horn.post("/iwm/ftz/pay/getBalance.json",{cif_account: cif_account, busin_account: busin_account, money_type: money_type},
+     function(data){
+            if(jQuery.type(data) == 'array'){
+            	Horn.getComp("transfer_balance").setValue(data[0].transfer_balance);
+            }
+        },
+        function(error){
+            alert(Horn.getError(error)) ;
+        },
+    null,true);
+}
+function upRmb(val){
+	if(val!=""&&val.substring(val.length-1)=='.')return;
+	$("#rmb").text(toBig(val));
+}
+/**
+ *金额大写转换函数
+ */
+function toBig(n) { 
+    if (!/^(0|\d{0,12})(\.\d{1,2})?$/.test(n))
+        return "无法显示";
+    var unit = "万千百拾亿千百拾万千百拾元角分",
+    num = '零壹贰叁肆伍陆柒捌玖',
+    str = "";
+    var p = Math.floor(n * 100).toString();
+    unit = unit.substr(unit.length - p.length);
+    for (var i = 0; i < p.length ; i++){
+        str += num.charAt(p.charAt(i)) + unit.charAt(i);
+    }
+    return str.replace(/零[千百拾角]/g, "零").replace(/零+/g, "零").replace(/零(万|亿|元)/g, "$1").replace(/(亿)万|^壹(拾)/g, "$1$2").replace(/^元零?|零分/g, "").replace(/元$/g, "元整");
+}
+function initBank(){
+	var branch_no = Horn.Field.getValue("branch_no");
+	Horn.post("/iwm/ftz/common/getBanks.json",{branch_no: branch_no},function(data){
+		var bank_no = Horn.getComp("bank_no");
+		bank_no.keyAttr="bank_no";
+		bank_no.valueAttr="bank_name";
+		bank_no.addDatas(data,true);
+	},null,true);
+}
+function bankChange(){
+	var branch_no = Horn.Field.getValue("branch_no");
+	Horn.post("/iwm/ftz/common/getProvinces.json",{branch_no: branch_no},function(data){
+		var province_code = Horn.getComp("province_code");
+		province_code.keyAttr="province_code";
+		province_code.valueAttr="province_name";
+		province_code.addDatas(data);
+	},null,true);
+	Horn.Field.setValue("province_code","");
+	Horn.Field.setValue("city_code","");
+	$(".bank-branch-value").val('');
+	$(".bank-branch").val('');
+	addDatas([],true);
+}
+function provinceChange(){
+	var province_code = Horn.Field.getValue("province_code");
+	var branch_no = Horn.Field.getValue("branch_no");
+	Horn.post("/iwm/ftz/common/getCities.json",{province_code: province_code,branch_no: branch_no},function(data){
+		var city_code = Horn.getComp("city_code")
+		city_code.keyAttr="city_code";
+		city_code.valueAttr="city_name";
+		city_code.addDatas(data,true);
+	},null,false);
+}
+function cityChange(){
+	var bank_no = Horn.Field.getValue("bank_no");
+	var city_code = Horn.Field.getValue("city_code");
+	var branch_no = Horn.Field.getValue("branch_no");
+	if(city_code=='')return;
+	Horn.post("/iwm/ftz/common/getBankBranchs.json",{bank_no: bank_no,city_code: city_code,branch_no: branch_no},function(data){
+		addDatas(data,true);
+	},null,true);
+}
+function bankBranchChange(event){
+	event=window.event?window.event:event;
+	if(event.keyCode==13){
+		var fuzzy = $(".bank-branch").val();
+		var bank_branch,bank_branch_name;
+		var num = /[0-9]\d*/;
+		if(num.test(fuzzy)){
+			bank_branch = fuzzy;
+		}else{
+			bank_branch_name = fuzzy;
+		}
+		var branch_no = Horn.Field.getValue("branch_no");
+		Horn.post("/iwm/ftz/common/fuzzyQueryBankBranchsBlur.json",{bank_branch: bank_branch,bank_branch_name: bank_branch_name,branch_no: branch_no},function(data){
+			addDatas(data,true);
+		},null,true);
+	}
+}
+function addDatas(data, isClear){
+	var list = [],
+	 	listDiv = $(".bank-branch-list") ,
+	 	keyAttr = "bank_branch",
+	 	valueAttr = "bank_branch_name",
+	 	showLabel = true;
+	 	
+	if (jQuery.type(data) == "array") {
+		list = data;
+	} else if (jQuery.isPlainObject(data)) {
+		if (jQuery.isEmptyObject(data)) {
+			return;
+		}
+		list.push(data);
+	}
+	
+	if (isClear) {
+		$(".bank-branch-list ul").empty();
+	}
+	if (list.length > 0) {
+		var ul = listDiv.children("ul");
+		var multipleline = ( listDiv.attr('multiple_line') == 'true');
+		$.each(list, function(index, obj) {
+			var key = obj[keyAttr],
+				val = obj[valueAttr];
+			if (key) {
+				var li = ul.children("li[key='" + key + "']");
+				if (li.length == 0) {
+					var li = $("<li key='" + key + "' title='"+ val + "'></li>");
+					var label = $('<label></label>');
+					label.text( (showLabel ?  key + ":" : "" ) + val);
+					if(multipleline){
+						label.prepend('<input type="checkbox" />');
+					}
+					li.append(label);
+					ul.append(li);
+				}
+			}
+		});
+	}
+	listDiv.show();
+	$(".bank-branch-list ul li").bind("click",function(){
+		var key = $(this).attr("key");
+		var val = $(this).text();
+		$(".bank-branch-value").val(key);
+		$(".bank-branch").val(val);
+		listDiv.hide();
+	});
+}
+
+//印鉴卡影像拍照
+	function scanImage(){
+		var cif_account = Horn.Field.getValue("cif_account");
+		var organ_flag = Horn.Field.getValue("organ_flag");
+
+		var busin_account = Horn.Field.getValue("busin_account");
+		
+		var branch_no = Horn.Field.getValue("branch_no");
+		var image_no = 'f1'; 
+
+		Horn.post("/archives/scanCacheConfig.json",{'image_no':image_no,'branch_no':branch_no,'client_id':cif_account},
+			function(data){
+				var win = Horn.Dhtmlx.get("scanFinish") ;
+				win.setModal(true) ;
+				win.show() ;
+				win.centerOnScreen() ;
+				location = 'ImagingScan:token='+data.acceptNo + ';sever=10.189.49.158:8088/imm                       ';
+			},
+			function(data){
+				if(data!=null && typeof(data.exception)!="undefined") {
+					alert("token生成失败："+data.exception.errorInfo);
+				}else{
+					alert("token生成失败：请求失败!");
+				}
+			}
+		);
+	}
+	
+	//印鉴卡拍照保存
+	function scanFinish(){
+		var win = Horn.Dhtmlx.get("scanFinish") ;
+		win.hide() ;
+		win.setModal(false) ;
+	}
+
+</script>
+			<div class="hc_hide_div">
+				<div class="hc_checkboxdiv" multiple_line="false"
+					ref_target="gt_ftu_trantype_s">
+					<ul>
+						<li key="121010" pKey="" title="一般贸易"><label>
+								121010:一般贸易 </label></li>
+						<li key="121020" pKey="" title="进料加工贸易"><label>
+								121020:进料加工贸易 </label></li>
+						<li key="121030" pKey="" title="海关特殊监管区域及保税监管场所进出境物流货物"><label>
+								121030:海关特殊监管区域及保税监管场所进出境物流货物 </label></li>
+						<li key="121040" pKey="" title="非货币黄金进出口"><label>
+								121040:非货币黄金进出口 </label></li>
+						<li key="121050" pKey="" title="金融性租赁贸易"><label>
+								121050:金融性租赁贸易 </label></li>
+						<li key="121060" pKey="" title="接受国家间、国际组织无偿援助和赠送的物资"><label>
+								121060:接受国家间、国际组织无偿援助和赠送的物资 </label></li>
+						<li key="121070" pKey="" title="国内机构或个人接受华侨、港澳台同胞、外籍华人等捐赠的物资"><label>
+								121070:国内机构或个人接受华侨、港澳台同胞、外籍华人等捐赠的物资 </label></li>
+						<li key="121080" pKey="" title="边境小额贸易"><label>
+								121080:边境小额贸易 </label></li>
+						<li key="121090" pKey="" title="对外承包工程货物出口"><label>
+								121090:对外承包工程货物出口 </label></li>
+						<li key="121990" pKey="" title="其他纳入海关统计的货物贸易"><label>
+								121990:其他纳入海关统计的货物贸易 </label></li>
+						<li key="122010" pKey="" title="离岸转手买卖"><label>
+								122010:离岸转手买卖 </label></li>
+						<li key="122020" pKey="" title="未纳入海关统计的非货币黄金"><label>
+								122020:未纳入海关统计的非货币黄金 </label></li>
+						<li key="122030" pKey="" title="未纳入海关统计的网络购物"><label>
+								122030:未纳入海关统计的网络购物 </label></li>
+						<li key="122990" pKey="" title="其他未纳入海关统计的货物贸易"><label>
+								122990:其他未纳入海关统计的货物贸易 </label></li>
+						<li key="221000" pKey="" title="来料加工工缴费收入/支出"><label>
+								221000:来料加工工缴费收入/支出 </label></li>
+						<li key="222011" pKey="" title="涉及我国出口的海洋货运服务"><label>
+								222011:涉及我国出口的海洋货运服务 </label></li>
+						<li key="222012" pKey="" title="涉及我国进口的海洋货运服务"><label>
+								222012:涉及我国进口的海洋货运服务 </label></li>
+						<li key="222013" pKey="" title="不涉及我国进出口的海洋货运服务"><label>
+								222013:不涉及我国进出口的海洋货运服务 </label></li>
+						<li key="222014" pKey="" title="海运客运"><label>
+								222014:海运客运 </label></li>
+						<li key="222019" pKey="" title="其他海运服务"><label>
+								222019:其他海运服务 </label></li>
+						<li key="222021" pKey="" title="涉及我国出口的空中货运服务"><label>
+								222021:涉及我国出口的空中货运服务 </label></li>
+						<li key="222022" pKey="" title="涉及我国进口的空中货运服务"><label>
+								222022:涉及我国进口的空中货运服务 </label></li>
+						<li key="222023" pKey="" title="不涉及我国进出口的空中货运服务"><label>
+								222023:不涉及我国进出口的空中货运服务 </label></li>
+						<li key="222024" pKey="" title="空运客运"><label>
+								222024:空运客运 </label></li>
+						<li key="222029" pKey="" title="其他空运服务"><label>
+								222029:其他空运服务 </label></li>
+						<li key="222031" pKey="" title="涉及我国出口的其他运输方式货运服务"><label>
+								222031:涉及我国出口的其他运输方式货运服务 </label></li>
+						<li key="222032" pKey="" title="涉及我国进口的其他运输方式货运服务"><label>
+								222032:涉及我国进口的其他运输方式货运服务 </label></li>
+						<li key="222033" pKey="" title="不涉及我国进出口的其他运输方式货运服务"><label>
+								222033:不涉及我国进出口的其他运输方式货运服务 </label></li>
+						<li key="222034" pKey="" title="其他运输方式客运"><label>
+								222034:其他运输方式客运 </label></li>
+						<li key="222039" pKey="" title="其他运输方式的其他服务"><label>
+								222039:其他运输方式的其他服务 </label></li>
+						<li key="222040" pKey="" title="邮政及寄递服务"><label>
+								222040:邮政及寄递服务 </label></li>
+						<li key="223010" pKey="" title="公务及商务旅行"><label>
+								223010:公务及商务旅行 </label></li>
+						<li key="223021" pKey="" title="就医及健康相关旅行"><label>
+								223021:就医及健康相关旅行 </label></li>
+						<li key="223022" pKey="" title="留学及教育相关旅行（一年以上）"><label>
+								223022:留学及教育相关旅行（一年以上） </label></li>
+						<li key="223023" pKey="" title="留学及教育相关旅行（一年及一年以下）"><label>
+								223023:留学及教育相关旅行（一年及一年以下） </label></li>
+						<li key="223029" pKey="" title="其他私人旅行"><label>
+								223029:其他私人旅行 </label></li>
+						<li key="224010" pKey="" title="境外建设"><label>
+								224010:境外建设 </label></li>
+						<li key="224020" pKey="" title="境内建设"><label>
+								224020:境内建设 </label></li>
+						<li key="225010" pKey="" title="寿险"><label> 225010:寿险
+						</label></li>
+						<li key="225021" pKey="" title="为我国出口提供的保险"><label>
+								225021:为我国出口提供的保险 </label></li>
+						<li key="225022" pKey="" title="为我国进口提供的保险"><label>
+								225022:为我国进口提供的保险 </label></li>
+						<li key="225029" pKey="" title="其他非寿险"><label>
+								225029:其他非寿险 </label></li>
+						<li key="225030" pKey="" title="再保险"><label>
+								225030:再保险 </label></li>
+						<li key="225040" pKey="" title="标准化担保服务"><label>
+								225040:标准化担保服务 </label></li>
+						<li key="225050" pKey="" title="保险辅助服务"><label>
+								225050:保险辅助服务 </label></li>
+						<li key="226000" pKey="" title="金融服务"><label>
+								226000:金融服务 </label></li>
+						<li key="227010" pKey="" title="电信服务"><label>
+								227010:电信服务 </label></li>
+						<li key="227020" pKey="" title="计算机服务"><label>
+								227020:计算机服务 </label></li>
+						<li key="227030" pKey="" title="信息服务"><label>
+								227030:信息服务 </label></li>
+						<li key="228010" pKey="" title="研发成果转让费及委托研发"><label>
+								228010:研发成果转让费及委托研发 </label></li>
+						<li key="228021" pKey="" title="法律服务"><label>
+								228021:法律服务 </label></li>
+						<li key="228022" pKey="" title="会计服务"><label>
+								228022:会计服务 </label></li>
+						<li key="228023" pKey="" title="管理咨询和公共关系服务"><label>
+								228023:管理咨询和公共关系服务 </label></li>
+						<li key="228024" pKey="" title="广告服务"><label>
+								228024:广告服务 </label></li>
+						<li key="228025" pKey="" title="展会服务"><label>
+								228025:展会服务 </label></li>
+						<li key="228026" pKey="" title="市场调查、民意测验服务"><label>
+								228026:市场调查、民意测验服务 </label></li>
+						<li key="228031" pKey="" title="建筑、工程服务"><label>
+								228031:建筑、工程服务 </label></li>
+						<li key="228032" pKey="" title="废物处理和防止污染服务"><label>
+								228032:废物处理和防止污染服务 </label></li>
+						<li key="228033" pKey="" title="农业和采矿服务"><label>
+								228033:农业和采矿服务 </label></li>
+						<li key="228039" pKey="" title="其他技术服务"><label>
+								228039:其他技术服务 </label></li>
+						<li key="228040" pKey="" title="经营性租赁服务"><label>
+								228040:经营性租赁服务 </label></li>
+						<li key="228050" pKey="" title="货物或服务交易佣金及相关服务"><label>
+								228050:货物或服务交易佣金及相关服务 </label></li>
+						<li key="228060" pKey="" title="办事处、代表处等办公经费"><label>
+								228060:办事处、代表处等办公经费 </label></li>
+						<li key="228990" pKey="" title="上述未提及的其他商业服务"><label>
+								228990:上述未提及的其他商业服务 </label></li>
+						<li key="229010" pKey="" title="视听和相关服务"><label>
+								229010:视听和相关服务 </label></li>
+						<li key="229020" pKey="" title="教育服务"><label>
+								229020:教育服务 </label></li>
+						<li key="229030" pKey="" title="医疗服务"><label>
+								229030:医疗服务 </label></li>
+						<li key="229990" pKey="" title="其他文化和娱乐服务"><label>
+								229990:其他文化和娱乐服务 </label></li>
+						<li key="230000" pKey="" title="别处未涵盖的维护和维修服务"><label>
+								230000:别处未涵盖的维护和维修服务 </label></li>
+						<li key="231010" pKey="" title="特许和商标使用费"><label>
+								231010:特许和商标使用费 </label></li>
+						<li key="231020" pKey="" title="研发成果使用费"><label>
+								231020:研发成果使用费 </label></li>
+						<li key="231030" pKey="" title="复制或分销计算机软件许可费"><label>
+								231030:复制或分销计算机软件许可费 </label></li>
+						<li key="231040" pKey="" title="复制或分销视听及相关产品许可费"><label>
+								231040:复制或分销视听及相关产品许可费 </label></li>
+						<li key="231990" pKey="" title="其他知识产权使用费"><label>
+								231990:其他知识产权使用费 </label></li>
+						<li key="232000" pKey="" title="别处未涵盖的政府货物和服务"><label>
+								232000:别处未涵盖的政府货物和服务 </label></li>
+						<li key="321000" pKey="" title="职工报酬（工资、薪金和福利）"><label>
+								321000:职工报酬（工资、薪金和福利） </label></li>
+						<li key="322011" pKey="" title="从境外子公司等获得的股息、红利或利润"><label>
+								322011:从境外子公司等获得的股息、红利或利润 </label></li>
+						<li key="322012" pKey="" title="从境外母公司获得的股息、红利（持有境外母公司10%以下股权）"><label>
+								322012:从境外母公司获得的股息、红利（持有境外母公司10%以下股权） </label></li>
+						<li key="322013" pKey="" title="从境外联属公司获得的股息、红利（持股10%以下的关联机构）"><label>
+								322013:从境外联属公司获得的股息、红利（持股10%以下的关联机构） </label></li>
+						<li key="322014" pKey="" title="因拥有境外建筑物而获得的租金"><label>
+								322014:因拥有境外建筑物而获得的租金 </label></li>
+						<li key="322021" pKey="" title="从境外子公司获得的利息"><label>
+								322021:从境外子公司获得的利息 </label></li>
+						<li key="322022" pKey="" title="从境外母公司获得的利息（持有境外母公司10%以下股权）"><label>
+								322022:从境外母公司获得的利息（持有境外母公司10%以下股权） </label></li>
+						<li key="322023" pKey="" title="从境外联属公司获得的利息（持股10%以下的关联机构）"><label>
+								322023:从境外联属公司获得的利息（持股10%以下的关联机构） </label></li>
+						<li key="322031" pKey="" title="股票投资的股息、红利"><label>
+								322031:股票投资的股息、红利 </label></li>
+						<li key="322032" pKey="" title="投资基金份额的股息、红利"><label>
+								322032:投资基金份额的股息、红利 </label></li>
+						<li key="322033" pKey="" title="短期债券利息"><label>
+								322033:短期债券利息 </label></li>
+						<li key="322034" pKey="" title="中长期债券利息"><label>
+								322034:中长期债券利息 </label></li>
+						<li key="322041" pKey="" title="存贷款利息"><label>
+								322041:存贷款利息 </label></li>
+						<li key="322042" pKey="" title="保单持有人获得的红利和利息"><label>
+								322042:保单持有人获得的红利和利息 </label></li>
+						<li key="322043" pKey=""
+							title="从准公司（持表决权10%以下）和国际组织（因份额投资）获得的红利、收益"><label>
+								322043:从准公司（持表决权10%以下）和国际组织（因份额投资）获得的红利、收益 </label></li>
+						<li key="322049" pKey="" title="其他的其他投资收益"><label>
+								322049:其他的其他投资收益 </label></li>
+						<li key="323010" pKey="" title="使用自然资源的租金"><label>
+								323010:使用自然资源的租金 </label></li>
+						<li key="323020" pKey="" title="产品和生产的税收及补贴"><label>
+								323020:产品和生产的税收及补贴 </label></li>
+						<li key="421010" pKey="" title="个人间捐赠及无偿援助"><label>
+								421010:个人间捐赠及无偿援助 </label></li>
+						<li key="421020" pKey="" title="政府、国际组织间捐赠及无偿援助（与固定资产无关）"><label>
+								421020:政府、国际组织间捐赠及无偿援助（与固定资产无关） </label></li>
+						<li key="421990" pKey="" title="其他捐赠及无偿援助（与固定资产无关）"><label>
+								421990:其他捐赠及无偿援助（与固定资产无关） </label></li>
+						<li key="422000" pKey="" title="非寿险保险赔偿"><label>
+								422000:非寿险保险赔偿 </label></li>
+						<li key="423010" pKey="" title="社保缴款"><label>
+								423010:社保缴款 </label></li>
+						<li key="423020" pKey="" title="社保返还的福利"><label>
+								423020:社保返还的福利 </label></li>
+						<li key="424000" pKey="" title="其他二次收入/支出（经常转移）"><label>
+								424000:其他二次收入/支出（经常转移） </label></li>
+						<li key="521010" pKey="" title="债务减免"><label>
+								521010:债务减免 </label></li>
+						<li key="521020" pKey="" title="与固定资产有关的捐赠及无偿援助"><label>
+								521020:与固定资产有关的捐赠及无偿援助 </label></li>
+						<li key="521030" pKey="" title="移民转移"><label>
+								521030:移民转移 </label></li>
+						<li key="521990" pKey="" title="其他资本转移"><label>
+								521990:其他资本转移 </label></li>
+						<li key="522000" pKey="" title="品牌、商标、契约和许可所有权等非生产非金融资产转让"><label>
+								522000:品牌、商标、契约和许可所有权等非生产非金融资产转让 </label></li>
+						<li key="621011" pKey="" title="因境外子公司清算、终止等撤资"><label>
+								621011:因境外子公司清算、终止等撤资 </label></li>
+						<li key="621012" pKey="" title="筹备资金撤回"><label>
+								621012:筹备资金撤回 </label></li>
+						<li key="621013" pKey="" title="因境外子公司减资收回资金"><label>
+								621013:因境外子公司减资收回资金 </label></li>
+						<li key="621014" pKey="" title="转让境外子公司股权收入/支出"><label>
+								621014:转让境外子公司股权收入/支出 </label></li>
+						<li key="621015" pKey="" title="接受境外子公司的股权投资（逆向股权投资）"><label>
+								621015:接受境外子公司的股权投资（逆向股权投资） </label></li>
+						<li key="621016" pKey="" title="非法人投资款撤回"><label>
+								621016:非法人投资款撤回 </label></li>
+						<li key="621021" pKey="" title="收回对境外子公司的贷款及其他往来"><label>
+								621021:收回对境外子公司的贷款及其他往来 </label></li>
+						<li key="621022" pKey="" title="接受境外子公司的贷款及其他往来（逆向贷款投资）"><label>
+								621022:接受境外子公司的贷款及其他往来（逆向贷款投资） </label></li>
+						<li key="621030" pKey="" title="出售境外不动产收入/支出"><label>
+								621030:出售境外不动产收入/支出 </label></li>
+						<li key="621050" pKey="" title="用境内股权交换境外股权"><label>
+								621050:用境内股权交换境外股权 </label></li>
+						<li key="621060" pKey="" title="实物投资"><label>
+								621060:实物投资 </label></li>
+						<li key="621070" pKey="" title="无形资产投资"><label>
+								621070:无形资产投资 </label></li>
+						<li key="622011" pKey="" title="新设外商投资企业资本金汇入/支出"><label>
+								622011:新设外商投资企业资本金汇入/支出 </label></li>
+						<li key="622012" pKey="" title="筹备资金汇入/支出"><label>
+								622012:筹备资金汇入/支出 </label></li>
+						<li key="622013" pKey="" title="外商投资企业增资"><label>
+								622013:外商投资企业增资 </label></li>
+						<li key="622014" pKey="" title="转让境内企业股权"><label>
+								622014:转让境内企业股权 </label></li>
+						<li key="622015" pKey="" title="对境外母公司的股权投资的撤回（逆向股权投资的撤回）"><label>
+								622015:对境外母公司的股权投资的撤回（逆向股权投资的撤回） </label></li>
+						<li key="622016" pKey="" title="非法人投资款汇入/支出"><label>
+								622016:非法人投资款汇入/支出 </label></li>
+						<li key="622021" pKey="" title="接受境外母公司的贷款及其他往来"><label>
+								622021:接受境外母公司的贷款及其他往来 </label></li>
+						<li key="622022" pKey="" title="收回对境外母公司的贷款及其他往来（逆向贷款投资的撤回）"><label>
+								622022:收回对境外母公司的贷款及其他往来（逆向贷款投资的撤回） </label></li>
+						<li key="622030" pKey="" title="向非居民出售境内不动产收入/支出"><label>
+								622030:向非居民出售境内不动产收入/支出 </label></li>
+						<li key="622040" pKey="" title="外商投资企业外方收益再投资收入/支出"><label>
+								622040:外商投资企业外方收益再投资收入/支出 </label></li>
+						<li key="622050" pKey="" title="用境外股权交换境内股权"><label>
+								622050:用境外股权交换境内股权 </label></li>
+						<li key="622060" pKey="" title="实物投资"><label>
+								622060:实物投资 </label></li>
+						<li key="622070" pKey="" title="无形资产投资"><label>
+								622070:无形资产投资 </label></li>
+						<li key="623011" pKey="" title="撤回对境外联属企业的股权投资"><label>
+								623011:撤回对境外联属企业的股权投资 </label></li>
+						<li key="623012" pKey="" title="接受境外联属企业的股权投资"><label>
+								623012:接受境外联属企业的股权投资 </label></li>
+						<li key="623021" pKey="" title="收回对境外联属企业的贷款及其他往来"><label>
+								623021:收回对境外联属企业的贷款及其他往来 </label></li>
+						<li key="623022" pKey="" title="接受境外联属企业的贷款及其他往来"><label>
+								623022:接受境外联属企业的贷款及其他往来 </label></li>
+						<li key="721010" pKey="" title="卖出境外机构境外发行的股票或股权"><label>
+								721010:卖出境外机构境外发行的股票或股权 </label></li>
+						<li key="721020" pKey="" title="卖出境内机构在境外发行的股票或股权"><label>
+								721020:卖出境内机构在境外发行的股票或股权 </label></li>
+						<li key="721030" pKey="" title="在境外市场发行股票或股权"><label>
+								721030:在境外市场发行股票或股权 </label></li>
+						<li key="721040" pKey="" title="非居民买入境内股票或股权"><label>
+								721040:非居民买入境内股票或股权 </label></li>
+						<li key="721050" pKey="" title="非居民回购境内股票或股权"><label>
+								721050:非居民回购境内股票或股权 </label></li>
+						<li key="722010" pKey="" title="赎回境外投资基金"><label>
+								722010:赎回境外投资基金 </label></li>
+						<li key="722020" pKey="" title="募集境外投资基金"><label>
+								722020:募集境外投资基金 </label></li>
+						<li key="722030" pKey="" title="非居民申购境内投资基金"><label>
+								722030:非居民申购境内投资基金 </label></li>
+						<li key="722040" pKey="" title="非居民清算境内募集的投资基金"><label>
+								722040:非居民清算境内募集的投资基金 </label></li>
+						<li key="723011" pKey="" title="卖出境外短期债券"><label>
+								723011:卖出境外短期债券 </label></li>
+						<li key="723012" pKey="" title="发行境外短期债券"><label>
+								723012:发行境外短期债券 </label></li>
+						<li key="723013" pKey="" title="非居民买入境内短期债券"><label>
+								723013:非居民买入境内短期债券 </label></li>
+						<li key="723014" pKey="" title="非居民偿付境内短期债券"><label>
+								723014:非居民偿付境内短期债券 </label></li>
+						<li key="723021" pKey="" title="卖出境外中长期债券"><label>
+								723021:卖出境外中长期债券 </label></li>
+						<li key="723022" pKey="" title="发行境外中长期债券"><label>
+								723022:发行境外中长期债券 </label></li>
+						<li key="723023" pKey="" title="非居民买入境内中长期债券"><label>
+								723023:非居民买入境内中长期债券 </label></li>
+						<li key="723024" pKey="" title="非居民偿付境内中长期债券"><label>
+								723024:非居民偿付境内中长期债券 </label></li>
+						<li key="724000" pKey="" title="因金融衍生工具交易引起的收入/支出"><label>
+								724000:因金融衍生工具交易引起的收入/支出 </label></li>
+						<li key="821010" pKey="" title="资产-人寿保险和年金权益"><label>
+								821010:资产-人寿保险和年金权益 </label></li>
+						<li key="821020" pKey="" title="对外贷款的收回"><label>
+								821020:对外贷款的收回 </label></li>
+						<li key="821030" pKey="" title="收回或调回存放境外存款本金"><label>
+								821030:收回或调回存放境外存款本金 </label></li>
+						<li key="821041" pKey="" title="出口延期应收款"><label>
+								821041:出口延期应收款 </label></li>
+						<li key="821042" pKey="" title="进口预付货款"><label>
+								821042:进口预付货款 </label></li>
+						<li key="821990" pKey="" title="其他债权"><label>
+								821990:其他债权 </label></li>
+						<li key="822010" pKey="" title="负债-人寿保险和年金权益"><label>
+								822010:负债-人寿保险和年金权益 </label></li>
+						<li key="822020" pKey="" title="获得境外贷款"><label>
+								822020:获得境外贷款 </label></li>
+						<li key="822030" pKey="" title="境外存入款项"><label>
+								822030:境外存入款项 </label></li>
+						<li key="822041" pKey="" title="进口延期应付款"><label>
+								822041:进口延期应付款 </label></li>
+						<li key="822042" pKey="" title="出口预收货款"><label>
+								822042:出口预收货款 </label></li>
+						<li key="822050" pKey="" title="实物外债"><label>
+								822050:实物外债 </label></li>
+						<li key="822990" pKey="" title="借入其他债务"><label>
+								822990:借入其他债务 </label></li>
+					</ul>
+				</div>
+				<div class="hc_checkboxdiv" multiple_line="false"
+					ref_target="csdc_nationality_s">
+					<ul>
+						<li key="ABW" pKey="" title="阿鲁巴"><label> ABW:阿鲁巴 </label></li>
+						<li key="ADR" pKey="" title="安道尔"><label> ADR:安道尔 </label></li>
+						<li key="AFG" pKey="" title="阿富汗"><label> AFG:阿富汗 </label></li>
+						<li key="AGO" pKey="" title="安哥拉"><label> AGO:安哥拉 </label></li>
+						<li key="AIA" pKey="" title="安圭拉"><label> AIA:安圭拉 </label></li>
+						<li key="ALB" pKey="" title="阿尔巴尼亚"><label> ALB:阿尔巴尼亚
+						</label></li>
+						<li key="ALG" pKey="" title="阿尔及利亚"><label> ALG:阿尔及利亚
+						</label></li>
+						<li key="ANT" pKey="" title="荷属安的列斯"><label>
+								ANT:荷属安的列斯 </label></li>
+						<li key="ARE" pKey="" title="阿拉伯联合酋长国"><label>
+								ARE:阿拉伯联合酋长国 </label></li>
+						<li key="ARG" pKey="" title="阿根廷"><label> ARG:阿根廷 </label></li>
+						<li key="ARM" pKey="" title="亚美尼亚共和国"><label>
+								ARM:亚美尼亚共和国 </label></li>
+						<li key="ASM" pKey="" title="美属萨摩亚"><label> ASM:美属萨摩亚
+						</label></li>
+						<li key="ATA" pKey="" title="南极洲"><label> ATA:南极洲 </label></li>
+						<li key="ATF" pKey="" title="法属南部领土"><label>
+								ATF:法属南部领土 </label></li>
+						<li key="ATG" pKey="" title="安提瓜和巴布达"><label>
+								ATG:安提瓜和巴布达 </label></li>
+						<li key="AUS" pKey="" title="澳大利亚"><label> AUS:澳大利亚 </label>
+						</li>
+						<li key="AUT" pKey="" title="奥地利"><label> AUT:奥地利 </label></li>
+						<li key="AZE" pKey="" title="阿塞拜疆共和国"><label>
+								AZE:阿塞拜疆共和国 </label></li>
+						<li key="BAH" pKey="" title="巴哈林"><label> BAH:巴哈林 </label></li>
+						<li key="BDI" pKey="" title="布隆迪"><label> BDI:布隆迪 </label></li>
+						<li key="BEL" pKey="" title="比利时"><label> BEL:比利时 </label></li>
+						<li key="BEN" pKey="" title="贝宁"><label> BEN:贝宁 </label></li>
+						<li key="BFA" pKey="" title="布基纳法索"><label> BFA:布基纳法索
+						</label></li>
+						<li key="BGD" pKey="" title="孟加拉"><label> BGD:孟加拉 </label></li>
+						<li key="BGR" pKey="" title="保加利亚"><label> BGR:保加利亚 </label>
+						</li>
+						<li key="BHR" pKey="" title="巴林"><label> BHR:巴林 </label></li>
+						<li key="BHS" pKey="" title="巴哈马"><label> BHS:巴哈马 </label></li>
+						<li key="BIH" pKey="" title="波黑"><label> BIH:波黑 </label></li>
+						<li key="BLR" pKey="" title="白俄罗斯"><label> BLR:白俄罗斯 </label>
+						</li>
+						<li key="BLZ" pKey="" title="伯利兹"><label> BLZ:伯利兹 </label></li>
+						<li key="BMU" pKey="" title="百慕大"><label> BMU:百慕大 </label></li>
+						<li key="BOL" pKey="" title="玻利维亚"><label> BOL:玻利维亚 </label>
+						</li>
+						<li key="BRA" pKey="" title="巴西"><label> BRA:巴西 </label></li>
+						<li key="BRB" pKey="" title="巴巴多斯"><label> BRB:巴巴多斯 </label>
+						</li>
+						<li key="BRN" pKey="" title="文莱"><label> BRN:文莱 </label></li>
+						<li key="BTN" pKey="" title="不丹"><label> BTN:不丹 </label></li>
+						<li key="BVI" pKey="" title="英属维京群岛"><label>
+								BVI:英属维京群岛 </label></li>
+						<li key="BVT" pKey="" title="布维岛"><label> BVT:布维岛 </label></li>
+						<li key="BWA" pKey="" title="博茨瓦纳"><label> BWA:博茨瓦纳 </label>
+						</li>
+						<li key="CAF" pKey="" title="中非共和国"><label> CAF:中非共和国
+						</label></li>
+						<li key="CAN" pKey="" title="加拿大"><label> CAN:加拿大 </label></li>
+						<li key="CCK" pKey="" title="科科斯(基林)群岛"><label>
+								CCK:科科斯(基林)群岛 </label></li>
+						<li key="CHE" pKey="" title="瑞士"><label> CHE:瑞士 </label></li>
+						<li key="CHL" pKey="" title="智利"><label> CHL:智利 </label></li>
+						<li key="CHN" pKey="" title="中国"><label> CHN:中国 </label></li>
+						<li key="CIV" pKey="" title="科特迪瓦"><label> CIV:科特迪瓦 </label>
+						</li>
+						<li key="CMR" pKey="" title="喀麦隆共和国"><label>
+								CMR:喀麦隆共和国 </label></li>
+						<li key="CNI" pKey="" title="海峡群岛"><label> CNI:海峡群岛 </label>
+						</li>
+						<li key="COD" pKey="" title="刚果（金）"><label> COD:刚果（金）
+						</label></li>
+						<li key="COG" pKey="" title="刚果共和国"><label> COG:刚果共和国
+						</label></li>
+						<li key="COK" pKey="" title="库克岛"><label> COK:库克岛 </label></li>
+						<li key="COL" pKey="" title="哥伦比亚"><label> COL:哥伦比亚 </label>
+						</li>
+						<li key="COM" pKey="" title="科摩罗"><label> COM:科摩罗 </label></li>
+						<li key="CPV" pKey="" title="佛得角"><label> CPV:佛得角 </label></li>
+						<li key="CRI" pKey="" title="哥斯达黎加"><label> CRI:哥斯达黎加
+						</label></li>
+						<li key="CSR" pKey="" title="圣诞岛"><label> CSR:圣诞岛 </label></li>
+						<li key="CTN" pKey="" title="中国台湾"><label> CTN:中国台湾 </label>
+						</li>
+						<li key="CUB" pKey="" title="古巴"><label> CUB:古巴 </label></li>
+						<li key="CXR" pKey="" title="圣诞岛"><label> CXR:圣诞岛 </label></li>
+						<li key="CYM" pKey="" title="开曼群岛"><label> CYM:开曼群岛 </label>
+						</li>
+						<li key="CYP" pKey="" title="塞浦路斯"><label> CYP:塞浦路斯 </label>
+						</li>
+						<li key="CZE" pKey="" title="捷克"><label> CZE:捷克 </label></li>
+						<li key="DEU" pKey="" title="德国"><label> DEU:德国 </label></li>
+						<li key="DJI" pKey="" title="吉布提"><label> DJI:吉布提 </label></li>
+						<li key="DMA" pKey="" title="多米尼克"><label> DMA:多米尼克 </label>
+						</li>
+						<li key="DNK" pKey="" title="丹麦"><label> DNK:丹麦 </label></li>
+						<li key="DOM" pKey="" title="多米尼加"><label> DOM:多米尼加 </label>
+						</li>
+						<li key="ECU" pKey="" title="厄瓜多尔"><label> ECU:厄瓜多尔 </label>
+						</li>
+						<li key="EGY" pKey="" title="埃及"><label> EGY:埃及 </label></li>
+						<li key="ERI" pKey="" title="厄立特亚国"><label> ERI:厄立特亚国
+						</label></li>
+						<li key="ESH" pKey="" title="西撒哈拉"><label> ESH:西撒哈拉 </label>
+						</li>
+						<li key="ESP" pKey="" title="西班牙"><label> ESP:西班牙 </label></li>
+						<li key="EST" pKey="" title="爱沙尼亚"><label> EST:爱沙尼亚 </label>
+						</li>
+						<li key="ETH" pKey="" title="埃塞俄比亚"><label> ETH:埃塞俄比亚
+						</label></li>
+						<li key="FIN" pKey="" title="芬兰"><label> FIN:芬兰 </label></li>
+						<li key="FJI" pKey="" title="斐济"><label> FJI:斐济 </label></li>
+						<li key="FLK" pKey="" title="福克兰群岛（马尔维纳斯群岛）"><label>
+								FLK:福克兰群岛（马尔维纳斯群岛） </label></li>
+						<li key="FRA" pKey="" title="法国"><label> FRA:法国 </label></li>
+						<li key="FRO" pKey="" title="法罗群岛"><label> FRO:法罗群岛 </label>
+						</li>
+						<li key="FSM" pKey="" title="密克罗尼西亚联邦"><label>
+								FSM:密克罗尼西亚联邦 </label></li>
+						<li key="GAB" pKey="" title="加蓬"><label> GAB:加蓬 </label></li>
+						<li key="GBR" pKey="" title="英国"><label> GBR:英国 </label></li>
+						<li key="GEO" pKey="" title="格鲁吉亚"><label> GEO:格鲁吉亚 </label>
+						</li>
+						<li key="GHA" pKey="" title="加纳共和国"><label> GHA:加纳共和国
+						</label></li>
+						<li key="GIB" pKey="" title="直布罗陀"><label> GIB:直布罗陀 </label>
+						</li>
+						<li key="GIN" pKey="" title="几内亚"><label> GIN:几内亚 </label></li>
+						<li key="GLP" pKey="" title="瓜德罗普"><label> GLP:瓜德罗普 </label>
+						</li>
+						<li key="GMB" pKey="" title="冈比亚"><label> GMB:冈比亚 </label></li>
+						<li key="GNB" pKey="" title="几内亚比绍"><label> GNB:几内亚比绍
+						</label></li>
+						<li key="GNQ" pKey="" title="赤道几内亚共和国"><label>
+								GNQ:赤道几内亚共和国 </label></li>
+						<li key="GRC" pKey="" title="希腊"><label> GRC:希腊 </label></li>
+						<li key="GRD" pKey="" title="格林纳达"><label> GRD:格林纳达 </label>
+						</li>
+						<li key="GRL" pKey="" title="格陵兰"><label> GRL:格陵兰 </label></li>
+						<li key="GTM" pKey="" title="危地马拉"><label> GTM:危地马拉 </label>
+						</li>
+						<li key="GUF" pKey="" title="法属圭亚那"><label> GUF:法属圭亚那
+						</label></li>
+						<li key="GUM" pKey="" title="关岛"><label> GUM:关岛 </label></li>
+						<li key="GUS" pKey="" title="格恩西"><label> GUS:格恩西 </label></li>
+						<li key="GUY" pKey="" title="圭亚那"><label> GUY:圭亚那 </label></li>
+						<li key="HKG" pKey="" title="中国香港"><label> HKG:中国香港 </label>
+						</li>
+						<li key="HMD" pKey="" title="赫德岛和麦克唐纳岛"><label>
+								HMD:赫德岛和麦克唐纳岛 </label></li>
+						<li key="HND" pKey="" title="洪都拉斯"><label> HND:洪都拉斯 </label>
+						</li>
+						<li key="HRV" pKey="" title="克罗地亚"><label> HRV:克罗地亚 </label>
+						</li>
+						<li key="HTI" pKey="" title="海地共和国"><label> HTI:海地共和国
+						</label></li>
+						<li key="HUN" pKey="" title="匈牙利"><label> HUN:匈牙利 </label></li>
+						<li key="IDN" pKey="" title="印尼"><label> IDN:印尼 </label></li>
+						<li key="IND" pKey="" title="印度"><label> IND:印度 </label></li>
+						<li key="INE" pKey="" title="尼维斯岛"><label> INE:尼维斯岛 </label>
+						</li>
+						<li key="IOM" pKey="" title="马恩岛"><label> IOM:马恩岛 </label></li>
+						<li key="IOT" pKey="" title="英属印度洋领地"><label>
+								IOT:英属印度洋领地 </label></li>
+						<li key="IRL" pKey="" title="爱尔兰"><label> IRL:爱尔兰 </label></li>
+						<li key="IRN" pKey="" title="伊朗"><label> IRN:伊朗 </label></li>
+						<li key="IRQ" pKey="" title="伊拉克"><label> IRQ:伊拉克 </label></li>
+						<li key="ISL" pKey="" title="冰岛"><label> ISL:冰岛 </label></li>
+						<li key="ISR" pKey="" title="以色列"><label> ISR:以色列 </label></li>
+						<li key="ITA" pKey="" title="意大利"><label> ITA:意大利 </label></li>
+						<li key="JAM" pKey="" title="牙买加"><label> JAM:牙买加 </label></li>
+						<li key="JOR" pKey="" title="约旦"><label> JOR:约旦 </label></li>
+						<li key="JPN" pKey="" title="日本"><label> JPN:日本 </label></li>
+						<li key="JSY" pKey="" title="泽西"><label> JSY:泽西 </label></li>
+						<li key="KAZ" pKey="" title="哈萨克斯坦共和国"><label>
+								KAZ:哈萨克斯坦共和国 </label></li>
+						<li key="KEN" pKey="" title="肯尼亚共和国"><label>
+								KEN:肯尼亚共和国 </label></li>
+						<li key="KGZ" pKey="" title="吉尔吉斯斯坦"><label>
+								KGZ:吉尔吉斯斯坦 </label></li>
+						<li key="KHM" pKey="" title="柬埔寨"><label> KHM:柬埔寨 </label></li>
+						<li key="KIR" pKey="" title="基里巴斯共和国"><label>
+								KIR:基里巴斯共和国 </label></li>
+						<li key="KNA" pKey="" title="圣基茨和尼维斯联邦"><label>
+								KNA:圣基茨和尼维斯联邦 </label></li>
+						<li key="KOR" pKey="" title="韩国"><label> KOR:韩国 </label></li>
+						<li key="KWT" pKey="" title="科威特"><label> KWT:科威特 </label></li>
+						<li key="LAO" pKey="" title="老挝"><label> LAO:老挝 </label></li>
+						<li key="LBN" pKey="" title="黎巴嫩"><label> LBN:黎巴嫩 </label></li>
+						<li key="LBR" pKey="" title="利比里亚"><label> LBR:利比里亚 </label>
+						</li>
+						<li key="LBY" pKey="" title="利比亚"><label> LBY:利比亚 </label></li>
+						<li key="LCA" pKey="" title="圣卢西亚"><label> LCA:圣卢西亚 </label>
+						</li>
+						<li key="LIE" pKey="" title="列支敦士登"><label> LIE:列支敦士登
+						</label></li>
+						<li key="LKA" pKey="" title="斯里兰卡"><label> LKA:斯里兰卡 </label>
+						</li>
+						<li key="LSO" pKey="" title="莱索托"><label> LSO:莱索托 </label></li>
+						<li key="LTU" pKey="" title="立陶宛共和国"><label>
+								LTU:立陶宛共和国 </label></li>
+						<li key="LUX" pKey="" title="卢森堡"><label> LUX:卢森堡 </label></li>
+						<li key="LVA" pKey="" title="拉脱维亚"><label> LVA:拉脱维亚 </label>
+						</li>
+						<li key="MAC" pKey="" title="中国澳门"><label> MAC:中国澳门 </label>
+						</li>
+						<li key="MAN" pKey="" title="曼岛"><label> MAN:曼岛 </label></li>
+						<li key="MAR" pKey="" title="摩洛哥"><label> MAR:摩洛哥 </label></li>
+						<li key="MCO" pKey="" title="摩纳哥"><label> MCO:摩纳哥 </label></li>
+						<li key="MDA" pKey="" title="摩尔多瓦"><label> MDA:摩尔多瓦 </label>
+						</li>
+						<li key="MDG" pKey="" title="马达加斯加"><label> MDG:马达加斯加
+						</label></li>
+						<li key="MDV" pKey="" title="马尔代夫"><label> MDV:马尔代夫 </label>
+						</li>
+						<li key="MEX" pKey="" title="墨西哥"><label> MEX:墨西哥 </label></li>
+						<li key="MHL" pKey="" title="马绍尔群岛共和国"><label>
+								MHL:马绍尔群岛共和国 </label></li>
+						<li key="MKD" pKey="" title="马其顿"><label> MKD:马其顿 </label></li>
+						<li key="MLI" pKey="" title="马里共和国"><label> MLI:马里共和国
+						</label></li>
+						<li key="MLT" pKey="" title="马耳他"><label> MLT:马耳他 </label></li>
+						<li key="MMR" pKey="" title="缅甸"><label> MMR:缅甸 </label></li>
+						<li key="MNG" pKey="" title="蒙古"><label> MNG:蒙古 </label></li>
+						<li key="MNP" pKey="" title="北马里亚纳"><label> MNP:北马里亚纳
+						</label></li>
+						<li key="MOZ" pKey="" title="莫桑比克"><label> MOZ:莫桑比克 </label>
+						</li>
+						<li key="MRT" pKey="" title="毛里塔尼亚"><label> MRT:毛里塔尼亚
+						</label></li>
+						<li key="MSR" pKey="" title="蒙特塞拉特"><label> MSR:蒙特塞拉特
+						</label></li>
+						<li key="MTQ" pKey="" title="马提尼克"><label> MTQ:马提尼克 </label>
+						</li>
+						<li key="MUS" pKey="" title="毛里求斯"><label> MUS:毛里求斯 </label>
+						</li>
+						<li key="MWI" pKey="" title="马拉维"><label> MWI:马拉维 </label></li>
+						<li key="MYS" pKey="" title="马来西亚"><label> MYS:马来西亚 </label>
+						</li>
+						<li key="MYT" pKey="" title="马约特"><label> MYT:马约特 </label></li>
+						<li key="NAM" pKey="" title="纳米比亚共和国"><label>
+								NAM:纳米比亚共和国 </label></li>
+						<li key="NCL" pKey="" title="新喀里多尼亚"><label>
+								NCL:新喀里多尼亚 </label></li>
+						<li key="NER" pKey="" title="尼日尔"><label> NER:尼日尔 </label></li>
+						<li key="NFK" pKey="" title="诺福克岛"><label> NFK:诺福克岛 </label>
+						</li>
+						<li key="NGA" pKey="" title="尼日利亚"><label> NGA:尼日利亚 </label>
+						</li>
+						<li key="NIC" pKey="" title="尼加拉瓜"><label> NIC:尼加拉瓜 </label>
+						</li>
+						<li key="NIU" pKey="" title="纽埃"><label> NIU:纽埃 </label></li>
+						<li key="NLA" pKey="" title="荷兰属地"><label> NLA:荷兰属地 </label>
+						</li>
+						<li key="NLD" pKey="" title="荷兰"><label> NLD:荷兰 </label></li>
+						<li key="NOR" pKey="" title="挪威"><label> NOR:挪威 </label></li>
+						<li key="NPL" pKey="" title="尼泊尔"><label> NPL:尼泊尔 </label></li>
+						<li key="NRU" pKey="" title="瑙鲁共和国"><label> NRU:瑙鲁共和国
+						</label></li>
+						<li key="NZL" pKey="" title="新西兰"><label> NZL:新西兰 </label></li>
+						<li key="OTH" pKey="" title="其它国家地区"><label>
+								OTH:其它国家地区 </label></li>
+						<li key="OWN" pKey="" title="阿曼"><label> OWN:阿曼 </label></li>
+						<li key="PAK" pKey="" title="巴基斯坦"><label> PAK:巴基斯坦 </label>
+						</li>
+						<li key="PAN" pKey="" title="巴拿马"><label> PAN:巴拿马 </label></li>
+						<li key="PCN" pKey="" title="皮特凯恩群岛"><label>
+								PCN:皮特凯恩群岛 </label></li>
+						<li key="PER" pKey="" title="秘鲁"><label> PER:秘鲁 </label></li>
+						<li key="PHL" pKey="" title="菲律宾"><label> PHL:菲律宾 </label></li>
+						<li key="PLW" pKey="" title="帕劳"><label> PLW:帕劳 </label></li>
+						<li key="PNG" pKey="" title="巴布亚新几内亚独立国"><label>
+								PNG:巴布亚新几内亚独立国 </label></li>
+						<li key="POL" pKey="" title="波兰"><label> POL:波兰 </label></li>
+						<li key="PRI" pKey="" title="波多黎各"><label> PRI:波多黎各 </label>
+						</li>
+						<li key="PRK" pKey="" title="朝鲜"><label> PRK:朝鲜 </label></li>
+						<li key="PRT" pKey="" title="葡萄牙"><label> PRT:葡萄牙 </label></li>
+						<li key="PRY" pKey="" title="巴拉圭"><label> PRY:巴拉圭 </label></li>
+						<li key="PSE" pKey="" title="巴勒斯坦"><label> PSE:巴勒斯坦 </label>
+						</li>
+						<li key="PST" pKey="" title="巴勒斯坦"><label> PST:巴勒斯坦 </label>
+						</li>
+						<li key="PYF" pKey="" title="法属波利尼西亚"><label>
+								PYF:法属波利尼西亚 </label></li>
+						<li key="QAT" pKey="" title="卡塔尔"><label> QAT:卡塔尔 </label></li>
+						<li key="REU" pKey="" title="留尼汪"><label> REU:留尼汪 </label></li>
+						<li key="ROM" pKey="" title="罗马尼亚"><label> ROM:罗马尼亚 </label>
+						</li>
+						<li key="RUS" pKey="" title="俄罗斯联邦"><label> RUS:俄罗斯联邦
+						</label></li>
+						<li key="RWA" pKey="" title="卢旺达"><label> RWA:卢旺达 </label></li>
+						<li key="SAU" pKey="" title="沙特阿拉伯"><label> SAU:沙特阿拉伯
+						</label></li>
+						<li key="SCG" pKey="" title="塞尔维亚和黑山"><label>
+								SCG:塞尔维亚和黑山 </label></li>
+						<li key="SDN" pKey="" title="苏丹"><label> SDN:苏丹 </label></li>
+						<li key="SEN" pKey="" title="塞内加尔"><label> SEN:塞内加尔 </label>
+						</li>
+						<li key="SGP" pKey="" title="新加坡"><label> SGP:新加坡 </label></li>
+						<li key="SGS" pKey="" title="南乔治亚岛和南桑德韦奇岛"><label>
+								SGS:南乔治亚岛和南桑德韦奇岛 </label></li>
+						<li key="SHN" pKey="" title="圣赫勒拿"><label> SHN:圣赫勒拿 </label>
+						</li>
+						<li key="SJM" pKey="" title="斯瓦尔巴岛和扬马延岛"><label>
+								SJM:斯瓦尔巴岛和扬马延岛 </label></li>
+						<li key="SLB" pKey="" title="所罗门群岛"><label> SLB:所罗门群岛
+						</label></li>
+						<li key="SLE" pKey="" title="塞拉利昂"><label> SLE:塞拉利昂 </label>
+						</li>
+						<li key="SLV" pKey="" title="萨尔瓦多"><label> SLV:萨尔瓦多 </label>
+						</li>
+						<li key="SMR" pKey="" title="圣马力诺"><label> SMR:圣马力诺 </label>
+						</li>
+						<li key="SOM" pKey="" title="索马里"><label> SOM:索马里 </label></li>
+						<li key="SPM" pKey="" title="圣皮埃尔和密克隆"><label>
+								SPM:圣皮埃尔和密克隆 </label></li>
+						<li key="STP" pKey="" title="圣多美和普林西比"><label>
+								STP:圣多美和普林西比 </label></li>
+						<li key="SUR" pKey="" title="苏里南共和国"><label>
+								SUR:苏里南共和国 </label></li>
+						<li key="SVK" pKey="" title="斯洛伐克"><label> SVK:斯洛伐克 </label>
+						</li>
+						<li key="SVN" pKey="" title="斯洛文尼亚"><label> SVN:斯洛文尼亚
+						</label></li>
+						<li key="SWE" pKey="" title="瑞典"><label> SWE:瑞典 </label></li>
+						<li key="SWZ" pKey="" title="斯威士兰"><label> SWZ:斯威士兰 </label>
+						</li>
+						<li key="SYC" pKey="" title="塞舌尔"><label> SYC:塞舌尔 </label></li>
+						<li key="SYR" pKey="" title="叙利亚"><label> SYR:叙利亚 </label></li>
+						<li key="TCA" pKey="" title="特克斯科斯群岛"><label>
+								TCA:特克斯科斯群岛 </label></li>
+						<li key="TCD" pKey="" title="乍得"><label> TCD:乍得 </label></li>
+						<li key="TGO" pKey="" title="多哥"><label> TGO:多哥 </label></li>
+						<li key="THA" pKey="" title="泰国"><label> THA:泰国 </label></li>
+						<li key="TJK" pKey="" title="塔吉克斯坦"><label> TJK:塔吉克斯坦
+						</label></li>
+						<li key="TKL" pKey="" title="托克劳"><label> TKL:托克劳 </label></li>
+						<li key="TKM" pKey="" title="土库曼斯坦"><label> TKM:土库曼斯坦
+						</label></li>
+						<li key="TMP" pKey="" title="东帝汶"><label> TMP:东帝汶 </label></li>
+						<li key="TON" pKey="" title="汤加"><label> TON:汤加 </label></li>
+						<li key="TTO" pKey="" title="特立尼达和多巴哥"><label>
+								TTO:特立尼达和多巴哥 </label></li>
+						<li key="TUN" pKey="" title="突尼斯"><label> TUN:突尼斯 </label></li>
+						<li key="TUR" pKey="" title="土耳其"><label> TUR:土耳其 </label></li>
+						<li key="TUV" pKey="" title="图瓦卢"><label> TUV:图瓦卢 </label></li>
+						<li key="TZA" pKey="" title="坦桑尼亚"><label> TZA:坦桑尼亚 </label>
+						</li>
+						<li key="UGA" pKey="" title="乌干达共和国"><label>
+								UGA:乌干达共和国 </label></li>
+						<li key="UKR" pKey="" title="乌克兰"><label> UKR:乌克兰 </label></li>
+						<li key="UMI" pKey="" title="美国本土外小岛屿"><label>
+								UMI:美国本土外小岛屿 </label></li>
+						<li key="URY" pKey="" title="乌拉圭"><label> URY:乌拉圭 </label></li>
+						<li key="USA" pKey="" title="美国"><label> USA:美国 </label></li>
+						<li key="UZB" pKey="" title="乌兹别克斯坦"><label>
+								UZB:乌兹别克斯坦 </label></li>
+						<li key="VAT" pKey="" title="梵蒂冈"><label> VAT:梵蒂冈 </label></li>
+						<li key="VCT" pKey="" title="圣文森特和格林纳丁斯"><label>
+								VCT:圣文森特和格林纳丁斯 </label></li>
+						<li key="VEN" pKey="" title="委内瑞拉"><label> VEN:委内瑞拉 </label>
+						</li>
+						<li key="VGB" pKey="" title="英属维尔京群岛"><label>
+								VGB:英属维尔京群岛 </label></li>
+						<li key="VIR" pKey="" title="美属维尔京群岛"><label>
+								VIR:美属维尔京群岛 </label></li>
+						<li key="VNM" pKey="" title="越南"><label> VNM:越南 </label></li>
+						<li key="VUT" pKey="" title="瓦努阿图"><label> VUT:瓦努阿图 </label>
+						</li>
+						<li key="WLF" pKey="" title="瓦利斯和富图纳"><label>
+								WLF:瓦利斯和富图纳 </label></li>
+						<li key="WSM" pKey="" title="西萨摩亚"><label> WSM:西萨摩亚 </label>
+						</li>
+						<li key="YEM" pKey="" title="也门"><label> YEM:也门 </label></li>
+						<li key="YUG" pKey="" title="南斯拉夫"><label> YUG:南斯拉夫 </label>
+						</li>
+						<li key="ZAF" pKey="" title="南非"><label> ZAF:南非 </label></li>
+						<li key="ZAR" pKey="" title="扎伊尔"><label> ZAR:扎伊尔 </label></li>
+						<li key="ZMB" pKey="" title="赞比亚"><label> ZMB:赞比亚 </label></li>
+						<li key="ZWE" pKey="" title="津巴布韦"><label> ZWE:津巴布韦 </label>
+						</li>
+					</ul>
+				</div>
+				<div class="hc_checkboxdiv" multiple_line="false"
+					ref_target="opp_area_code_s">
+					<ul>
+						<li key="000344" pKey="" title="香港"><label> 000344:香港
+						</label></li>
+						<li key="000446" pKey="" title="澳门"><label> 000446:澳门
+						</label></li>
+						<li key="110000" pKey="" title="北京市"><label>
+								110000:北京市 </label></li>
+						<li key="120000" pKey="" title="天津市"><label>
+								120000:天津市 </label></li>
+						<li key="130000" pKey="" title="河北省"><label>
+								130000:河北省 </label></li>
+						<li key="140000" pKey="" title="山西省"><label>
+								140000:山西省 </label></li>
+						<li key="150000" pKey="" title="内蒙古自治区"><label>
+								150000:内蒙古自治区 </label></li>
+						<li key="210000" pKey="" title="辽宁省"><label>
+								210000:辽宁省 </label></li>
+						<li key="220000" pKey="" title="吉林省"><label>
+								220000:吉林省 </label></li>
+						<li key="230000" pKey="" title="黑龙江省"><label>
+								230000:黑龙江省 </label></li>
+						<li key="310000" pKey="" title="上海市"><label>
+								310000:上海市 </label></li>
+						<li key="320000" pKey="" title="江苏省"><label>
+								320000:江苏省 </label></li>
+						<li key="330000" pKey="" title="浙江省"><label>
+								330000:浙江省 </label></li>
+						<li key="340000" pKey="" title="安徽省"><label>
+								340000:安徽省 </label></li>
+						<li key="350000" pKey="" title="福建省"><label>
+								350000:福建省 </label></li>
+						<li key="360000" pKey="" title="江西省"><label>
+								360000:江西省 </label></li>
+						<li key="370000" pKey="" title="山东省"><label>
+								370000:山东省 </label></li>
+						<li key="410000" pKey="" title="河南省"><label>
+								410000:河南省 </label></li>
+						<li key="420000" pKey="" title="湖北省"><label>
+								420000:湖北省 </label></li>
+						<li key="430000" pKey="" title="湖南省"><label>
+								430000:湖南省 </label></li>
+						<li key="440000" pKey="" title="广东省"><label>
+								440000:广东省 </label></li>
+						<li key="450000" pKey="" title="广西壮族自治区"><label>
+								450000:广西壮族自治区 </label></li>
+						<li key="460000" pKey="" title="海南省"><label>
+								460000:海南省 </label></li>
+						<li key="500000" pKey="" title="重庆市"><label>
+								500000:重庆市 </label></li>
+						<li key="510000" pKey="" title="四川省"><label>
+								510000:四川省 </label></li>
+						<li key="520000" pKey="" title="贵州省"><label>
+								520000:贵州省 </label></li>
+						<li key="530000" pKey="" title="云南省"><label>
+								530000:云南省 </label></li>
+						<li key="540000" pKey="" title="西藏自治区"><label>
+								540000:西藏自治区 </label></li>
+						<li key="610000" pKey="" title="陕西省"><label>
+								610000:陕西省 </label></li>
+						<li key="620000" pKey="" title="甘肃省"><label>
+								620000:甘肃省 </label></li>
+						<li key="630000" pKey="" title="青海省"><label>
+								630000:青海省 </label></li>
+						<li key="640000" pKey="" title="宁夏回族自治区"><label>
+								640000:宁夏回族自治区 </label></li>
+						<li key="650000" pKey="" title="新疆维吾尔自治区"><label>
+								650000:新疆维吾尔自治区 </label></li>
+					</ul>
+				</div>
+				<script type="text/javascript">
+						Horn.Tip.clear() ;
+					</script>
+			</div>
+		</div>
+
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,797 @@
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>国泰君安综合理财服务系统 -</title>
+<meta content="IE=7" http-equiv="X-UA-Compatible" />
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+<link rel="stylesheet"
+	href="http://10.176.108.50:8080/biz-iwm/css/horn/h_ui.css"
+	type="text/css">
+	<link rel="stylesheet"
+		href="http://10.176.108.50:8080/biz-iwm/components/components.css"
+		type="text/css">
+		<link rel="stylesheet"
+			href="http://10.176.108.50:8080/biz-iwm/plugins/lhgcalendar/skins/lhgcalendar.css"
+			type="text/css">
+			<link rel="stylesheet"
+				href="http://10.176.108.50:8080/biz-iwm/plugins/ztree/zTreeStyle/zTreeStyle.css"
+				type="text/css">
+				<link rel="stylesheet"
+					href="http://10.176.108.50:8080/biz-iwm/css/horn/h_iframe.css"
+					type="text/css">
+					<link rel="stylesheet"
+						href="http://10.176.108.50:8080/biz-iwm/css/horn/h_index.css"
+						type="text/css">
+						<link rel="stylesheet"
+							href="http://10.176.108.50:8080/biz-iwm/css/user/user.css"
+							type="text/css">
+							<link rel="stylesheet"
+								href="http://10.176.108.50:8080/biz-iwm/dhtmlx/dhtmlx.css"
+								type="text/css">
+								<script
+									src="http://10.176.108.50:8080/biz-iwm/scripts/bigpipe.mini.js"
+									type="text/javascript"></script>
+								<script
+									src="http://10.176.108.50:8080/biz-iwm/scripts/jquery.mini.js"
+									type="text/javascript"></script>
+								<script
+									src="http://10.176.108.50:8080/biz-iwm/scripts/horn/horn.core.js"
+									type="text/javascript"></script>
+								<script
+									src="http://10.176.108.50:8080/biz-iwm/components/components.js"
+									type="text/javascript"></script>
+								<script
+									src="http://10.176.108.50:8080/biz-iwm/plugins/lhgcalendar/lhgcalendar.js"
+									type="text/javascript"></script>
+								<script
+									src="http://10.176.108.50:8080/biz-iwm/plugins/lhgcalendar/lhgcalendar.min.js"
+									type="text/javascript"></script>
+								<script
+									src="http://10.176.108.50:8080/biz-iwm/plugins/lhgcalendar/lhgcore.lhgcalendar.min.js"
+									type="text/javascript"></script>
+								<script
+									src="http://10.176.108.50:8080/biz-iwm/plugins/ztree/jquery.ztree.core-3.5.min.js"
+									type="text/javascript"></script>
+								<script
+									src="http://10.176.108.50:8080/biz-iwm/plugins/ztree/jquery.ztree.excheck-3.5.min.js"
+									type="text/javascript"></script>
+								<script
+									src="http://10.176.108.50:8080/biz-iwm/plugins/ztree/jquery.ztree.exhide-3.5.min.js"
+									type="text/javascript"></script>
+								<script
+									src="http://10.176.108.50:8080/biz-iwm/scripts/horn/hc_gtja.js"
+									type="text/javascript"></script>
+								<script src="http://10.176.108.50:8080/biz-iwm/dhtmlx/dhtmlx.js"
+									type="text/javascript"></script>
+								<script
+									src="http://10.176.108.50:8080/biz-iwm/dhtmlx/hc_dhtmlx.js"
+									type="text/javascript"></script>
+								<script src="http://10.176.108.50:8080/biz-iwm/scripts/iwm.js"
+									type="text/javascript"></script>
+								<script
+									src="http://10.176.108.50:8080/biz-iwm/scripts/iwm.querytable.js"
+									type="text/javascript"></script>
+								<script
+									src="http://10.176.108.50:8080/biz-iwm/scripts/iwm.select.js"
+									type="text/javascript"></script>
+								<script
+									src="http://10.176.108.50:8080/biz-iwm/scripts/iwm.pwd.js"
+									type="text/javascript"></script>
+
+								<script type="text/javascript">
+		var context_path = "http://10.176.108.50:8080/biz-iwm/" ;
+		if(context_path.lastIndexOf("/")==context_path.length-1){
+			context_path = context_path.substr(0,context_path.length-1) ;
+		}
+	</script>
+</head>
+<body>
+	<script src="http://10.176.108.50:8080/biz-iwm/scripts/iwm.imm.js"
+		type="text/javascript"></script>
+	<script type="text/javascript">
+var menu_id = "230807" ;
+</script>
+
+	<div class="h_screen">
+		<style type="text/css">
+ul.h_panel {
+	display: block;
+	width: 680px;
+}
+
+ul.h_panel li {
+	display: inline-block;
+	width: 220px;
+}
+
+ul.h_panel li span{
+	float: left;
+	width: 70px;
+}
+
+.btn-box {
+	float: right;
+	margin: 20px;
+}
+</style>
+		<div class="h_screen-content-3">
+			<h1>
+				<span>证通支付银行参数设置</span>
+			</h1>
+			<div class="h_columns-2">
+				<div class="h_colspan-7" style="height:750px;">
+					<ul class="h_panel">
+
+						<li class="hc_panel-li "><span title="证通机构编号:">
+								证通机构编号:</span>
+							<div class="hc_combox" pKeyField=pLabel keyField=label
+								titleField=value showLabel="true">
+								<input type="hidden" name="gt_ztbank_no_q" check="" /> <input
+									multiple="" type="text" readonly="readonly" delimiter="," />
+
+								<div class="hc_checkboxdiv" multiple_line="false">
+									<ul>
+
+									</ul>
+								</div>
+							</div>
+							<div style="display:none;"></div></li>
+
+						<li class="hc_panel-li "><span title="报文编号:"> 报文编号:</span>
+							<div class="hc_combox" pKeyField=pLabel keyField=label
+								titleField=value showLabel="false">
+								<input type="hidden" name="gt_msgcd_q" value="!" check="" />
+								<input multiple="" type="text" readonly="readonly" value="全部"
+									delimiter="," />
+
+								<div class="hc_checkboxdiv" multiple_line="false">
+									<ul>
+
+
+										<li title="全部" pKeyCommand="$!{pItem.pLabel}" pKey="" key="!"><label>
+
+												全部 </label>
+										</li>
+
+										<li title="重置密钥请求报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="PSB.920.001.01"><label> 重置密钥请求报文 </label>
+										</li>
+
+										<li title="重置密钥应答报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="PSB.921.001.01"><label> 重置密钥应答报文 </label>
+										</li>
+
+										<li title="机构数字证书绑定/解绑" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="PSB.922.001.01"><label> 机构数字证书绑定/解绑 </label>
+										</li>
+
+										<li title="证书下发通知报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="PSB.923.001.01"><label> 证书下发通知报文 </label>
+										</li>
+
+										<li title="资金调拨请求报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.170.001.01"><label> 资金调拨请求报文 </label>
+										</li>
+
+										<li title="转账请求报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.200.001.01"><label> 转账请求报文 </label>
+										</li>
+
+										<li title="转账应答报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.201.001.01"><label> 转账应答报文 </label>
+										</li>
+
+										<li title="延时转账转出请求报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.202.001.01"><label> 延时转账转出请求报文 </label>
+										</li>
+
+										<li title="延时转账转出应答报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.203.001.01"><label> 延时转账转出应答报文 </label>
+										</li>
+
+										<li title="延时转账转入请求报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.204.001.01"><label> 延时转账转入请求报文 </label>
+										</li>
+
+										<li title="延时转账转入应答报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.205.001.01"><label> 延时转账转入应答报文 </label>
+										</li>
+
+										<li title="延时转账退款请求报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.206.001.01"><label> 延时转账退款请求报文 </label>
+										</li>
+
+										<li title="延时转账退款应答报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.207.001.01"><label> 延时转账退款应答报文 </label>
+										</li>
+
+										<li title="实时贷记请求报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.208.001.01"><label> 实时贷记请求报文 </label>
+										</li>
+
+										<li title="实时贷记应答报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.209.001.01"><label> 实时贷记应答报文 </label>
+										</li>
+
+										<li title="实时借记请求报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.210.001.01"><label> 实时借记请求报文 </label>
+										</li>
+
+										<li title="实时借记应答报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.211.001.01"><label> 实时借记应答报文 </label>
+										</li>
+
+										<li title="理财购买请求报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.220.001.01"><label> 理财购买请求报文 </label>
+										</li>
+
+										<li title="理财购买应答报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.221.001.01"><label> 理财购买应答报文 </label>
+										</li>
+
+										<li title="预约撤销请求报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.222.001.01"><label> 预约撤销请求报文 </label>
+										</li>
+
+										<li title="预约撤销应答报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.223.001.01"><label> 预约撤销应答报文 </label>
+										</li>
+
+										<li title="预约确认请求报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.224.001.01"><label> 预约确认请求报文 </label>
+										</li>
+
+										<li title="预约确认应答报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.225.001.01"><label> 预约确认应答报文 </label>
+										</li>
+
+										<li title="支付撤销请求报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.226.001.01"><label> 支付撤销请求报文 </label>
+										</li>
+
+										<li title="支付撤销应答报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.227.001.01"><label> 支付撤销应答报文 </label>
+										</li>
+
+										<li title="赎回兑付请求报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.228.001.01"><label> 赎回兑付请求报文 </label>
+										</li>
+
+										<li title="赎回兑付应答报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.229.001.01"><label> 赎回兑付应答报文 </label>
+										</li>
+
+										<li title="消费请求报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.240.001.01"><label> 消费请求报文 </label>
+										</li>
+
+										<li title="消费应答报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.241.001.01"><label> 消费应答报文 </label>
+										</li>
+
+										<li title="消费撤销请求报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.242.001.01"><label> 消费撤销请求报文 </label>
+										</li>
+
+										<li title="消费撤销应答报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.243.001.01"><label> 消费撤销应答报文 </label>
+										</li>
+
+										<li title="消费退货请求报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.244.001.01"><label> 消费退货请求报文 </label>
+										</li>
+
+										<li title="消费退货应答报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.245.001.01"><label> 消费退货应答报文 </label>
+										</li>
+
+										<li title="预授权请求报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.246.001.01"><label> 预授权请求报文 </label>
+										</li>
+
+										<li title="预授权应答报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.247.001.01"><label> 预授权应答报文 </label>
+										</li>
+
+										<li title="预授权撤销请求报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.250.001.01"><label> 预授权撤销请求报文 </label>
+										</li>
+
+										<li title="预授权撤销应答报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.251.001.01"><label> 预授权撤销应答报文 </label>
+										</li>
+
+										<li title="预授权完成请求报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.252.001.01"><label> 预授权完成请求报文 </label>
+										</li>
+
+										<li title="预授权完成应答报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.253.001.01"><label> 预授权完成应答报文 </label>
+										</li>
+
+										<li title="预授权完成撤销请求" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.254.001.01"><label> 预授权完成撤销请求 </label>
+										</li>
+
+										<li title="预授权完成撤销应答" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.255.001.01"><label> 预授权完成撤销应答 </label>
+										</li>
+
+										<li title="单笔代收请求报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.270.001.01"><label> 单笔代收请求报文 </label>
+										</li>
+
+										<li title="单笔代收应答报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.271.001.01"><label> 单笔代收应答报文 </label>
+										</li>
+
+										<li title="单笔代付请求报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.272.001.01"><label> 单笔代付请求报文 </label>
+										</li>
+
+										<li title="单笔代付应答报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.273.001.01"><label> 单笔代付应答报文 </label>
+										</li>
+
+										<li title="批量代收请求报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.274.001.01"><label> 批量代收请求报文 </label>
+										</li>
+
+										<li title="批量代收应答报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.275.001.01"><label> 批量代收应答报文 </label>
+										</li>
+
+										<li title="批量代付请求报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.276.001.01"><label> 批量代付请求报文 </label>
+										</li>
+
+										<li title="批量代付应答报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.277.001.01"><label> 批量代付应答报文 </label>
+										</li>
+
+										<li title="单笔代收撤销请求报" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.278.001.01"><label> 单笔代收撤销请求报 </label>
+										</li>
+
+										<li title="单笔代收撤销应答报" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.279.001.01"><label> 单笔代收撤销应答报 </label>
+										</li>
+
+										<li title="交易状态查询请求报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.300.001.01"><label> 交易状态查询请求报文 </label>
+										</li>
+
+										<li title="交易状态查询应答报" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.301.001.01"><label> 交易状态查询应答报 </label>
+										</li>
+
+										<li title="业务撤销请求报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.302.001.01"><label> 业务撤销请求报文 </label>
+										</li>
+
+										<li title="业务撤销应答" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.303.001.01"><label> 业务撤销应答 </label>
+										</li>
+
+										<li title="自动冲正请求报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.304.001.01"><label> 自动冲正请求报文 </label>
+										</li>
+
+										<li title="自动冲正应答报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.305.001.01"><label> 自动冲正应答报文 </label>
+										</li>
+
+										<li title="账户验证请求报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.330.001.01"><label> 账户验证请求报文 </label>
+										</li>
+
+										<li title="账户验证应答报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.331.001.01"><label> 账户验证应答报文 </label>
+										</li>
+
+										<li title="账户余额查询请求报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.332.001.01"><label> 账户余额查询请求报文 </label>
+										</li>
+
+										<li title="账户余额查询应答报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.333.001.01"><label> 账户余额查询应答报文 </label>
+										</li>
+
+										<li title="账户明细查询请求报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.334.001.01"><label> 账户明细查询请求报文 </label>
+										</li>
+
+										<li title="账户明细查询应答报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.335.001.01"><label> 账户明细查询应答报文 </label>
+										</li>
+
+										<li title="清算账户余额预警通知" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.362.001.01"><label> 清算账户余额预警通知 </label>
+										</li>
+
+										<li title="清算账户余额查询请求" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.363.001.01"><label> 清算账户余额查询请求 </label>
+										</li>
+
+										<li title="清算账户余额查询应答" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.364.001.01"><label> 清算账户余额查询应答 </label>
+										</li>
+
+										<li title="清算账户余额通知报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.366.001.01"><label> 清算账户余额通知报文 </label>
+										</li>
+
+										<li title="系统状态变更通知报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.801.001.01"><label> 系统状态变更通知报文 </label>
+										</li>
+
+										<li title="成员机构状态变更通知" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.803.001.01"><label> 成员机构状态变更通知 </label>
+										</li>
+
+										<li title="系统登录/退出请求报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.805.001.01"><label> 系统登录/退出请求报文 </label>
+										</li>
+
+										<li title="系统登录/退出应答报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.806.001.01"><label> 系统登录/退出应答报文 </label>
+										</li>
+
+										<li title="强制离线通知报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.807.001.01"><label> 强制离线通知报文 </label>
+										</li>
+
+										<li title="停启运通知报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.809.001.01"><label> 停启运通知报文 </label>
+										</li>
+
+										<li title="通用处理确认报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.900.001.01"><label> 通用处理确认报文 </label>
+										</li>
+
+										<li title="报文丢弃通知报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.911.001.01"><label> 报文丢弃通知报文 </label>
+										</li>
+
+										<li title="下发文件通知报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.919.001.01"><label> 下发文件通知报文 </label>
+										</li>
+
+										<li title="通信级应答报文" pKeyCommand="$!{pItem.pLabel}" pKey=""
+											key="TACS.990.001.01"><label> 通信级应答报文 </label>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div style="display:none;"></div></li>
+						<li class="hc_panel-li "><span title="业务类型:"> 业务类型:</span>
+							<div class="hc_textfield">
+								<input type="text" name="gt_biztyp_q" maxlength="" value=""
+									check="" />
+							</div>
+							<div style="display:none;"></div></li>
+						<li class="hc_panel-li "><span title="业务种类:"> 业务种类:</span>
+							<div class="hc_textfield">
+								<input type="text" name="gt_bizKind_q" maxlength="" value=""
+									check="" />
+							</div>
+							<div style="display:none;"></div></li>
+
+						<li class="hc_panel-li "><span title="支付机构编号:">
+								支付机构编号:</span>
+							<div class="hc_combox" pKeyField=pLabel keyField=label
+								titleField=value showLabel="true">
+								<input type="hidden" name="payorgan_id_q" value="9000" check="" />
+								<input multiple="" type="text" onchange="gtZtbankNoChange()"
+									ref="payorgan_id_s" readonly="readonly" value="9000:证通"
+									delimiter="," />
+								<div>payorgan_id horn</div>
+
+
+							</div>
+							<div style="display:none;"></div></li>
+					</ul>
+
+					<div class="btn-box">
+						<button class="btn query">查询</button>
+						<button class="btn add">添加</button>
+						<button class="btn modify">修改</button>
+						<button class="btn remove">删除</button>
+					</div>
+					<div class=" userborderB">
+						<div
+							style="width:100%;height:500px;overflow-x:hidden;overflow-y:auto;">
+							<div class="h_colspan-7">
+								<div class="h_listtable">
+									<table class="h_table" name="ztOrganArgTable"
+										bindformname="ztInfoQueryForm"
+										url="/pay/bankarg/payztorganargset/query.json"
+										request_num="500" position_str="position_str" hasPage="true"
+										numbercolumn="true" selectModel="muti" simpleRequest="true">
+										<thead>
+											<th class="h_numbercolumn"></th>
+											<th class="h_querytable_checkboxcolumn"><input
+												type="checkbox" class="h_querytable_select_all" />
+											</th>
+											<th name="name">证通机构名称</th>
+											<th name="gt_ztbank_no">证通机构编号</th>
+											<th name="gt_trans_flag_name">交易标识</th>
+											<th name="gt_biztyp">业务类型</th>
+											<th name="gt_msgcd_dictentry_name">报文编号</th>
+											<th name="gt_bizKind">业务种类</th>
+											<th name="right_open_flag" dealFun="deal_right_open_flag">权限是否开通</th>
+											<th name="payorgan_id">支付机构编号</th>
+											<th name="active_flag">当前使用标记</th>
+											<th name="modify_date">修改日期</th>
+											<th name="remark" dealFun="deal_remark">备注</th>
+										</thead>
+										<tbody>
+										</tbody>
+									</table>
+									<div class="h_pages"></div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+			<script type="text/javascript">
+//var gt_ztbank_no_string = $gt_ztbank_no_string;
+var gt_trans_flag_string = [{"label":"1","value":"受理方"},{"label":"2","value":"账户方"}];
+var gt_msgcd_string =[{"label":"PSB.920.001.01","value":"重置密钥请求报文"},{"label":"PSB.921.001.01","value":"重置密钥应答报文"},{"label":"PSB.922.001.01","value":"机构数字证书绑定/解绑"},{"label":"PSB.923.001.01","value":"证书下发通知报文"},{"label":"TACS.170.001.01","value":"资金调拨请求报文"},{"label":"TACS.200.001.01","value":"转账请求报文"},{"label":"TACS.201.001.01","value":"转账应答报文"},{"label":"TACS.202.001.01","value":"延时转账转出请求报文"},{"label":"TACS.203.001.01","value":"延时转账转出应答报文"},{"label":"TACS.204.001.01","value":"延时转账转入请求报文"},{"label":"TACS.205.001.01","value":"延时转账转入应答报文"},{"label":"TACS.206.001.01","value":"延时转账退款请求报文"},{"label":"TACS.207.001.01","value":"延时转账退款应答报文"},{"label":"TACS.208.001.01","value":"实时贷记请求报文"},{"label":"TACS.209.001.01","value":"实时贷记应答报文"},{"label":"TACS.210.001.01","value":"实时借记请求报文"},{"label":"TACS.211.001.01","value":"实时借记应答报文"},{"label":"TACS.220.001.01","value":"理财购买请求报文"},{"label":"TACS.221.001.01","value":"理财购买应答报文"},{"label":"TACS.222.001.01","value":"预约撤销请求报文"},{"label":"TACS.223.001.01","value":"预约撤销应答报文"},{"label":"TACS.224.001.01","value":"预约确认请求报文"},{"label":"TACS.225.001.01","value":"预约确认应答报文"},{"label":"TACS.226.001.01","value":"支付撤销请求报文"},{"label":"TACS.227.001.01","value":"支付撤销应答报文"},{"label":"TACS.228.001.01","value":"赎回兑付请求报文"},{"label":"TACS.229.001.01","value":"赎回兑付应答报文"},{"label":"TACS.240.001.01","value":"消费请求报文"},{"label":"TACS.241.001.01","value":"消费应答报文"},{"label":"TACS.242.001.01","value":"消费撤销请求报文"},{"label":"TACS.243.001.01","value":"消费撤销应答报文"},{"label":"TACS.244.001.01","value":"消费退货请求报文"},{"label":"TACS.245.001.01","value":"消费退货应答报文"},{"label":"TACS.246.001.01","value":"预授权请求报文"},{"label":"TACS.247.001.01","value":"预授权应答报文"},{"label":"TACS.250.001.01","value":"预授权撤销请求报文"},{"label":"TACS.251.001.01","value":"预授权撤销应答报文"},{"label":"TACS.252.001.01","value":"预授权完成请求报文"},{"label":"TACS.253.001.01","value":"预授权完成应答报文"},{"label":"TACS.254.001.01","value":"预授权完成撤销请求"},{"label":"TACS.255.001.01","value":"预授权完成撤销应答"},{"label":"TACS.270.001.01","value":"单笔代收请求报文"},{"label":"TACS.271.001.01","value":"单笔代收应答报文"},{"label":"TACS.272.001.01","value":"单笔代付请求报文"},{"label":"TACS.273.001.01","value":"单笔代付应答报文"},{"label":"TACS.274.001.01","value":"批量代收请求报文"},{"label":"TACS.275.001.01","value":"批量代收应答报文"},{"label":"TACS.276.001.01","value":"批量代付请求报文"},{"label":"TACS.277.001.01","value":"批量代付应答报文"},{"label":"TACS.278.001.01","value":"单笔代收撤销请求报"},{"label":"TACS.279.001.01","value":"单笔代收撤销应答报"},{"label":"TACS.300.001.01","value":"交易状态查询请求报文"},{"label":"TACS.301.001.01","value":"交易状态查询应答报"},{"label":"TACS.302.001.01","value":"业务撤销请求报文"},{"label":"TACS.303.001.01","value":"业务撤销应答"},{"label":"TACS.304.001.01","value":"自动冲正请求报文"},{"label":"TACS.305.001.01","value":"自动冲正应答报文"},{"label":"TACS.330.001.01","value":"账户验证请求报文"},{"label":"TACS.331.001.01","value":"账户验证应答报文"},{"label":"TACS.332.001.01","value":"账户余额查询请求报文"},{"label":"TACS.333.001.01","value":"账户余额查询应答报文"},{"label":"TACS.334.001.01","value":"账户明细查询请求报文"},{"label":"TACS.335.001.01","value":"账户明细查询应答报文"},{"label":"TACS.362.001.01","value":"清算账户余额预警通知"},{"label":"TACS.363.001.01","value":"清算账户余额查询请求"},{"label":"TACS.364.001.01","value":"清算账户余额查询应答"},{"label":"TACS.366.001.01","value":"清算账户余额通知报文"},{"label":"TACS.801.001.01","value":"系统状态变更通知报文"},{"label":"TACS.803.001.01","value":"成员机构状态变更通知"},{"label":"TACS.805.001.01","value":"系统登录/退出请求报文"},{"label":"TACS.806.001.01","value":"系统登录/退出应答报文"},{"label":"TACS.807.001.01","value":"强制离线通知报文"},{"label":"TACS.809.001.01","value":"停启运通知报文"},{"label":"TACS.900.001.01","value":"通用处理确认报文"},{"label":"TACS.911.001.01","value":"报文丢弃通知报文"},{"label":"TACS.919.001.01","value":"下发文件通知报文"},{"label":"TACS.990.001.01","value":"通信级应答报文"}];
+var removes=[];
+var right_open_flag_s = [{"label":"0","value":"否"},{"label":"1","value":"是"}];
+//$(document).ready(function(){
+Horn.ready(function(){
+
+    $(".h_querytable_select").live("change",function(){
+        buttonEnabled();
+    });
+    $(".query").click(function(){
+        loadQryTable();
+    });
+    $(".add").click(function(){
+    	var data = [];
+    	data.payorgan_id = Horn.getComp("payorgan_id_q").getValue();
+        var params = {data: data,url: "/pay/bankarg/payztorganargset/payZtOrganArgAdd.htm"};
+        if(dialog(params)){
+            loadQryTable();
+            buttonEnabled();
+        }
+    });
+    $(".modify").click(function(){
+        buttonEnabled();
+        //var datas = Horn.QueryTable.get().selecteds;
+        var datas = Horn.getComp("ztOrganArgTable").getSelecteds(true);
+        //console.log("log: "+datas[0].gt_trans_flag_name+datas[0].gt_msgcd_dictentry_name+datas[0].right_open_flag+datas[0].remark);
+        //console.log("log: "+datas.length+$.type(datas));
+        if(datas.length==0) return;
+        var data = [];
+        for(var i in datas){
+            if(datas[i]!=null){
+                data = datas[i];
+                data.gt_trans_flag = getLabel(gt_trans_flag_string,datas[i].gt_trans_flag_name);
+                data.gt_msgcd = getLabel(gt_msgcd_string,datas[i].gt_msgcd_dictentry_name);
+                //data.right_open_flag = getLabel(right_open_flag_s,datas[i].right_open_flag);
+            }
+        }
+        if(data.length==0)return;
+        var params = {data: data,url: "/pay/bankarg/payztorganargset/payZtOrganArgModify.htm"}
+        if(dialog(params)){
+            loadQryTable();
+            buttonEnabled();
+        }
+
+    });
+    $(".remove").click(function(){
+        var size = $(".h_querytable_select:checked").size();
+        if(size==0)return;
+        if(!confirm("是否确认删除"+size+"个选中项目？\n\r点击“确定”删除所有选择项目。"))return;
+        buttonEnabled();
+        var datas = Horn.QueryTable.get().selecteds;
+        var j = 0;
+        for(var i in datas){
+            if(datas[i]!=null){
+                removes[j] = datas[i];
+                removes[j].gt_ztbank_no = datas[i].gt_ztbank_no.split(":")[0];
+                removes[j].right_open_flag = getLabel(right_open_flag_s, datas[i].right_open_flag);
+                removes[j].gt_msgcd = getLabel(gt_msgcd_string, datas[i].gt_msgcd_dictentry_name);  
+                removes[j].gt_trans_flag = getLabel(gt_trans_flag_string, datas[i].gt_trans_flag_name);              
+                removes[j].action_in = 3;
+                j++;
+            }
+        }
+        remove(0);
+    });
+
+	
+	//loadQryTable();
+	gtZtbankNoChange();
+    buttonEnabled();
+});
+
+function buttonEnabled(){
+	var checkedSize=$(".h_querytable_select:checked").size();
+	var allSize =$(".h_querytable_select").size();
+	if(checkedSize == allSize && allSize != 0 ){
+		$(".h_querytable_select_all").attr("checked",true);
+	}else{
+		$(".h_querytable_select_all").attr("checked",false);
+	}
+
+    if(checkedSize > 1||checkedSize == 0){
+        $(".modify").attr("disabled",true);
+        $(".remove").attr("disabled",true);
+    }else{
+        $(".modify").attr("disabled",false);
+    }
+    if(checkedSize>0){
+        $(".remove").attr("disabled",false);
+    }
+}
+
+function loadQryTable(){
+    var data={};
+    //
+    var gt_ztbank_no_t = Horn.getComp("gt_ztbank_no_q");
+    var gt_ztbank_no = gt_ztbank_no_t.getValue();
+    if(gt_ztbank_no == "!"){
+    	gt_ztbank_no = "";
+    }
+    data.gt_ztbank_no = gt_ztbank_no;
+    
+    var gt_msgcd_t = Horn.getComp("gt_msgcd_q");
+    var gt_msgcd = gt_msgcd_t.getValue();
+    if(gt_msgcd == "!"){
+    	gt_msgcd = "";
+    }
+    data.gt_msgcd = gt_msgcd;
+    
+    data.gt_biztyp = Horn.Field.getValue("gt_biztyp_q");
+     
+    data.gt_bizKind = Horn.Field.getValue("gt_bizKind_q");
+    data.payorgan_id = Horn.getComp("payorgan_id_q").getValue();
+    var qryTable = Horn.getComp("ztOrganArgTable");
+    qryTable.load(data);
+}
+   
+function remove(i){
+    if(removes.length<=i){
+        loadQryTable();
+        buttonEnabled();
+        return;
+    }
+    Horn.post("/pay/bankarg/payztorganargset/set.json",removes[i],function(data){
+        remove(++i);
+    },function(data){
+        alert(Horn.getError(data));
+    },null,true);
+}
+function format_money_type (val){
+    for(var i in money_types){
+        if(money_types[i].label==val){
+            return val+":"+money_types[i].value;
+        }
+    }
+}
+function format_gt_default_intype(val){
+    for(var i in gt_default_intypes){
+        if(gt_default_intypes[i].label==val){
+            return val+":"+gt_default_intypes[i].value;
+        }
+    }
+}
+function format_gt_segmentflag(val){
+    for(var i in gt_segmentflags){
+        if(gt_segmentflags[i].label==val){
+            return val+":"+gt_segmentflags[i].value;
+        }
+    }
+}
+
+
+function dialog(o){
+    var data = o.data ;
+    var width = 300 ;
+    height = 380 ;
+    var url = o.url ;
+    url = window.context_path + url ;
+    //alert(window.context_path);
+    var ps = [] ;
+    if(ps.length>0){
+        url += "?" + ps.join("&") ;
+    }
+    var px = [] ;
+    px.push("dialogWidth:" + width + "px") ;
+    px.push("dialogHeight:" + height + "px") ;
+    px.push("help:no") ;
+    px.push("resizable:no") ;
+    px.push("scroll:no") ;
+    px.push("status:no") ;
+    //px.push("titlebar:no") ;
+    return window.showModalDialog(url ,data ,px.join(";"));
+}
+
+function deal_right_open_flag(val){
+	return getValue(right_open_flag_s,val);
+}
+
+function deal_gt_trans_flag(val){
+	return getValue(gt_trans_flag_string,val);
+}
+
+function deal_gt_msgcd(val){
+	return getValue(gt_msgcd_string,val);
+}
+
+function getValue(arrays,val){
+	var ret="";
+	$.each(arrays,function(idx,item){
+		if(val.indexOf(item.label)>=0){
+			ret +="," + item.value;
+		}
+	});
+	return ret.substring(1);
+}
+function getLabel(arrays,val){
+	var ret="";
+	$.each(arrays,function(idx,item){
+		if(val.indexOf(item.value)>=0){
+			ret +="," + item.label;
+		}
+	});
+	return ret.substring(1);
+}
+function gtZtbankNoChange(){
+	var payorgan_id = Horn.getComp("payorgan_id_q").getValue();
+	Horn.post("/pay/bankarg/payztorganargset/bankNoExtQuery.json",{payorgan_id: payorgan_id},
+	function(data){
+		//Horn.getComp('gt_ztbank_no_q').setValue(data);
+		var gt_ztbank_no_q = Horn.getComp("gt_ztbank_no_q")
+		gt_ztbank_no_q.keyAttr="label";
+		gt_ztbank_no_q.valueAttr="value";
+		gt_ztbank_no_q.addDatas(data,true);
+		gt_ztbank_no_q.selectFirst();
+	},function(error){
+		alert(Horn.getError(error));
+		
+	}, false);
+}
+function deal_remark(val){
+    var remarkTip = "<span title='"+ val +"' style='user-select: none;'>"+ (val.length>10?val.substring(0,10)+"...":val) +"<\/span>"
+    return remarkTip;
+}
+</script>
+			<div class="hc_hide_div">
+				<div class="hc_checkboxdiv" multiple_line="false"
+					ref_target="payorgan_id_s">
+					<ul>
+						<li key="9000" pKey="" title="证通"><label> 9000:证通 </label></li>
+						<li key="9001" pKey="" title="资管"><label> 9001:资管 </label></li>
+					</ul>
+				</div>
+				<script type="text/javascript">
+						Horn.Tip.clear() ;
+					</script>
+			</div>
+		</div>
+
+	</div>
+</body>
+
+</html>

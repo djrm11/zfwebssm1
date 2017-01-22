@@ -1,0 +1,71 @@
+<!-- !DOCTYPE html> -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>qryAllUser.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+	<script type="text/javascript" src="js/jquery-1.7.1.js"></script>
+<!-- 	<script type="text/javascript" src="WebRoot/js/jquery-1.7.1.js"></script> -->
+	<script type="text/javascript">
+	function getUser2()
+	{
+	alert("getUser2");
+	};
+	$(document).ready(function(){
+
+		  
+	  	$("#getUser1").click(function(){
+	  		var iloc = window.location.href;
+	  		alert(iloc);
+	  		
+	  	});
+	  	
+		$("#getUser").click(function(){
+	        $.ajax({  
+	            type:"GET",  
+	            url: "http://localhost:8080/SpringMVC_Spring_mybatis/user/getAllUserT",  
+	            dataType:"json",  
+	            global:false,   
+	            success: function(data){  
+	          	  $("#userList tr:not(#title)").remove();			  
+	        	  $.each(data,function(index,item){
+	        		  $("#userList").append(
+	        				  "<tr><td bgcolor='#FFFFCC'>" + item.id + "</td>"
+	        				  +"<td bgcolor='#FFFFCC'>" + item.age + "</td>"
+	        				  +"<td bgcolor='#FFFFCC'>" + item.userName + "</td>"
+// 	        				  + "<td bgcolor='#FFFFCC'>" + "<a href='" + item.age + "'>" + item.age + "</a>" + "</td>"
+// 	                          + "<td>" + "<img src='" + item.userName + "' width='80' height='60' "+"alt ='" + item.userName + "'>" + "</td>"
+	        				  + "</tr>");
+	        	  });
+	            }
+	        });
+	      });
+	});
+	</script>
+  </head>
+  
+
+  <body>
+    WebRoot/html<br>This is my HTML page. <br> 
+    <button id="getUser">getUser</button><br><button id="getUser1">getUser1</button>
+    <button id="getUser1" onclick = "getUser2()">getUser2</button>
+      <table id="userList" width="450" border="0" align="center" cellspacing="0">
+	  <tr id="title">
+	    <td width="100" bgcolor="lightblue"><div align="center">
+	      <div align="left">user_id</div>
+	    </div></td>
+	    <td width="200" bgcolor="lightblue"><div align="center">
+	      <div align="left">user_name</div>
+	    </div></td>
+	    <td width="80" bgcolor="lightblue"><div align="center">
+	      <div align="left">user_age</div>
+	    </div></td>
+	  </tr>      
+	</table>
+  </body>
+</html>
